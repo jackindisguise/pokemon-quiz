@@ -1,0 +1,7177 @@
+[
+	{
+		"id": 1,
+		"pokemon": "Bulbasaur",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 2,
+		"pokemon": "Ivysaur",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 3,
+		"pokemon": "Venusaur",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 4,
+		"pokemon": "Charmander",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 5,
+		"pokemon": "Charmeleon",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 6,
+		"pokemon": "Charizard",
+		"type": ["Fire", "Flying"],
+		"generation": "I",
+		"typeMask": 1028
+	},
+	{
+		"id": 7,
+		"pokemon": "Squirtle",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 8,
+		"pokemon": "Wartortle",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 9,
+		"pokemon": "Blastoise",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 10,
+		"pokemon": "Caterpie",
+		"type": ["Bug"],
+		"generation": "I",
+		"typeMask": 4096
+	},
+	{
+		"id": 11,
+		"pokemon": "Metapod",
+		"type": ["Bug"],
+		"generation": "I",
+		"typeMask": 4096
+	},
+	{
+		"id": 12,
+		"pokemon": "Butterfree",
+		"type": ["Bug", "Flying"],
+		"generation": "I",
+		"typeMask": 5120
+	},
+	{
+		"id": 13,
+		"pokemon": "Weedle",
+		"type": ["Bug", "Poison"],
+		"generation": "I",
+		"typeMask": 4352
+	},
+	{
+		"id": 14,
+		"pokemon": "Kakuna",
+		"type": ["Bug", "Poison"],
+		"generation": "I",
+		"typeMask": 4352
+	},
+	{
+		"id": 15,
+		"pokemon": "Beedrill",
+		"type": ["Bug", "Poison"],
+		"generation": "I",
+		"typeMask": 4352
+	},
+	{
+		"id": 16,
+		"pokemon": "Pidgey",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 17,
+		"pokemon": "Pidgeotto",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 18,
+		"pokemon": "Pidgeot",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 19,
+		"pokemon": "Rattata",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 20,
+		"pokemon": "Raticate",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 21,
+		"pokemon": "Spearow",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 22,
+		"pokemon": "Fearow",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 23,
+		"pokemon": "Ekans",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 24,
+		"pokemon": "Arbok",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 25,
+		"pokemon": "Pikachu",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 26,
+		"pokemon": "Raichu",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 27,
+		"pokemon": "Sandshrew",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 28,
+		"pokemon": "Sandslash",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 29,
+		"pokemon": "Nidoran♀",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 30,
+		"pokemon": "Nidorina",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 31,
+		"pokemon": "Nidoqueen",
+		"type": ["Poison", "Ground"],
+		"generation": "I",
+		"typeMask": 768
+	},
+	{
+		"id": 32,
+		"pokemon": "Nidoran♂",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 33,
+		"pokemon": "Nidorino",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 34,
+		"pokemon": "Nidoking",
+		"type": ["Poison", "Ground"],
+		"generation": "I",
+		"typeMask": 768
+	},
+	{
+		"id": 35,
+		"pokemon": "Clefairy",
+		"type": ["Fairy"],
+		"generation": "I",
+		"typeMask": 262144
+	},
+	{
+		"id": 36,
+		"pokemon": "Clefable",
+		"type": ["Fairy"],
+		"generation": "I",
+		"typeMask": 262144
+	},
+	{
+		"id": 37,
+		"pokemon": "Vulpix",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 38,
+		"pokemon": "Ninetales",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 39,
+		"pokemon": "Jigglypuff",
+		"type": ["Normal", "Fairy"],
+		"generation": "I",
+		"typeMask": 262146
+	},
+	{
+		"id": 40,
+		"pokemon": "Wigglytuff",
+		"type": ["Normal", "Fairy"],
+		"generation": "I",
+		"typeMask": 262146
+	},
+	{
+		"id": 41,
+		"pokemon": "Zubat",
+		"type": ["Poison", "Flying"],
+		"generation": "I",
+		"typeMask": 1280
+	},
+	{
+		"id": 42,
+		"pokemon": "Golbat",
+		"type": ["Poison", "Flying"],
+		"generation": "I",
+		"typeMask": 1280
+	},
+	{
+		"id": 43,
+		"pokemon": "Oddish",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 44,
+		"pokemon": "Gloom",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 45,
+		"pokemon": "Vileplume",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 46,
+		"pokemon": "Paras",
+		"type": ["Bug", "Grass"],
+		"generation": "I",
+		"typeMask": 4128
+	},
+	{
+		"id": 47,
+		"pokemon": "Parasect",
+		"type": ["Bug", "Grass"],
+		"generation": "I",
+		"typeMask": 4128
+	},
+	{
+		"id": 48,
+		"pokemon": "Venonat",
+		"type": ["Bug", "Poison"],
+		"generation": "I",
+		"typeMask": 4352
+	},
+	{
+		"id": 49,
+		"pokemon": "Venomoth",
+		"type": ["Bug", "Poison"],
+		"generation": "I",
+		"typeMask": 4352
+	},
+	{
+		"id": 50,
+		"pokemon": "Diglett",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 51,
+		"pokemon": "Dugtrio",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 52,
+		"pokemon": "Meowth",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 53,
+		"pokemon": "Persian",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 54,
+		"pokemon": "Psyduck",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 55,
+		"pokemon": "Golduck",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 56,
+		"pokemon": "Mankey",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 57,
+		"pokemon": "Primeape",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 58,
+		"pokemon": "Growlithe",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 59,
+		"pokemon": "Arcanine",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 60,
+		"pokemon": "Poliwag",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 61,
+		"pokemon": "Poliwhirl",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 62,
+		"pokemon": "Poliwrath",
+		"type": ["Water", "Fighting"],
+		"generation": "I",
+		"typeMask": 136
+	},
+	{
+		"id": 63,
+		"pokemon": "Abra",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 64,
+		"pokemon": "Kadabra",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 65,
+		"pokemon": "Alakazam",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 66,
+		"pokemon": "Machop",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 67,
+		"pokemon": "Machoke",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 68,
+		"pokemon": "Machamp",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 69,
+		"pokemon": "Bellsprout",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 70,
+		"pokemon": "Weepinbell",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 71,
+		"pokemon": "Victreebel",
+		"type": ["Grass", "Poison"],
+		"generation": "I",
+		"typeMask": 288
+	},
+	{
+		"id": 72,
+		"pokemon": "Tentacool",
+		"type": ["Water", "Poison"],
+		"generation": "I",
+		"typeMask": 264
+	},
+	{
+		"id": 73,
+		"pokemon": "Tentacruel",
+		"type": ["Water", "Poison"],
+		"generation": "I",
+		"typeMask": 264
+	},
+	{
+		"id": 74,
+		"pokemon": "Geodude",
+		"type": ["Rock", "Ground"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 75,
+		"pokemon": "Graveler",
+		"type": ["Rock", "Ground"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 76,
+		"pokemon": "Golem",
+		"type": ["Rock", "Ground"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 77,
+		"pokemon": "Ponyta",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 78,
+		"pokemon": "Rapidash",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 79,
+		"pokemon": "Slowpoke",
+		"type": ["Water", "Psychic"],
+		"generation": "I",
+		"typeMask": 2056
+	},
+	{
+		"id": 80,
+		"pokemon": "Slowbro",
+		"type": ["Water", "Psychic"],
+		"generation": "I",
+		"typeMask": 2056
+	},
+	{
+		"id": 81,
+		"pokemon": "Magnemite",
+		"type": ["Electric", "Steel"],
+		"generation": "I",
+		"typeMask": 131088
+	},
+	{
+		"id": 82,
+		"pokemon": "Magneton",
+		"type": ["Electric", "Steel"],
+		"generation": "I",
+		"typeMask": 131088
+	},
+	{
+		"id": 83,
+		"pokemon": "Farfetch'd",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 84,
+		"pokemon": "Doduo",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 85,
+		"pokemon": "Dodrio",
+		"type": ["Normal", "Flying"],
+		"generation": "I",
+		"typeMask": 1026
+	},
+	{
+		"id": 86,
+		"pokemon": "Seel",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 87,
+		"pokemon": "Dewgong",
+		"type": ["Water", "Ice"],
+		"generation": "I",
+		"typeMask": 72
+	},
+	{
+		"id": 88,
+		"pokemon": "Grimer",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 89,
+		"pokemon": "Muk",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 90,
+		"pokemon": "Shellder",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 91,
+		"pokemon": "Cloyster",
+		"type": ["Water", "Ice"],
+		"generation": "I",
+		"typeMask": 72
+	},
+	{
+		"id": 92,
+		"pokemon": "Gastly",
+		"type": ["Ghost", "Poison"],
+		"generation": "I",
+		"typeMask": 16640
+	},
+	{
+		"id": 93,
+		"pokemon": "Haunter",
+		"type": ["Ghost", "Poison"],
+		"generation": "I",
+		"typeMask": 16640
+	},
+	{
+		"id": 94,
+		"pokemon": "Gengar",
+		"type": ["Ghost", "Poison"],
+		"generation": "I",
+		"typeMask": 16640
+	},
+	{
+		"id": 95,
+		"pokemon": "Onix",
+		"type": ["Rock", "Ground"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 96,
+		"pokemon": "Drowzee",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 97,
+		"pokemon": "Hypno",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 98,
+		"pokemon": "Krabby",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 99,
+		"pokemon": "Kingler",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 100,
+		"pokemon": "Voltorb",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 101,
+		"pokemon": "Electrode",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 102,
+		"pokemon": "Exeggcute",
+		"type": ["Grass", "Psychic"],
+		"generation": "I",
+		"typeMask": 2080
+	},
+	{
+		"id": 103,
+		"pokemon": "Exeggutor",
+		"type": ["Grass", "Psychic"],
+		"generation": "I",
+		"typeMask": 2080
+	},
+	{
+		"id": 104,
+		"pokemon": "Cubone",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 105,
+		"pokemon": "Marowak",
+		"type": ["Ground"],
+		"generation": "I",
+		"typeMask": 512
+	},
+	{
+		"id": 106,
+		"pokemon": "Hitmonlee",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 107,
+		"pokemon": "Hitmonchan",
+		"type": ["Fighting"],
+		"generation": "I",
+		"typeMask": 128
+	},
+	{
+		"id": 108,
+		"pokemon": "Lickitung",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 109,
+		"pokemon": "Koffing",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 110,
+		"pokemon": "Weezing",
+		"type": ["Poison"],
+		"generation": "I",
+		"typeMask": 256
+	},
+	{
+		"id": 111,
+		"pokemon": "Rhyhorn",
+		"type": ["Ground", "Rock"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 112,
+		"pokemon": "Rhydon",
+		"type": ["Ground", "Rock"],
+		"generation": "I",
+		"typeMask": 8704
+	},
+	{
+		"id": 113,
+		"pokemon": "Chansey",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 114,
+		"pokemon": "Tangela",
+		"type": ["Grass"],
+		"generation": "I",
+		"typeMask": 32
+	},
+	{
+		"id": 115,
+		"pokemon": "Kangaskhan",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 116,
+		"pokemon": "Horsea",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 117,
+		"pokemon": "Seadra",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 118,
+		"pokemon": "Goldeen",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 119,
+		"pokemon": "Seaking",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 120,
+		"pokemon": "Staryu",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 121,
+		"pokemon": "Starmie",
+		"type": ["Water", "Psychic"],
+		"generation": "I",
+		"typeMask": 2056
+	},
+	{
+		"id": 122,
+		"pokemon": "Mr. Mime",
+		"type": ["Psychic", "Fairy"],
+		"generation": "I",
+		"typeMask": 264192
+	},
+	{
+		"id": 123,
+		"pokemon": "Scyther",
+		"type": ["Bug", "Flying"],
+		"generation": "I",
+		"typeMask": 5120
+	},
+	{
+		"id": 124,
+		"pokemon": "Jynx",
+		"type": ["Ice", "Psychic"],
+		"generation": "I",
+		"typeMask": 2112
+	},
+	{
+		"id": 125,
+		"pokemon": "Electabuzz",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 126,
+		"pokemon": "Magmar",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 127,
+		"pokemon": "Pinsir",
+		"type": ["Bug"],
+		"generation": "I",
+		"typeMask": 4096
+	},
+	{
+		"id": 128,
+		"pokemon": "Tauros",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 129,
+		"pokemon": "Magikarp",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 130,
+		"pokemon": "Gyarados",
+		"type": ["Water", "Flying"],
+		"generation": "I",
+		"typeMask": 1032
+	},
+	{
+		"id": 131,
+		"pokemon": "Lapras",
+		"type": ["Water", "Ice"],
+		"generation": "I",
+		"typeMask": 72
+	},
+	{
+		"id": 132,
+		"pokemon": "Ditto",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 133,
+		"pokemon": "Eevee",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 134,
+		"pokemon": "Vaporeon",
+		"type": ["Water"],
+		"generation": "I",
+		"typeMask": 8
+	},
+	{
+		"id": 135,
+		"pokemon": "Jolteon",
+		"type": ["Electric"],
+		"generation": "I",
+		"typeMask": 16
+	},
+	{
+		"id": 136,
+		"pokemon": "Flareon",
+		"type": ["Fire"],
+		"generation": "I",
+		"typeMask": 4
+	},
+	{
+		"id": 137,
+		"pokemon": "Porygon",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 138,
+		"pokemon": "Omanyte",
+		"type": ["Rock", "Water"],
+		"generation": "I",
+		"typeMask": 8200
+	},
+	{
+		"id": 139,
+		"pokemon": "Omastar",
+		"type": ["Rock", "Water"],
+		"generation": "I",
+		"typeMask": 8200
+	},
+	{
+		"id": 140,
+		"pokemon": "Kabuto",
+		"type": ["Rock", "Water"],
+		"generation": "I",
+		"typeMask": 8200
+	},
+	{
+		"id": 141,
+		"pokemon": "Kabutops",
+		"type": ["Rock", "Water"],
+		"generation": "I",
+		"typeMask": 8200
+	},
+	{
+		"id": 142,
+		"pokemon": "Aerodactyl",
+		"type": ["Rock", "Flying"],
+		"generation": "I",
+		"typeMask": 9216
+	},
+	{
+		"id": 143,
+		"pokemon": "Snorlax",
+		"type": ["Normal"],
+		"generation": "I",
+		"typeMask": 2
+	},
+	{
+		"id": 144,
+		"pokemon": "Articuno",
+		"type": ["Ice", "Flying"],
+		"generation": "I",
+		"typeMask": 1088
+	},
+	{
+		"id": 145,
+		"pokemon": "Zapdos",
+		"type": ["Electric", "Flying"],
+		"generation": "I",
+		"typeMask": 1040
+	},
+	{
+		"id": 146,
+		"pokemon": "Moltres",
+		"type": ["Fire", "Flying"],
+		"generation": "I",
+		"typeMask": 1028
+	},
+	{
+		"id": 147,
+		"pokemon": "Dratini",
+		"type": ["Dragon"],
+		"generation": "I",
+		"typeMask": 32768
+	},
+	{
+		"id": 148,
+		"pokemon": "Dragonair",
+		"type": ["Dragon"],
+		"generation": "I",
+		"typeMask": 32768
+	},
+	{
+		"id": 149,
+		"pokemon": "Dragonite",
+		"type": ["Dragon", "Flying"],
+		"generation": "I",
+		"typeMask": 33792
+	},
+	{
+		"id": 150,
+		"pokemon": "Mewtwo",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 151,
+		"pokemon": "Mew",
+		"type": ["Psychic"],
+		"generation": "I",
+		"typeMask": 2048
+	},
+	{
+		"id": 152,
+		"pokemon": "Chikorita",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 153,
+		"pokemon": "Bayleef",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 154,
+		"pokemon": "Meganium",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 155,
+		"pokemon": "Cyndaquil",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 156,
+		"pokemon": "Quilava",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 157,
+		"pokemon": "Typhlosion",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 158,
+		"pokemon": "Totodile",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 159,
+		"pokemon": "Croconaw",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 160,
+		"pokemon": "Feraligatr",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 161,
+		"pokemon": "Sentret",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 162,
+		"pokemon": "Furret",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 163,
+		"pokemon": "Hoothoot",
+		"type": ["Normal", "Flying"],
+		"generation": "II",
+		"typeMask": 1026
+	},
+	{
+		"id": 164,
+		"pokemon": "Noctowl",
+		"type": ["Normal", "Flying"],
+		"generation": "II",
+		"typeMask": 1026
+	},
+	{
+		"id": 165,
+		"pokemon": "Ledyba",
+		"type": ["Bug", "Flying"],
+		"generation": "II",
+		"typeMask": 5120
+	},
+	{
+		"id": 166,
+		"pokemon": "Ledian",
+		"type": ["Bug", "Flying"],
+		"generation": "II",
+		"typeMask": 5120
+	},
+	{
+		"id": 167,
+		"pokemon": "Spinarak",
+		"type": ["Bug", "Poison"],
+		"generation": "II",
+		"typeMask": 4352
+	},
+	{
+		"id": 168,
+		"pokemon": "Ariados",
+		"type": ["Bug", "Poison"],
+		"generation": "II",
+		"typeMask": 4352
+	},
+	{
+		"id": 169,
+		"pokemon": "Crobat",
+		"type": ["Poison", "Flying"],
+		"generation": "II",
+		"typeMask": 1280
+	},
+	{
+		"id": 170,
+		"pokemon": "Chinchou",
+		"type": ["Water", "Electric"],
+		"generation": "II",
+		"typeMask": 24
+	},
+	{
+		"id": 171,
+		"pokemon": "Lanturn",
+		"type": ["Water", "Electric"],
+		"generation": "II",
+		"typeMask": 24
+	},
+	{
+		"id": 172,
+		"pokemon": "Pichu",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 173,
+		"pokemon": "Cleffa",
+		"type": ["Fairy"],
+		"generation": "II",
+		"typeMask": 262144
+	},
+	{
+		"id": 174,
+		"pokemon": "Igglybuff",
+		"type": ["Normal", "Fairy"],
+		"generation": "II",
+		"typeMask": 262146
+	},
+	{
+		"id": 175,
+		"pokemon": "Togepi",
+		"type": ["Fairy"],
+		"generation": "II",
+		"typeMask": 262144
+	},
+	{
+		"id": 176,
+		"pokemon": "Togetic",
+		"type": ["Fairy", "Flying"],
+		"generation": "II",
+		"typeMask": 263168
+	},
+	{
+		"id": 177,
+		"pokemon": "Natu",
+		"type": ["Psychic", "Flying"],
+		"generation": "II",
+		"typeMask": 3072
+	},
+	{
+		"id": 178,
+		"pokemon": "Xatu",
+		"type": ["Psychic", "Flying"],
+		"generation": "II",
+		"typeMask": 3072
+	},
+	{
+		"id": 179,
+		"pokemon": "Mareep",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 180,
+		"pokemon": "Flaaffy",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 181,
+		"pokemon": "Ampharos",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 182,
+		"pokemon": "Bellossom",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 183,
+		"pokemon": "Marill",
+		"type": ["Water", "Fairy"],
+		"generation": "II",
+		"typeMask": 262152
+	},
+	{
+		"id": 184,
+		"pokemon": "Azumarill",
+		"type": ["Water", "Fairy"],
+		"generation": "II",
+		"typeMask": 262152
+	},
+	{
+		"id": 185,
+		"pokemon": "Sudowoodo",
+		"type": ["Rock"],
+		"generation": "II",
+		"typeMask": 8192
+	},
+	{
+		"id": 186,
+		"pokemon": "Politoed",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 187,
+		"pokemon": "Hoppip",
+		"type": ["Grass", "Flying"],
+		"generation": "II",
+		"typeMask": 1056
+	},
+	{
+		"id": 188,
+		"pokemon": "Skiploom",
+		"type": ["Grass", "Flying"],
+		"generation": "II",
+		"typeMask": 1056
+	},
+	{
+		"id": 189,
+		"pokemon": "Jumpluff",
+		"type": ["Grass", "Flying"],
+		"generation": "II",
+		"typeMask": 1056
+	},
+	{
+		"id": 190,
+		"pokemon": "Aipom",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 191,
+		"pokemon": "Sunkern",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 192,
+		"pokemon": "Sunflora",
+		"type": ["Grass"],
+		"generation": "II",
+		"typeMask": 32
+	},
+	{
+		"id": 193,
+		"pokemon": "Yanma",
+		"type": ["Bug", "Flying"],
+		"generation": "II",
+		"typeMask": 5120
+	},
+	{
+		"id": 194,
+		"pokemon": "Wooper",
+		"type": ["Water", "Ground"],
+		"generation": "II",
+		"typeMask": 520
+	},
+	{
+		"id": 195,
+		"pokemon": "Quagsire",
+		"type": ["Water", "Ground"],
+		"generation": "II",
+		"typeMask": 520
+	},
+	{
+		"id": 196,
+		"pokemon": "Espeon",
+		"type": ["Psychic"],
+		"generation": "II",
+		"typeMask": 2048
+	},
+	{
+		"id": 197,
+		"pokemon": "Umbreon",
+		"type": ["Dark"],
+		"generation": "II",
+		"typeMask": 65536
+	},
+	{
+		"id": 198,
+		"pokemon": "Murkrow",
+		"type": ["Dark", "Flying"],
+		"generation": "II",
+		"typeMask": 66560
+	},
+	{
+		"id": 199,
+		"pokemon": "Slowking",
+		"type": ["Water", "Psychic"],
+		"generation": "II",
+		"typeMask": 2056
+	},
+	{
+		"id": 200,
+		"pokemon": "Misdreavus",
+		"type": ["Ghost"],
+		"generation": "II",
+		"typeMask": 16384
+	},
+	{
+		"id": 201,
+		"pokemon": "Unown",
+		"type": ["Psychic"],
+		"generation": "II",
+		"typeMask": 2048
+	},
+	{
+		"id": 202,
+		"pokemon": "Wobbuffet",
+		"type": ["Psychic"],
+		"generation": "II",
+		"typeMask": 2048
+	},
+	{
+		"id": 203,
+		"pokemon": "Girafarig",
+		"type": ["Normal", "Psychic"],
+		"generation": "II",
+		"typeMask": 2050
+	},
+	{
+		"id": 204,
+		"pokemon": "Pineco",
+		"type": ["Bug"],
+		"generation": "II",
+		"typeMask": 4096
+	},
+	{
+		"id": 205,
+		"pokemon": "Forretress",
+		"type": ["Bug", "Steel"],
+		"generation": "II",
+		"typeMask": 135168
+	},
+	{
+		"id": 206,
+		"pokemon": "Dunsparce",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 207,
+		"pokemon": "Gligar",
+		"type": ["Ground", "Flying"],
+		"generation": "II",
+		"typeMask": 1536
+	},
+	{
+		"id": 208,
+		"pokemon": "Steelix",
+		"type": ["Steel", "Ground"],
+		"generation": "II",
+		"typeMask": 131584
+	},
+	{
+		"id": 209,
+		"pokemon": "Snubbull",
+		"type": ["Fairy"],
+		"generation": "II",
+		"typeMask": 262144
+	},
+	{
+		"id": 210,
+		"pokemon": "Granbull",
+		"type": ["Fairy"],
+		"generation": "II",
+		"typeMask": 262144
+	},
+	{
+		"id": 211,
+		"pokemon": "Qwilfish",
+		"type": ["Water", "Poison"],
+		"generation": "II",
+		"typeMask": 264
+	},
+	{
+		"id": 212,
+		"pokemon": "Scizor",
+		"type": ["Bug", "Steel"],
+		"generation": "II",
+		"typeMask": 135168
+	},
+	{
+		"id": 213,
+		"pokemon": "Shuckle",
+		"type": ["Bug", "Rock"],
+		"generation": "II",
+		"typeMask": 12288
+	},
+	{
+		"id": 214,
+		"pokemon": "Heracross",
+		"type": ["Bug", "Fighting"],
+		"generation": "II",
+		"typeMask": 4224
+	},
+	{
+		"id": 215,
+		"pokemon": "Sneasel",
+		"type": ["Dark", "Ice"],
+		"generation": "II",
+		"typeMask": 65600
+	},
+	{
+		"id": 216,
+		"pokemon": "Teddiursa",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 217,
+		"pokemon": "Ursaring",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 218,
+		"pokemon": "Slugma",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 219,
+		"pokemon": "Magcargo",
+		"type": ["Fire", "Rock"],
+		"generation": "II",
+		"typeMask": 8196
+	},
+	{
+		"id": 220,
+		"pokemon": "Swinub",
+		"type": ["Ice", "Ground"],
+		"generation": "II",
+		"typeMask": 576
+	},
+	{
+		"id": 221,
+		"pokemon": "Piloswine",
+		"type": ["Ice", "Ground"],
+		"generation": "II",
+		"typeMask": 576
+	},
+	{
+		"id": 222,
+		"pokemon": "Corsola",
+		"type": ["Water", "Rock"],
+		"generation": "II",
+		"typeMask": 8200
+	},
+	{
+		"id": 223,
+		"pokemon": "Remoraid",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 224,
+		"pokemon": "Octillery",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 225,
+		"pokemon": "Delibird",
+		"type": ["Ice", "Flying"],
+		"generation": "II",
+		"typeMask": 1088
+	},
+	{
+		"id": 226,
+		"pokemon": "Mantine",
+		"type": ["Water", "Flying"],
+		"generation": "II",
+		"typeMask": 1032
+	},
+	{
+		"id": 227,
+		"pokemon": "Skarmory",
+		"type": ["Steel", "Flying"],
+		"generation": "II",
+		"typeMask": 132096
+	},
+	{
+		"id": 228,
+		"pokemon": "Houndour",
+		"type": ["Dark", "Fire"],
+		"generation": "II",
+		"typeMask": 65540
+	},
+	{
+		"id": 229,
+		"pokemon": "Houndoom",
+		"type": ["Dark", "Fire"],
+		"generation": "II",
+		"typeMask": 65540
+	},
+	{
+		"id": 230,
+		"pokemon": "Kingdra",
+		"type": ["Water", "Dragon"],
+		"generation": "II",
+		"typeMask": 32776
+	},
+	{
+		"id": 231,
+		"pokemon": "Phanpy",
+		"type": ["Ground"],
+		"generation": "II",
+		"typeMask": 512
+	},
+	{
+		"id": 232,
+		"pokemon": "Donphan",
+		"type": ["Ground"],
+		"generation": "II",
+		"typeMask": 512
+	},
+	{
+		"id": 233,
+		"pokemon": "Porygon2",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 234,
+		"pokemon": "Stantler",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 235,
+		"pokemon": "Smeargle",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 236,
+		"pokemon": "Tyrogue",
+		"type": ["Fighting"],
+		"generation": "II",
+		"typeMask": 128
+	},
+	{
+		"id": 237,
+		"pokemon": "Hitmontop",
+		"type": ["Fighting"],
+		"generation": "II",
+		"typeMask": 128
+	},
+	{
+		"id": 238,
+		"pokemon": "Smoochum",
+		"type": ["Ice", "Psychic"],
+		"generation": "II",
+		"typeMask": 2112
+	},
+	{
+		"id": 239,
+		"pokemon": "Elekid",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 240,
+		"pokemon": "Magby",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 241,
+		"pokemon": "Miltank",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 242,
+		"pokemon": "Blissey",
+		"type": ["Normal"],
+		"generation": "II",
+		"typeMask": 2
+	},
+	{
+		"id": 243,
+		"pokemon": "Raikou",
+		"type": ["Electric"],
+		"generation": "II",
+		"typeMask": 16
+	},
+	{
+		"id": 244,
+		"pokemon": "Entei",
+		"type": ["Fire"],
+		"generation": "II",
+		"typeMask": 4
+	},
+	{
+		"id": 245,
+		"pokemon": "Suicune",
+		"type": ["Water"],
+		"generation": "II",
+		"typeMask": 8
+	},
+	{
+		"id": 246,
+		"pokemon": "Larvitar",
+		"type": ["Rock", "Ground"],
+		"generation": "II",
+		"typeMask": 8704
+	},
+	{
+		"id": 247,
+		"pokemon": "Pupitar",
+		"type": ["Rock", "Ground"],
+		"generation": "II",
+		"typeMask": 8704
+	},
+	{
+		"id": 248,
+		"pokemon": "Tyranitar",
+		"type": ["Rock", "Dark"],
+		"generation": "II",
+		"typeMask": 73728
+	},
+	{
+		"id": 249,
+		"pokemon": "Lugia",
+		"type": ["Psychic", "Flying"],
+		"generation": "II",
+		"typeMask": 3072
+	},
+	{
+		"id": 250,
+		"pokemon": "Ho-Oh",
+		"type": ["Fire", "Flying"],
+		"generation": "II",
+		"typeMask": 1028
+	},
+	{
+		"id": 251,
+		"pokemon": "Celebi",
+		"type": ["Psychic", "Grass"],
+		"generation": "II",
+		"typeMask": 2080
+	},
+	{
+		"id": 252,
+		"pokemon": "Treecko",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 253,
+		"pokemon": "Grovyle",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 254,
+		"pokemon": "Sceptile",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 255,
+		"pokemon": "Torchic",
+		"type": ["Fire"],
+		"generation": "III",
+		"typeMask": 4
+	},
+	{
+		"id": 256,
+		"pokemon": "Combusken",
+		"type": ["Fire", "Fighting"],
+		"generation": "III",
+		"typeMask": 132
+	},
+	{
+		"id": 257,
+		"pokemon": "Blaziken",
+		"type": ["Fire", "Fighting"],
+		"generation": "III",
+		"typeMask": 132
+	},
+	{
+		"id": 258,
+		"pokemon": "Mudkip",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 259,
+		"pokemon": "Marshtomp",
+		"type": ["Water", "Ground"],
+		"generation": "III",
+		"typeMask": 520
+	},
+	{
+		"id": 260,
+		"pokemon": "Swampert",
+		"type": ["Water", "Ground"],
+		"generation": "III",
+		"typeMask": 520
+	},
+	{
+		"id": 261,
+		"pokemon": "Poochyena",
+		"type": ["Dark"],
+		"generation": "III",
+		"typeMask": 65536
+	},
+	{
+		"id": 262,
+		"pokemon": "Mightyena",
+		"type": ["Dark"],
+		"generation": "III",
+		"typeMask": 65536
+	},
+	{
+		"id": 263,
+		"pokemon": "Zigzagoon",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 264,
+		"pokemon": "Linoone",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 265,
+		"pokemon": "Wurmple",
+		"type": ["Bug"],
+		"generation": "III",
+		"typeMask": 4096
+	},
+	{
+		"id": 266,
+		"pokemon": "Silcoon",
+		"type": ["Bug"],
+		"generation": "III",
+		"typeMask": 4096
+	},
+	{
+		"id": 267,
+		"pokemon": "Beautifly",
+		"type": ["Bug", "Flying"],
+		"generation": "III",
+		"typeMask": 5120
+	},
+	{
+		"id": 268,
+		"pokemon": "Cascoon",
+		"type": ["Bug"],
+		"generation": "III",
+		"typeMask": 4096
+	},
+	{
+		"id": 269,
+		"pokemon": "Dustox",
+		"type": ["Bug", "Poison"],
+		"generation": "III",
+		"typeMask": 4352
+	},
+	{
+		"id": 270,
+		"pokemon": "Lotad",
+		"type": ["Water", "Grass"],
+		"generation": "III",
+		"typeMask": 40
+	},
+	{
+		"id": 271,
+		"pokemon": "Lombre",
+		"type": ["Water", "Grass"],
+		"generation": "III",
+		"typeMask": 40
+	},
+	{
+		"id": 272,
+		"pokemon": "Ludicolo",
+		"type": ["Water", "Grass"],
+		"generation": "III",
+		"typeMask": 40
+	},
+	{
+		"id": 273,
+		"pokemon": "Seedot",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 274,
+		"pokemon": "Nuzleaf",
+		"type": ["Grass", "Dark"],
+		"generation": "III",
+		"typeMask": 65568
+	},
+	{
+		"id": 275,
+		"pokemon": "Shiftry",
+		"type": ["Grass", "Dark"],
+		"generation": "III",
+		"typeMask": 65568
+	},
+	{
+		"id": 276,
+		"pokemon": "Taillow",
+		"type": ["Normal", "Flying"],
+		"generation": "III",
+		"typeMask": 1026
+	},
+	{
+		"id": 277,
+		"pokemon": "Swellow",
+		"type": ["Normal", "Flying"],
+		"generation": "III",
+		"typeMask": 1026
+	},
+	{
+		"id": 278,
+		"pokemon": "Wingull",
+		"type": ["Water", "Flying"],
+		"generation": "III",
+		"typeMask": 1032
+	},
+	{
+		"id": 279,
+		"pokemon": "Pelipper",
+		"type": ["Water", "Flying"],
+		"generation": "III",
+		"typeMask": 1032
+	},
+	{
+		"id": 280,
+		"pokemon": "Ralts",
+		"type": ["Psychic", "Fairy"],
+		"generation": "III",
+		"typeMask": 264192
+	},
+	{
+		"id": 281,
+		"pokemon": "Kirlia",
+		"type": ["Psychic", "Fairy"],
+		"generation": "III",
+		"typeMask": 264192
+	},
+	{
+		"id": 282,
+		"pokemon": "Gardevoir",
+		"type": ["Psychic", "Fairy"],
+		"generation": "III",
+		"typeMask": 264192
+	},
+	{
+		"id": 283,
+		"pokemon": "Surskit",
+		"type": ["Bug", "Water"],
+		"generation": "III",
+		"typeMask": 4104
+	},
+	{
+		"id": 284,
+		"pokemon": "Masquerain",
+		"type": ["Bug", "Flying"],
+		"generation": "III",
+		"typeMask": 5120
+	},
+	{
+		"id": 285,
+		"pokemon": "Shroomish",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 286,
+		"pokemon": "Breloom",
+		"type": ["Grass", "Fighting"],
+		"generation": "III",
+		"typeMask": 160
+	},
+	{
+		"id": 287,
+		"pokemon": "Slakoth",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 288,
+		"pokemon": "Vigoroth",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 289,
+		"pokemon": "Slaking",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 290,
+		"pokemon": "Nincada",
+		"type": ["Bug", "Ground"],
+		"generation": "III",
+		"typeMask": 4608
+	},
+	{
+		"id": 291,
+		"pokemon": "Ninjask",
+		"type": ["Bug", "Flying"],
+		"generation": "III",
+		"typeMask": 5120
+	},
+	{
+		"id": 292,
+		"pokemon": "Shedinja",
+		"type": ["Bug", "Ghost"],
+		"generation": "III",
+		"typeMask": 20480
+	},
+	{
+		"id": 293,
+		"pokemon": "Whismur",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 294,
+		"pokemon": "Loudred",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 295,
+		"pokemon": "Exploud",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 296,
+		"pokemon": "Makuhita",
+		"type": ["Fighting"],
+		"generation": "III",
+		"typeMask": 128
+	},
+	{
+		"id": 297,
+		"pokemon": "Hariyama",
+		"type": ["Fighting"],
+		"generation": "III",
+		"typeMask": 128
+	},
+	{
+		"id": 298,
+		"pokemon": "Azurill",
+		"type": ["Normal", "Fairy"],
+		"generation": "III",
+		"typeMask": 262146
+	},
+	{
+		"id": 299,
+		"pokemon": "Nosepass",
+		"type": ["Rock"],
+		"generation": "III",
+		"typeMask": 8192
+	},
+	{
+		"id": 300,
+		"pokemon": "Skitty",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 301,
+		"pokemon": "Delcatty",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 302,
+		"pokemon": "Sableye",
+		"type": ["Dark", "Ghost"],
+		"generation": "III",
+		"typeMask": 81920
+	},
+	{
+		"id": 303,
+		"pokemon": "Mawile",
+		"type": ["Steel", "Fairy"],
+		"generation": "III",
+		"typeMask": 393216
+	},
+	{
+		"id": 304,
+		"pokemon": "Aron",
+		"type": ["Steel", "Rock"],
+		"generation": "III",
+		"typeMask": 139264
+	},
+	{
+		"id": 305,
+		"pokemon": "Lairon",
+		"type": ["Steel", "Rock"],
+		"generation": "III",
+		"typeMask": 139264
+	},
+	{
+		"id": 306,
+		"pokemon": "Aggron",
+		"type": ["Steel", "Rock"],
+		"generation": "III",
+		"typeMask": 139264
+	},
+	{
+		"id": 307,
+		"pokemon": "Meditite",
+		"type": ["Fighting", "Psychic"],
+		"generation": "III",
+		"typeMask": 2176
+	},
+	{
+		"id": 308,
+		"pokemon": "Medicham",
+		"type": ["Fighting", "Psychic"],
+		"generation": "III",
+		"typeMask": 2176
+	},
+	{
+		"id": 309,
+		"pokemon": "Electrike",
+		"type": ["Electric"],
+		"generation": "III",
+		"typeMask": 16
+	},
+	{
+		"id": 310,
+		"pokemon": "Manectric",
+		"type": ["Electric"],
+		"generation": "III",
+		"typeMask": 16
+	},
+	{
+		"id": 311,
+		"pokemon": "Plusle",
+		"type": ["Electric"],
+		"generation": "III",
+		"typeMask": 16
+	},
+	{
+		"id": 312,
+		"pokemon": "Minun",
+		"type": ["Electric"],
+		"generation": "III",
+		"typeMask": 16
+	},
+	{
+		"id": 313,
+		"pokemon": "Volbeat",
+		"type": ["Bug"],
+		"generation": "III",
+		"typeMask": 4096
+	},
+	{
+		"id": 314,
+		"pokemon": "Illumise",
+		"type": ["Bug"],
+		"generation": "III",
+		"typeMask": 4096
+	},
+	{
+		"id": 315,
+		"pokemon": "Roselia",
+		"type": ["Grass", "Poison"],
+		"generation": "III",
+		"typeMask": 288
+	},
+	{
+		"id": 316,
+		"pokemon": "Gulpin",
+		"type": ["Poison"],
+		"generation": "III",
+		"typeMask": 256
+	},
+	{
+		"id": 317,
+		"pokemon": "Swalot",
+		"type": ["Poison"],
+		"generation": "III",
+		"typeMask": 256
+	},
+	{
+		"id": 318,
+		"pokemon": "Carvanha",
+		"type": ["Water", "Dark"],
+		"generation": "III",
+		"typeMask": 65544
+	},
+	{
+		"id": 319,
+		"pokemon": "Sharpedo",
+		"type": ["Water", "Dark"],
+		"generation": "III",
+		"typeMask": 65544
+	},
+	{
+		"id": 320,
+		"pokemon": "Wailmer",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 321,
+		"pokemon": "Wailord",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 322,
+		"pokemon": "Numel",
+		"type": ["Fire", "Ground"],
+		"generation": "III",
+		"typeMask": 516
+	},
+	{
+		"id": 323,
+		"pokemon": "Camerupt",
+		"type": ["Fire", "Ground"],
+		"generation": "III",
+		"typeMask": 516
+	},
+	{
+		"id": 324,
+		"pokemon": "Torkoal",
+		"type": ["Fire"],
+		"generation": "III",
+		"typeMask": 4
+	},
+	{
+		"id": 325,
+		"pokemon": "Spoink",
+		"type": ["Psychic"],
+		"generation": "III",
+		"typeMask": 2048
+	},
+	{
+		"id": 326,
+		"pokemon": "Grumpig",
+		"type": ["Psychic"],
+		"generation": "III",
+		"typeMask": 2048
+	},
+	{
+		"id": 327,
+		"pokemon": "Spinda",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 328,
+		"pokemon": "Trapinch",
+		"type": ["Ground"],
+		"generation": "III",
+		"typeMask": 512
+	},
+	{
+		"id": 329,
+		"pokemon": "Vibrava",
+		"type": ["Ground", "Dragon"],
+		"generation": "III",
+		"typeMask": 33280
+	},
+	{
+		"id": 330,
+		"pokemon": "Flygon",
+		"type": ["Ground", "Dragon"],
+		"generation": "III",
+		"typeMask": 33280
+	},
+	{
+		"id": 331,
+		"pokemon": "Cacnea",
+		"type": ["Grass"],
+		"generation": "III",
+		"typeMask": 32
+	},
+	{
+		"id": 332,
+		"pokemon": "Cacturne",
+		"type": ["Grass", "Dark"],
+		"generation": "III",
+		"typeMask": 65568
+	},
+	{
+		"id": 333,
+		"pokemon": "Swablu",
+		"type": ["Normal", "Flying"],
+		"generation": "III",
+		"typeMask": 1026
+	},
+	{
+		"id": 334,
+		"pokemon": "Altaria",
+		"type": ["Dragon", "Flying"],
+		"generation": "III",
+		"typeMask": 33792
+	},
+	{
+		"id": 335,
+		"pokemon": "Zangoose",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 336,
+		"pokemon": "Seviper",
+		"type": ["Poison"],
+		"generation": "III",
+		"typeMask": 256
+	},
+	{
+		"id": 337,
+		"pokemon": "Lunatone",
+		"type": ["Rock", "Psychic"],
+		"generation": "III",
+		"typeMask": 10240
+	},
+	{
+		"id": 338,
+		"pokemon": "Solrock",
+		"type": ["Rock", "Psychic"],
+		"generation": "III",
+		"typeMask": 10240
+	},
+	{
+		"id": 339,
+		"pokemon": "Barboach",
+		"type": ["Water", "Ground"],
+		"generation": "III",
+		"typeMask": 520
+	},
+	{
+		"id": 340,
+		"pokemon": "Whiscash",
+		"type": ["Water", "Ground"],
+		"generation": "III",
+		"typeMask": 520
+	},
+	{
+		"id": 341,
+		"pokemon": "Corphish",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 342,
+		"pokemon": "Crawdaunt",
+		"type": ["Water", "Dark"],
+		"generation": "III",
+		"typeMask": 65544
+	},
+	{
+		"id": 343,
+		"pokemon": "Baltoy",
+		"type": ["Ground", "Psychic"],
+		"generation": "III",
+		"typeMask": 2560
+	},
+	{
+		"id": 344,
+		"pokemon": "Claydol",
+		"type": ["Ground", "Psychic"],
+		"generation": "III",
+		"typeMask": 2560
+	},
+	{
+		"id": 345,
+		"pokemon": "Lileep",
+		"type": ["Rock", "Grass"],
+		"generation": "III",
+		"typeMask": 8224
+	},
+	{
+		"id": 346,
+		"pokemon": "Cradily",
+		"type": ["Rock", "Grass"],
+		"generation": "III",
+		"typeMask": 8224
+	},
+	{
+		"id": 347,
+		"pokemon": "Anorith",
+		"type": ["Rock", "Bug"],
+		"generation": "III",
+		"typeMask": 12288
+	},
+	{
+		"id": 348,
+		"pokemon": "Armaldo",
+		"type": ["Rock", "Bug"],
+		"generation": "III",
+		"typeMask": 12288
+	},
+	{
+		"id": 349,
+		"pokemon": "Feebas",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 350,
+		"pokemon": "Milotic",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 351,
+		"pokemon": "Castform",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 352,
+		"pokemon": "Kecleon",
+		"type": ["Normal"],
+		"generation": "III",
+		"typeMask": 2
+	},
+	{
+		"id": 353,
+		"pokemon": "Shuppet",
+		"type": ["Ghost"],
+		"generation": "III",
+		"typeMask": 16384
+	},
+	{
+		"id": 354,
+		"pokemon": "Banette",
+		"type": ["Ghost"],
+		"generation": "III",
+		"typeMask": 16384
+	},
+	{
+		"id": 355,
+		"pokemon": "Duskull",
+		"type": ["Ghost"],
+		"generation": "III",
+		"typeMask": 16384
+	},
+	{
+		"id": 356,
+		"pokemon": "Dusclops",
+		"type": ["Ghost"],
+		"generation": "III",
+		"typeMask": 16384
+	},
+	{
+		"id": 357,
+		"pokemon": "Tropius",
+		"type": ["Grass", "Flying"],
+		"generation": "III",
+		"typeMask": 1056
+	},
+	{
+		"id": 358,
+		"pokemon": "Chimecho",
+		"type": ["Psychic"],
+		"generation": "III",
+		"typeMask": 2048
+	},
+	{
+		"id": 359,
+		"pokemon": "Absol",
+		"type": ["Dark"],
+		"generation": "III",
+		"typeMask": 65536
+	},
+	{
+		"id": 360,
+		"pokemon": "Wynaut",
+		"type": ["Psychic"],
+		"generation": "III",
+		"typeMask": 2048
+	},
+	{
+		"id": 361,
+		"pokemon": "Snorunt",
+		"type": ["Ice"],
+		"generation": "III",
+		"typeMask": 64
+	},
+	{
+		"id": 362,
+		"pokemon": "Glalie",
+		"type": ["Ice"],
+		"generation": "III",
+		"typeMask": 64
+	},
+	{
+		"id": 363,
+		"pokemon": "Spheal",
+		"type": ["Ice", "Water"],
+		"generation": "III",
+		"typeMask": 72
+	},
+	{
+		"id": 364,
+		"pokemon": "Sealeo",
+		"type": ["Ice", "Water"],
+		"generation": "III",
+		"typeMask": 72
+	},
+	{
+		"id": 365,
+		"pokemon": "Walrein",
+		"type": ["Ice", "Water"],
+		"generation": "III",
+		"typeMask": 72
+	},
+	{
+		"id": 366,
+		"pokemon": "Clamperl",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 367,
+		"pokemon": "Huntail",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 368,
+		"pokemon": "Gorebyss",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 369,
+		"pokemon": "Relicanth",
+		"type": ["Water", "Rock"],
+		"generation": "III",
+		"typeMask": 8200
+	},
+	{
+		"id": 370,
+		"pokemon": "Luvdisc",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 371,
+		"pokemon": "Bagon",
+		"type": ["Dragon"],
+		"generation": "III",
+		"typeMask": 32768
+	},
+	{
+		"id": 372,
+		"pokemon": "Shelgon",
+		"type": ["Dragon"],
+		"generation": "III",
+		"typeMask": 32768
+	},
+	{
+		"id": 373,
+		"pokemon": "Salamence",
+		"type": ["Dragon", "Flying"],
+		"generation": "III",
+		"typeMask": 33792
+	},
+	{
+		"id": 374,
+		"pokemon": "Beldum",
+		"type": ["Steel", "Psychic"],
+		"generation": "III",
+		"typeMask": 133120
+	},
+	{
+		"id": 375,
+		"pokemon": "Metang",
+		"type": ["Steel", "Psychic"],
+		"generation": "III",
+		"typeMask": 133120
+	},
+	{
+		"id": 376,
+		"pokemon": "Metagross",
+		"type": ["Steel", "Psychic"],
+		"generation": "III",
+		"typeMask": 133120
+	},
+	{
+		"id": 377,
+		"pokemon": "Regirock",
+		"type": ["Rock"],
+		"generation": "III",
+		"typeMask": 8192
+	},
+	{
+		"id": 378,
+		"pokemon": "Regice",
+		"type": ["Ice"],
+		"generation": "III",
+		"typeMask": 64
+	},
+	{
+		"id": 379,
+		"pokemon": "Registeel",
+		"type": ["Steel"],
+		"generation": "III",
+		"typeMask": 131072
+	},
+	{
+		"id": 380,
+		"pokemon": "Latias",
+		"type": ["Dragon", "Psychic"],
+		"generation": "III",
+		"typeMask": 34816
+	},
+	{
+		"id": 381,
+		"pokemon": "Latios",
+		"type": ["Dragon", "Psychic"],
+		"generation": "III",
+		"typeMask": 34816
+	},
+	{
+		"id": 382,
+		"pokemon": "Kyogre",
+		"type": ["Water"],
+		"generation": "III",
+		"typeMask": 8
+	},
+	{
+		"id": 383,
+		"pokemon": "Groudon",
+		"type": ["Ground"],
+		"generation": "III",
+		"typeMask": 512
+	},
+	{
+		"id": 384,
+		"pokemon": "Rayquaza",
+		"type": ["Dragon", "Flying"],
+		"generation": "III",
+		"typeMask": 33792
+	},
+	{
+		"id": 385,
+		"pokemon": "Jirachi",
+		"type": ["Steel", "Psychic"],
+		"generation": "III",
+		"typeMask": 133120
+	},
+	{
+		"id": 386,
+		"pokemon": "Deoxys",
+		"type": ["Psychic"],
+		"generation": "III",
+		"typeMask": 2048
+	},
+	{
+		"id": 387,
+		"pokemon": "Turtwig",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 388,
+		"pokemon": "Grotle",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 389,
+		"pokemon": "Torterra",
+		"type": ["Grass", "Ground"],
+		"generation": "IV",
+		"typeMask": 544
+	},
+	{
+		"id": 390,
+		"pokemon": "Chimchar",
+		"type": ["Fire"],
+		"generation": "IV",
+		"typeMask": 4
+	},
+	{
+		"id": 391,
+		"pokemon": "Monferno",
+		"type": ["Fire", "Fighting"],
+		"generation": "IV",
+		"typeMask": 132
+	},
+	{
+		"id": 392,
+		"pokemon": "Infernape",
+		"type": ["Fire", "Fighting"],
+		"generation": "IV",
+		"typeMask": 132
+	},
+	{
+		"id": 393,
+		"pokemon": "Piplup",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 394,
+		"pokemon": "Prinplup",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 395,
+		"pokemon": "Empoleon",
+		"type": ["Water", "Steel"],
+		"generation": "IV",
+		"typeMask": 131080
+	},
+	{
+		"id": 396,
+		"pokemon": "Starly",
+		"type": ["Normal", "Flying"],
+		"generation": "IV",
+		"typeMask": 1026
+	},
+	{
+		"id": 397,
+		"pokemon": "Staravia",
+		"type": ["Normal", "Flying"],
+		"generation": "IV",
+		"typeMask": 1026
+	},
+	{
+		"id": 398,
+		"pokemon": "Staraptor",
+		"type": ["Normal", "Flying"],
+		"generation": "IV",
+		"typeMask": 1026
+	},
+	{
+		"id": 399,
+		"pokemon": "Bidoof",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 400,
+		"pokemon": "Bibarel",
+		"type": ["Normal", "Water"],
+		"generation": "IV",
+		"typeMask": 10
+	},
+	{
+		"id": 401,
+		"pokemon": "Kricketot",
+		"type": ["Bug"],
+		"generation": "IV",
+		"typeMask": 4096
+	},
+	{
+		"id": 402,
+		"pokemon": "Kricketune",
+		"type": ["Bug"],
+		"generation": "IV",
+		"typeMask": 4096
+	},
+	{
+		"id": 403,
+		"pokemon": "Shinx",
+		"type": ["Electric"],
+		"generation": "IV",
+		"typeMask": 16
+	},
+	{
+		"id": 404,
+		"pokemon": "Luxio",
+		"type": ["Electric"],
+		"generation": "IV",
+		"typeMask": 16
+	},
+	{
+		"id": 405,
+		"pokemon": "Luxray",
+		"type": ["Electric"],
+		"generation": "IV",
+		"typeMask": 16
+	},
+	{
+		"id": 406,
+		"pokemon": "Budew",
+		"type": ["Grass", "Poison"],
+		"generation": "IV",
+		"typeMask": 288
+	},
+	{
+		"id": 407,
+		"pokemon": "Roserade",
+		"type": ["Grass", "Poison"],
+		"generation": "IV",
+		"typeMask": 288
+	},
+	{
+		"id": 408,
+		"pokemon": "Cranidos",
+		"type": ["Rock"],
+		"generation": "IV",
+		"typeMask": 8192
+	},
+	{
+		"id": 409,
+		"pokemon": "Rampardos",
+		"type": ["Rock"],
+		"generation": "IV",
+		"typeMask": 8192
+	},
+	{
+		"id": 410,
+		"pokemon": "Shieldon",
+		"type": ["Rock", "Steel"],
+		"generation": "IV",
+		"typeMask": 139264
+	},
+	{
+		"id": 411,
+		"pokemon": "Bastiodon",
+		"type": ["Rock", "Steel"],
+		"generation": "IV",
+		"typeMask": 139264
+	},
+	{
+		"id": 412,
+		"pokemon": "Burmy",
+		"type": ["Bug"],
+		"generation": "IV",
+		"typeMask": 4096
+	},
+	{
+		"id": 413,
+		"pokemon": "Wormadam",
+		"type": ["Bug", "Grass"],
+		"generation": "IV",
+		"typeMask": 4128
+	},
+	{
+		"id": 414,
+		"pokemon": "Mothim",
+		"type": ["Bug", "Flying"],
+		"generation": "IV",
+		"typeMask": 5120
+	},
+	{
+		"id": 415,
+		"pokemon": "Combee",
+		"type": ["Bug", "Flying"],
+		"generation": "IV",
+		"typeMask": 5120
+	},
+	{
+		"id": 416,
+		"pokemon": "Vespiquen",
+		"type": ["Bug", "Flying"],
+		"generation": "IV",
+		"typeMask": 5120
+	},
+	{
+		"id": 417,
+		"pokemon": "Pachirisu",
+		"type": ["Electric"],
+		"generation": "IV",
+		"typeMask": 16
+	},
+	{
+		"id": 418,
+		"pokemon": "Buizel",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 419,
+		"pokemon": "Floatzel",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 420,
+		"pokemon": "Cherubi",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 421,
+		"pokemon": "Cherrim",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 422,
+		"pokemon": "Shellos",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 423,
+		"pokemon": "Gastrodon",
+		"type": ["Water", "Ground"],
+		"generation": "IV",
+		"typeMask": 520
+	},
+	{
+		"id": 424,
+		"pokemon": "Ambipom",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 425,
+		"pokemon": "Drifloon",
+		"type": ["Ghost", "Flying"],
+		"generation": "IV",
+		"typeMask": 17408
+	},
+	{
+		"id": 426,
+		"pokemon": "Drifblim",
+		"type": ["Ghost", "Flying"],
+		"generation": "IV",
+		"typeMask": 17408
+	},
+	{
+		"id": 427,
+		"pokemon": "Buneary",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 428,
+		"pokemon": "Lopunny",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 429,
+		"pokemon": "Mismagius",
+		"type": ["Ghost"],
+		"generation": "IV",
+		"typeMask": 16384
+	},
+	{
+		"id": 430,
+		"pokemon": "Honchkrow",
+		"type": ["Dark", "Flying"],
+		"generation": "IV",
+		"typeMask": 66560
+	},
+	{
+		"id": 431,
+		"pokemon": "Glameow",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 432,
+		"pokemon": "Purugly",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 433,
+		"pokemon": "Chingling",
+		"type": ["Psychic"],
+		"generation": "IV",
+		"typeMask": 2048
+	},
+	{
+		"id": 434,
+		"pokemon": "Stunky",
+		"type": ["Poison", "Dark"],
+		"generation": "IV",
+		"typeMask": 65792
+	},
+	{
+		"id": 435,
+		"pokemon": "Skuntank",
+		"type": ["Poison", "Dark"],
+		"generation": "IV",
+		"typeMask": 65792
+	},
+	{
+		"id": 436,
+		"pokemon": "Bronzor",
+		"type": ["Steel", "Psychic"],
+		"generation": "IV",
+		"typeMask": 133120
+	},
+	{
+		"id": 437,
+		"pokemon": "Bronzong",
+		"type": ["Steel", "Psychic"],
+		"generation": "IV",
+		"typeMask": 133120
+	},
+	{
+		"id": 438,
+		"pokemon": "Bonsly",
+		"type": ["Rock"],
+		"generation": "IV",
+		"typeMask": 8192
+	},
+	{
+		"id": 439,
+		"pokemon": "Mime Jr.",
+		"type": ["Psychic", "Fairy"],
+		"generation": "IV",
+		"typeMask": 264192
+	},
+	{
+		"id": 440,
+		"pokemon": "Happiny",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 441,
+		"pokemon": "Chatot",
+		"type": ["Normal", "Flying"],
+		"generation": "IV",
+		"typeMask": 1026
+	},
+	{
+		"id": 442,
+		"pokemon": "Spiritomb",
+		"type": ["Ghost", "Dark"],
+		"generation": "IV",
+		"typeMask": 81920
+	},
+	{
+		"id": 443,
+		"pokemon": "Gible",
+		"type": ["Dragon", "Ground"],
+		"generation": "IV",
+		"typeMask": 33280
+	},
+	{
+		"id": 444,
+		"pokemon": "Gabite",
+		"type": ["Dragon", "Ground"],
+		"generation": "IV",
+		"typeMask": 33280
+	},
+	{
+		"id": 445,
+		"pokemon": "Garchomp",
+		"type": ["Dragon", "Ground"],
+		"generation": "IV",
+		"typeMask": 33280
+	},
+	{
+		"id": 446,
+		"pokemon": "Munchlax",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 447,
+		"pokemon": "Riolu",
+		"type": ["Fighting"],
+		"generation": "IV",
+		"typeMask": 128
+	},
+	{
+		"id": 448,
+		"pokemon": "Lucario",
+		"type": ["Fighting", "Steel"],
+		"generation": "IV",
+		"typeMask": 131200
+	},
+	{
+		"id": 449,
+		"pokemon": "Hippopotas",
+		"type": ["Ground"],
+		"generation": "IV",
+		"typeMask": 512
+	},
+	{
+		"id": 450,
+		"pokemon": "Hippowdon",
+		"type": ["Ground"],
+		"generation": "IV",
+		"typeMask": 512
+	},
+	{
+		"id": 451,
+		"pokemon": "Skorupi",
+		"type": ["Poison", "Bug"],
+		"generation": "IV",
+		"typeMask": 4352
+	},
+	{
+		"id": 452,
+		"pokemon": "Drapion",
+		"type": ["Poison", "Dark"],
+		"generation": "IV",
+		"typeMask": 65792
+	},
+	{
+		"id": 453,
+		"pokemon": "Croagunk",
+		"type": ["Poison", "Fighting"],
+		"generation": "IV",
+		"typeMask": 384
+	},
+	{
+		"id": 454,
+		"pokemon": "Toxicroak",
+		"type": ["Poison", "Fighting"],
+		"generation": "IV",
+		"typeMask": 384
+	},
+	{
+		"id": 455,
+		"pokemon": "Carnivine",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 456,
+		"pokemon": "Finneon",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 457,
+		"pokemon": "Lumineon",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 458,
+		"pokemon": "Mantyke",
+		"type": ["Water", "Flying"],
+		"generation": "IV",
+		"typeMask": 1032
+	},
+	{
+		"id": 459,
+		"pokemon": "Snover",
+		"type": ["Grass", "Ice"],
+		"generation": "IV",
+		"typeMask": 96
+	},
+	{
+		"id": 460,
+		"pokemon": "Abomasnow",
+		"type": ["Grass", "Ice"],
+		"generation": "IV",
+		"typeMask": 96
+	},
+	{
+		"id": 461,
+		"pokemon": "Weavile",
+		"type": ["Dark", "Ice"],
+		"generation": "IV",
+		"typeMask": 65600
+	},
+	{
+		"id": 462,
+		"pokemon": "Magnezone",
+		"type": ["Electric", "Steel"],
+		"generation": "IV",
+		"typeMask": 131088
+	},
+	{
+		"id": 463,
+		"pokemon": "Lickilicky",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 464,
+		"pokemon": "Rhyperior",
+		"type": ["Ground", "Rock"],
+		"generation": "IV",
+		"typeMask": 8704
+	},
+	{
+		"id": 465,
+		"pokemon": "Tangrowth",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 466,
+		"pokemon": "Electivire",
+		"type": ["Electric"],
+		"generation": "IV",
+		"typeMask": 16
+	},
+	{
+		"id": 467,
+		"pokemon": "Magmortar",
+		"type": ["Fire"],
+		"generation": "IV",
+		"typeMask": 4
+	},
+	{
+		"id": 468,
+		"pokemon": "Togekiss",
+		"type": ["Fairy", "Flying"],
+		"generation": "IV",
+		"typeMask": 263168
+	},
+	{
+		"id": 469,
+		"pokemon": "Yanmega",
+		"type": ["Bug", "Flying"],
+		"generation": "IV",
+		"typeMask": 5120
+	},
+	{
+		"id": 470,
+		"pokemon": "Leafeon",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 471,
+		"pokemon": "Glaceon",
+		"type": ["Ice"],
+		"generation": "IV",
+		"typeMask": 64
+	},
+	{
+		"id": 472,
+		"pokemon": "Gliscor",
+		"type": ["Ground", "Flying"],
+		"generation": "IV",
+		"typeMask": 1536
+	},
+	{
+		"id": 473,
+		"pokemon": "Mamoswine",
+		"type": ["Ice", "Ground"],
+		"generation": "IV",
+		"typeMask": 576
+	},
+	{
+		"id": 474,
+		"pokemon": "Porygon-Z",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 475,
+		"pokemon": "Gallade",
+		"type": ["Psychic", "Fighting"],
+		"generation": "IV",
+		"typeMask": 2176
+	},
+	{
+		"id": 476,
+		"pokemon": "Probopass",
+		"type": ["Rock", "Steel"],
+		"generation": "IV",
+		"typeMask": 139264
+	},
+	{
+		"id": 477,
+		"pokemon": "Dusknoir",
+		"type": ["Ghost"],
+		"generation": "IV",
+		"typeMask": 16384
+	},
+	{
+		"id": 478,
+		"pokemon": "Froslass",
+		"type": ["Ice", "Ghost"],
+		"generation": "IV",
+		"typeMask": 16448
+	},
+	{
+		"id": 479,
+		"pokemon": "Rotom",
+		"type": ["Electric", "Ghost"],
+		"generation": "IV",
+		"typeMask": 16400
+	},
+	{
+		"id": 480,
+		"pokemon": "Uxie",
+		"type": ["Psychic"],
+		"generation": "IV",
+		"typeMask": 2048
+	},
+	{
+		"id": 481,
+		"pokemon": "Mesprit",
+		"type": ["Psychic"],
+		"generation": "IV",
+		"typeMask": 2048
+	},
+	{
+		"id": 482,
+		"pokemon": "Azelf",
+		"type": ["Psychic"],
+		"generation": "IV",
+		"typeMask": 2048
+	},
+	{
+		"id": 483,
+		"pokemon": "Dialga",
+		"type": ["Steel", "Dragon"],
+		"generation": "IV",
+		"typeMask": 163840
+	},
+	{
+		"id": 484,
+		"pokemon": "Palkia",
+		"type": ["Water", "Dragon"],
+		"generation": "IV",
+		"typeMask": 32776
+	},
+	{
+		"id": 485,
+		"pokemon": "Heatran",
+		"type": ["Fire", "Steel"],
+		"generation": "IV",
+		"typeMask": 131076
+	},
+	{
+		"id": 486,
+		"pokemon": "Regigigas",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 487,
+		"pokemon": "Giratina",
+		"type": ["Ghost", "Dragon"],
+		"generation": "IV",
+		"typeMask": 49152
+	},
+	{
+		"id": 488,
+		"pokemon": "Cresselia",
+		"type": ["Psychic"],
+		"generation": "IV",
+		"typeMask": 2048
+	},
+	{
+		"id": 489,
+		"pokemon": "Phione",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 490,
+		"pokemon": "Manaphy",
+		"type": ["Water"],
+		"generation": "IV",
+		"typeMask": 8
+	},
+	{
+		"id": 491,
+		"pokemon": "Darkrai",
+		"type": ["Dark"],
+		"generation": "IV",
+		"typeMask": 65536
+	},
+	{
+		"id": 492,
+		"pokemon": "Shaymin",
+		"type": ["Grass"],
+		"generation": "IV",
+		"typeMask": 32
+	},
+	{
+		"id": 493,
+		"pokemon": "Arceus",
+		"type": ["Normal"],
+		"generation": "IV",
+		"typeMask": 2
+	},
+	{
+		"id": 494,
+		"pokemon": "Victini",
+		"type": ["Psychic", "Fire"],
+		"generation": "V",
+		"typeMask": 2052
+	},
+	{
+		"id": 495,
+		"pokemon": "Snivy",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 496,
+		"pokemon": "Servine",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 497,
+		"pokemon": "Serperior",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 498,
+		"pokemon": "Tepig",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 499,
+		"pokemon": "Pignite",
+		"type": ["Fire", "Fighting"],
+		"generation": "V",
+		"typeMask": 132
+	},
+	{
+		"id": 500,
+		"pokemon": "Emboar",
+		"type": ["Fire", "Fighting"],
+		"generation": "V",
+		"typeMask": 132
+	},
+	{
+		"id": 501,
+		"pokemon": "Oshawott",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 502,
+		"pokemon": "Dewott",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 503,
+		"pokemon": "Samurott",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 504,
+		"pokemon": "Patrat",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 505,
+		"pokemon": "Watchog",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 506,
+		"pokemon": "Lillipup",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 507,
+		"pokemon": "Herdier",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 508,
+		"pokemon": "Stoutland",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 509,
+		"pokemon": "Purrloin",
+		"type": ["Dark"],
+		"generation": "V",
+		"typeMask": 65536
+	},
+	{
+		"id": 510,
+		"pokemon": "Liepard",
+		"type": ["Dark"],
+		"generation": "V",
+		"typeMask": 65536
+	},
+	{
+		"id": 511,
+		"pokemon": "Pansage",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 512,
+		"pokemon": "Simisage",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 513,
+		"pokemon": "Pansear",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 514,
+		"pokemon": "Simisear",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 515,
+		"pokemon": "Panpour",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 516,
+		"pokemon": "Simipour",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 517,
+		"pokemon": "Munna",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 518,
+		"pokemon": "Musharna",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 519,
+		"pokemon": "Pidove",
+		"type": ["Normal", "Flying"],
+		"generation": "V",
+		"typeMask": 1026
+	},
+	{
+		"id": 520,
+		"pokemon": "Tranquill",
+		"type": ["Normal", "Flying"],
+		"generation": "V",
+		"typeMask": 1026
+	},
+	{
+		"id": 521,
+		"pokemon": "Unfezant",
+		"type": ["Normal", "Flying"],
+		"generation": "V",
+		"typeMask": 1026
+	},
+	{
+		"id": 522,
+		"pokemon": "Blitzle",
+		"type": ["Electric"],
+		"generation": "V",
+		"typeMask": 16
+	},
+	{
+		"id": 523,
+		"pokemon": "Zebstrika",
+		"type": ["Electric"],
+		"generation": "V",
+		"typeMask": 16
+	},
+	{
+		"id": 524,
+		"pokemon": "Roggenrola",
+		"type": ["Rock"],
+		"generation": "V",
+		"typeMask": 8192
+	},
+	{
+		"id": 525,
+		"pokemon": "Boldore",
+		"type": ["Rock"],
+		"generation": "V",
+		"typeMask": 8192
+	},
+	{
+		"id": 526,
+		"pokemon": "Gigalith",
+		"type": ["Rock"],
+		"generation": "V",
+		"typeMask": 8192
+	},
+	{
+		"id": 527,
+		"pokemon": "Woobat",
+		"type": ["Psychic", "Flying"],
+		"generation": "V",
+		"typeMask": 3072
+	},
+	{
+		"id": 528,
+		"pokemon": "Swoobat",
+		"type": ["Psychic", "Flying"],
+		"generation": "V",
+		"typeMask": 3072
+	},
+	{
+		"id": 529,
+		"pokemon": "Drilbur",
+		"type": ["Ground"],
+		"generation": "V",
+		"typeMask": 512
+	},
+	{
+		"id": 530,
+		"pokemon": "Excadrill",
+		"type": ["Ground", "Steel"],
+		"generation": "V",
+		"typeMask": 131584
+	},
+	{
+		"id": 531,
+		"pokemon": "Audino",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 532,
+		"pokemon": "Timburr",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 533,
+		"pokemon": "Gurdurr",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 534,
+		"pokemon": "Conkeldurr",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 535,
+		"pokemon": "Tympole",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 536,
+		"pokemon": "Palpitoad",
+		"type": ["Water", "Ground"],
+		"generation": "V",
+		"typeMask": 520
+	},
+	{
+		"id": 537,
+		"pokemon": "Seismitoad",
+		"type": ["Water", "Ground"],
+		"generation": "V",
+		"typeMask": 520
+	},
+	{
+		"id": 538,
+		"pokemon": "Throh",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 539,
+		"pokemon": "Sawk",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 540,
+		"pokemon": "Sewaddle",
+		"type": ["Bug", "Grass"],
+		"generation": "V",
+		"typeMask": 4128
+	},
+	{
+		"id": 541,
+		"pokemon": "Swadloon",
+		"type": ["Bug", "Grass"],
+		"generation": "V",
+		"typeMask": 4128
+	},
+	{
+		"id": 542,
+		"pokemon": "Leavanny",
+		"type": ["Bug", "Grass"],
+		"generation": "V",
+		"typeMask": 4128
+	},
+	{
+		"id": 543,
+		"pokemon": "Venipede",
+		"type": ["Bug", "Poison"],
+		"generation": "V",
+		"typeMask": 4352
+	},
+	{
+		"id": 544,
+		"pokemon": "Whirlipede",
+		"type": ["Bug", "Poison"],
+		"generation": "V",
+		"typeMask": 4352
+	},
+	{
+		"id": 545,
+		"pokemon": "Scolipede",
+		"type": ["Bug", "Poison"],
+		"generation": "V",
+		"typeMask": 4352
+	},
+	{
+		"id": 546,
+		"pokemon": "Cottonee",
+		"type": ["Grass", "Fairy"],
+		"generation": "V",
+		"typeMask": 262176
+	},
+	{
+		"id": 547,
+		"pokemon": "Whimsicott",
+		"type": ["Grass", "Fairy"],
+		"generation": "V",
+		"typeMask": 262176
+	},
+	{
+		"id": 548,
+		"pokemon": "Petilil",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 549,
+		"pokemon": "Lilligant",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 550,
+		"pokemon": "Basculin",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 551,
+		"pokemon": "Sandile",
+		"type": ["Ground", "Dark"],
+		"generation": "V",
+		"typeMask": 66048
+	},
+	{
+		"id": 552,
+		"pokemon": "Krokorok",
+		"type": ["Ground", "Dark"],
+		"generation": "V",
+		"typeMask": 66048
+	},
+	{
+		"id": 553,
+		"pokemon": "Krookodile",
+		"type": ["Ground", "Dark"],
+		"generation": "V",
+		"typeMask": 66048
+	},
+	{
+		"id": 554,
+		"pokemon": "Darumaka",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 555,
+		"pokemon": "Darmanitan",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 556,
+		"pokemon": "Maractus",
+		"type": ["Grass"],
+		"generation": "V",
+		"typeMask": 32
+	},
+	{
+		"id": 557,
+		"pokemon": "Dwebble",
+		"type": ["Bug", "Rock"],
+		"generation": "V",
+		"typeMask": 12288
+	},
+	{
+		"id": 558,
+		"pokemon": "Crustle",
+		"type": ["Bug", "Rock"],
+		"generation": "V",
+		"typeMask": 12288
+	},
+	{
+		"id": 559,
+		"pokemon": "Scraggy",
+		"type": ["Dark", "Fighting"],
+		"generation": "V",
+		"typeMask": 65664
+	},
+	{
+		"id": 560,
+		"pokemon": "Scrafty",
+		"type": ["Dark", "Fighting"],
+		"generation": "V",
+		"typeMask": 65664
+	},
+	{
+		"id": 561,
+		"pokemon": "Sigilyph",
+		"type": ["Psychic", "Flying"],
+		"generation": "V",
+		"typeMask": 3072
+	},
+	{
+		"id": 562,
+		"pokemon": "Yamask",
+		"type": ["Ghost"],
+		"generation": "V",
+		"typeMask": 16384
+	},
+	{
+		"id": 563,
+		"pokemon": "Cofagrigus",
+		"type": ["Ghost"],
+		"generation": "V",
+		"typeMask": 16384
+	},
+	{
+		"id": 564,
+		"pokemon": "Tirtouga",
+		"type": ["Water", "Rock"],
+		"generation": "V",
+		"typeMask": 8200
+	},
+	{
+		"id": 565,
+		"pokemon": "Carracosta",
+		"type": ["Water", "Rock"],
+		"generation": "V",
+		"typeMask": 8200
+	},
+	{
+		"id": 566,
+		"pokemon": "Archen",
+		"type": ["Rock", "Flying"],
+		"generation": "V",
+		"typeMask": 9216
+	},
+	{
+		"id": 567,
+		"pokemon": "Archeops",
+		"type": ["Rock", "Flying"],
+		"generation": "V",
+		"typeMask": 9216
+	},
+	{
+		"id": 568,
+		"pokemon": "Trubbish",
+		"type": ["Poison"],
+		"generation": "V",
+		"typeMask": 256
+	},
+	{
+		"id": 569,
+		"pokemon": "Garbodor",
+		"type": ["Poison"],
+		"generation": "V",
+		"typeMask": 256
+	},
+	{
+		"id": 570,
+		"pokemon": "Zorua",
+		"type": ["Dark"],
+		"generation": "V",
+		"typeMask": 65536
+	},
+	{
+		"id": 571,
+		"pokemon": "Zoroark",
+		"type": ["Dark"],
+		"generation": "V",
+		"typeMask": 65536
+	},
+	{
+		"id": 572,
+		"pokemon": "Minccino",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 573,
+		"pokemon": "Cinccino",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 574,
+		"pokemon": "Gothita",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 575,
+		"pokemon": "Gothorita",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 576,
+		"pokemon": "Gothitelle",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 577,
+		"pokemon": "Solosis",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 578,
+		"pokemon": "Duosion",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 579,
+		"pokemon": "Reuniclus",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 580,
+		"pokemon": "Ducklett",
+		"type": ["Water", "Flying"],
+		"generation": "V",
+		"typeMask": 1032
+	},
+	{
+		"id": 581,
+		"pokemon": "Swanna",
+		"type": ["Water", "Flying"],
+		"generation": "V",
+		"typeMask": 1032
+	},
+	{
+		"id": 582,
+		"pokemon": "Vanillite",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 583,
+		"pokemon": "Vanillish",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 584,
+		"pokemon": "Vanilluxe",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 585,
+		"pokemon": "Deerling",
+		"type": ["Normal", "Grass"],
+		"generation": "V",
+		"typeMask": 34
+	},
+	{
+		"id": 586,
+		"pokemon": "Sawsbuck",
+		"type": ["Normal", "Grass"],
+		"generation": "V",
+		"typeMask": 34
+	},
+	{
+		"id": 587,
+		"pokemon": "Emolga",
+		"type": ["Electric", "Flying"],
+		"generation": "V",
+		"typeMask": 1040
+	},
+	{
+		"id": 588,
+		"pokemon": "Karrablast",
+		"type": ["Bug"],
+		"generation": "V",
+		"typeMask": 4096
+	},
+	{
+		"id": 589,
+		"pokemon": "Escavalier",
+		"type": ["Bug", "Steel"],
+		"generation": "V",
+		"typeMask": 135168
+	},
+	{
+		"id": 590,
+		"pokemon": "Foongus",
+		"type": ["Grass", "Poison"],
+		"generation": "V",
+		"typeMask": 288
+	},
+	{
+		"id": 591,
+		"pokemon": "Amoonguss",
+		"type": ["Grass", "Poison"],
+		"generation": "V",
+		"typeMask": 288
+	},
+	{
+		"id": 592,
+		"pokemon": "Frillish",
+		"type": ["Water", "Ghost"],
+		"generation": "V",
+		"typeMask": 16392
+	},
+	{
+		"id": 593,
+		"pokemon": "Jellicent",
+		"type": ["Water", "Ghost"],
+		"generation": "V",
+		"typeMask": 16392
+	},
+	{
+		"id": 594,
+		"pokemon": "Alomomola",
+		"type": ["Water"],
+		"generation": "V",
+		"typeMask": 8
+	},
+	{
+		"id": 595,
+		"pokemon": "Joltik",
+		"type": ["Bug", "Electric"],
+		"generation": "V",
+		"typeMask": 4112
+	},
+	{
+		"id": 596,
+		"pokemon": "Galvantula",
+		"type": ["Bug", "Electric"],
+		"generation": "V",
+		"typeMask": 4112
+	},
+	{
+		"id": 597,
+		"pokemon": "Ferroseed",
+		"type": ["Grass", "Steel"],
+		"generation": "V",
+		"typeMask": 131104
+	},
+	{
+		"id": 598,
+		"pokemon": "Ferrothorn",
+		"type": ["Grass", "Steel"],
+		"generation": "V",
+		"typeMask": 131104
+	},
+	{
+		"id": 599,
+		"pokemon": "Klink",
+		"type": ["Steel"],
+		"generation": "V",
+		"typeMask": 131072
+	},
+	{
+		"id": 600,
+		"pokemon": "Klang",
+		"type": ["Steel"],
+		"generation": "V",
+		"typeMask": 131072
+	},
+	{
+		"id": 601,
+		"pokemon": "Klinklang",
+		"type": ["Steel"],
+		"generation": "V",
+		"typeMask": 131072
+	},
+	{
+		"id": 602,
+		"pokemon": "Tynamo",
+		"type": ["Electric"],
+		"generation": "V",
+		"typeMask": 16
+	},
+	{
+		"id": 603,
+		"pokemon": "Eelektrik",
+		"type": ["Electric"],
+		"generation": "V",
+		"typeMask": 16
+	},
+	{
+		"id": 604,
+		"pokemon": "Eelektross",
+		"type": ["Electric"],
+		"generation": "V",
+		"typeMask": 16
+	},
+	{
+		"id": 605,
+		"pokemon": "Elgyem",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 606,
+		"pokemon": "Beheeyem",
+		"type": ["Psychic"],
+		"generation": "V",
+		"typeMask": 2048
+	},
+	{
+		"id": 607,
+		"pokemon": "Litwick",
+		"type": ["Ghost", "Fire"],
+		"generation": "V",
+		"typeMask": 16388
+	},
+	{
+		"id": 608,
+		"pokemon": "Lampent",
+		"type": ["Ghost", "Fire"],
+		"generation": "V",
+		"typeMask": 16388
+	},
+	{
+		"id": 609,
+		"pokemon": "Chandelure",
+		"type": ["Ghost", "Fire"],
+		"generation": "V",
+		"typeMask": 16388
+	},
+	{
+		"id": 610,
+		"pokemon": "Axew",
+		"type": ["Dragon"],
+		"generation": "V",
+		"typeMask": 32768
+	},
+	{
+		"id": 611,
+		"pokemon": "Fraxure",
+		"type": ["Dragon"],
+		"generation": "V",
+		"typeMask": 32768
+	},
+	{
+		"id": 612,
+		"pokemon": "Haxorus",
+		"type": ["Dragon"],
+		"generation": "V",
+		"typeMask": 32768
+	},
+	{
+		"id": 613,
+		"pokemon": "Cubchoo",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 614,
+		"pokemon": "Beartic",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 615,
+		"pokemon": "Cryogonal",
+		"type": ["Ice"],
+		"generation": "V",
+		"typeMask": 64
+	},
+	{
+		"id": 616,
+		"pokemon": "Shelmet",
+		"type": ["Bug"],
+		"generation": "V",
+		"typeMask": 4096
+	},
+	{
+		"id": 617,
+		"pokemon": "Accelgor",
+		"type": ["Bug"],
+		"generation": "V",
+		"typeMask": 4096
+	},
+	{
+		"id": 618,
+		"pokemon": "Stunfisk",
+		"type": ["Ground", "Electric"],
+		"generation": "V",
+		"typeMask": 528
+	},
+	{
+		"id": 619,
+		"pokemon": "Mienfoo",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 620,
+		"pokemon": "Mienshao",
+		"type": ["Fighting"],
+		"generation": "V",
+		"typeMask": 128
+	},
+	{
+		"id": 621,
+		"pokemon": "Druddigon",
+		"type": ["Dragon"],
+		"generation": "V",
+		"typeMask": 32768
+	},
+	{
+		"id": 622,
+		"pokemon": "Golett",
+		"type": ["Ground", "Ghost"],
+		"generation": "V",
+		"typeMask": 16896
+	},
+	{
+		"id": 623,
+		"pokemon": "Golurk",
+		"type": ["Ground", "Ghost"],
+		"generation": "V",
+		"typeMask": 16896
+	},
+	{
+		"id": 624,
+		"pokemon": "Pawniard",
+		"type": ["Dark", "Steel"],
+		"generation": "V",
+		"typeMask": 196608
+	},
+	{
+		"id": 625,
+		"pokemon": "Bisharp",
+		"type": ["Dark", "Steel"],
+		"generation": "V",
+		"typeMask": 196608
+	},
+	{
+		"id": 626,
+		"pokemon": "Bouffalant",
+		"type": ["Normal"],
+		"generation": "V",
+		"typeMask": 2
+	},
+	{
+		"id": 627,
+		"pokemon": "Rufflet",
+		"type": ["Normal", "Flying"],
+		"generation": "V",
+		"typeMask": 1026
+	},
+	{
+		"id": 628,
+		"pokemon": "Braviary",
+		"type": ["Normal", "Flying"],
+		"generation": "V",
+		"typeMask": 1026
+	},
+	{
+		"id": 629,
+		"pokemon": "Vullaby",
+		"type": ["Dark", "Flying"],
+		"generation": "V",
+		"typeMask": 66560
+	},
+	{
+		"id": 630,
+		"pokemon": "Mandibuzz",
+		"type": ["Dark", "Flying"],
+		"generation": "V",
+		"typeMask": 66560
+	},
+	{
+		"id": 631,
+		"pokemon": "Heatmor",
+		"type": ["Fire"],
+		"generation": "V",
+		"typeMask": 4
+	},
+	{
+		"id": 632,
+		"pokemon": "Durant",
+		"type": ["Bug", "Steel"],
+		"generation": "V",
+		"typeMask": 135168
+	},
+	{
+		"id": 633,
+		"pokemon": "Deino",
+		"type": ["Dark", "Dragon"],
+		"generation": "V",
+		"typeMask": 98304
+	},
+	{
+		"id": 634,
+		"pokemon": "Zweilous",
+		"type": ["Dark", "Dragon"],
+		"generation": "V",
+		"typeMask": 98304
+	},
+	{
+		"id": 635,
+		"pokemon": "Hydreigon",
+		"type": ["Dark", "Dragon"],
+		"generation": "V",
+		"typeMask": 98304
+	},
+	{
+		"id": 636,
+		"pokemon": "Larvesta",
+		"type": ["Bug", "Fire"],
+		"generation": "V",
+		"typeMask": 4100
+	},
+	{
+		"id": 637,
+		"pokemon": "Volcarona",
+		"type": ["Bug", "Fire"],
+		"generation": "V",
+		"typeMask": 4100
+	},
+	{
+		"id": 638,
+		"pokemon": "Cobalion",
+		"type": ["Steel", "Fighting"],
+		"generation": "V",
+		"typeMask": 131200
+	},
+	{
+		"id": 639,
+		"pokemon": "Terrakion",
+		"type": ["Rock", "Fighting"],
+		"generation": "V",
+		"typeMask": 8320
+	},
+	{
+		"id": 640,
+		"pokemon": "Virizion",
+		"type": ["Grass", "Fighting"],
+		"generation": "V",
+		"typeMask": 160
+	},
+	{
+		"id": 641,
+		"pokemon": "Tornadus",
+		"type": ["Flying"],
+		"generation": "V",
+		"typeMask": 1024
+	},
+	{
+		"id": 642,
+		"pokemon": "Thundurus",
+		"type": ["Electric", "Flying"],
+		"generation": "V",
+		"typeMask": 1040
+	},
+	{
+		"id": 643,
+		"pokemon": "Reshiram",
+		"type": ["Dragon", "Fire"],
+		"generation": "V",
+		"typeMask": 32772
+	},
+	{
+		"id": 644,
+		"pokemon": "Zekrom",
+		"type": ["Dragon", "Electric"],
+		"generation": "V",
+		"typeMask": 32784
+	},
+	{
+		"id": 645,
+		"pokemon": "Landorus",
+		"type": ["Ground", "Flying"],
+		"generation": "V",
+		"typeMask": 1536
+	},
+	{
+		"id": 646,
+		"pokemon": "Kyurem",
+		"type": ["Dragon", "Ice"],
+		"generation": "V",
+		"typeMask": 32832
+	},
+	{
+		"id": 647,
+		"pokemon": "Keldeo",
+		"type": ["Water", "Fighting"],
+		"generation": "V",
+		"typeMask": 136
+	},
+	{
+		"id": 648,
+		"pokemon": "Meloetta",
+		"type": ["Normal", "Psychic"],
+		"generation": "V",
+		"typeMask": 2050
+	},
+	{
+		"id": 649,
+		"pokemon": "Genesect",
+		"type": ["Bug", "Steel"],
+		"generation": "V",
+		"typeMask": 135168
+	},
+	{
+		"id": 650,
+		"pokemon": "Chespin",
+		"type": ["Grass"],
+		"generation": "VI",
+		"typeMask": 32
+	},
+	{
+		"id": 651,
+		"pokemon": "Quilladin",
+		"type": ["Grass"],
+		"generation": "VI",
+		"typeMask": 32
+	},
+	{
+		"id": 652,
+		"pokemon": "Chesnaught",
+		"type": ["Grass", "Fighting"],
+		"generation": "VI",
+		"typeMask": 160
+	},
+	{
+		"id": 653,
+		"pokemon": "Fennekin",
+		"type": ["Fire"],
+		"generation": "VI",
+		"typeMask": 4
+	},
+	{
+		"id": 654,
+		"pokemon": "Braixen",
+		"type": ["Fire"],
+		"generation": "VI",
+		"typeMask": 4
+	},
+	{
+		"id": 655,
+		"pokemon": "Delphox",
+		"type": ["Fire", "Psychic"],
+		"generation": "VI",
+		"typeMask": 2052
+	},
+	{
+		"id": 656,
+		"pokemon": "Froakie",
+		"type": ["Water"],
+		"generation": "VI",
+		"typeMask": 8
+	},
+	{
+		"id": 657,
+		"pokemon": "Frogadier",
+		"type": ["Water"],
+		"generation": "VI",
+		"typeMask": 8
+	},
+	{
+		"id": 658,
+		"pokemon": "Greninja",
+		"type": ["Water", "Dark"],
+		"generation": "VI",
+		"typeMask": 65544
+	},
+	{
+		"id": 659,
+		"pokemon": "Bunnelby",
+		"type": ["Normal"],
+		"generation": "VI",
+		"typeMask": 2
+	},
+	{
+		"id": 660,
+		"pokemon": "Diggersby",
+		"type": ["Normal", "Ground"],
+		"generation": "VI",
+		"typeMask": 514
+	},
+	{
+		"id": 661,
+		"pokemon": "Fletchling",
+		"type": ["Normal", "Flying"],
+		"generation": "VI",
+		"typeMask": 1026
+	},
+	{
+		"id": 662,
+		"pokemon": "Fletchinder",
+		"type": ["Fire", "Flying"],
+		"generation": "VI",
+		"typeMask": 1028
+	},
+	{
+		"id": 663,
+		"pokemon": "Talonflame",
+		"type": ["Fire", "Flying"],
+		"generation": "VI",
+		"typeMask": 1028
+	},
+	{
+		"id": 664,
+		"pokemon": "Scatterbug",
+		"type": ["Bug"],
+		"generation": "VI",
+		"typeMask": 4096
+	},
+	{
+		"id": 665,
+		"pokemon": "Spewpa",
+		"type": ["Bug"],
+		"generation": "VI",
+		"typeMask": 4096
+	},
+	{
+		"id": 666,
+		"pokemon": "Vivillon",
+		"type": ["Bug", "Flying"],
+		"generation": "VI",
+		"typeMask": 5120
+	},
+	{
+		"id": 667,
+		"pokemon": "Litleo",
+		"type": ["Fire", "Normal"],
+		"generation": "VI",
+		"typeMask": 6
+	},
+	{
+		"id": 668,
+		"pokemon": "Pyroar",
+		"type": ["Fire", "Normal"],
+		"generation": "VI",
+		"typeMask": 6
+	},
+	{
+		"id": 669,
+		"pokemon": "Flabébé",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 670,
+		"pokemon": "Floette",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 671,
+		"pokemon": "Florges",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 672,
+		"pokemon": "Skiddo",
+		"type": ["Grass"],
+		"generation": "VI",
+		"typeMask": 32
+	},
+	{
+		"id": 673,
+		"pokemon": "Gogoat",
+		"type": ["Grass"],
+		"generation": "VI",
+		"typeMask": 32
+	},
+	{
+		"id": 674,
+		"pokemon": "Pancham",
+		"type": ["Fighting"],
+		"generation": "VI",
+		"typeMask": 128
+	},
+	{
+		"id": 675,
+		"pokemon": "Pangoro",
+		"type": ["Fighting", "Dark"],
+		"generation": "VI",
+		"typeMask": 65664
+	},
+	{
+		"id": 676,
+		"pokemon": "Furfrou",
+		"type": ["Normal"],
+		"generation": "VI",
+		"typeMask": 2
+	},
+	{
+		"id": 677,
+		"pokemon": "Espurr",
+		"type": ["Psychic"],
+		"generation": "VI",
+		"typeMask": 2048
+	},
+	{
+		"id": 678,
+		"pokemon": "Meowstic",
+		"type": ["Psychic"],
+		"generation": "VI",
+		"typeMask": 2048
+	},
+	{
+		"id": 679,
+		"pokemon": "Honedge",
+		"type": ["Steel", "Ghost"],
+		"generation": "VI",
+		"typeMask": 147456
+	},
+	{
+		"id": 680,
+		"pokemon": "Doublade",
+		"type": ["Steel", "Ghost"],
+		"generation": "VI",
+		"typeMask": 147456
+	},
+	{
+		"id": 681,
+		"pokemon": "Aegislash",
+		"type": ["Steel", "Ghost"],
+		"generation": "VI",
+		"typeMask": 147456
+	},
+	{
+		"id": 682,
+		"pokemon": "Spritzee",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 683,
+		"pokemon": "Aromatisse",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 684,
+		"pokemon": "Swirlix",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 685,
+		"pokemon": "Slurpuff",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 686,
+		"pokemon": "Inkay",
+		"type": ["Dark", "Psychic"],
+		"generation": "VI",
+		"typeMask": 67584
+	},
+	{
+		"id": 687,
+		"pokemon": "Malamar",
+		"type": ["Dark", "Psychic"],
+		"generation": "VI",
+		"typeMask": 67584
+	},
+	{
+		"id": 688,
+		"pokemon": "Binacle",
+		"type": ["Rock", "Water"],
+		"generation": "VI",
+		"typeMask": 8200
+	},
+	{
+		"id": 689,
+		"pokemon": "Barbaracle",
+		"type": ["Rock", "Water"],
+		"generation": "VI",
+		"typeMask": 8200
+	},
+	{
+		"id": 690,
+		"pokemon": "Skrelp",
+		"type": ["Poison", "Water"],
+		"generation": "VI",
+		"typeMask": 264
+	},
+	{
+		"id": 691,
+		"pokemon": "Dragalge",
+		"type": ["Poison", "Dragon"],
+		"generation": "VI",
+		"typeMask": 33024
+	},
+	{
+		"id": 692,
+		"pokemon": "Clauncher",
+		"type": ["Water"],
+		"generation": "VI",
+		"typeMask": 8
+	},
+	{
+		"id": 693,
+		"pokemon": "Clawitzer",
+		"type": ["Water"],
+		"generation": "VI",
+		"typeMask": 8
+	},
+	{
+		"id": 694,
+		"pokemon": "Helioptile",
+		"type": ["Electric", "Normal"],
+		"generation": "VI",
+		"typeMask": 18
+	},
+	{
+		"id": 695,
+		"pokemon": "Heliolisk",
+		"type": ["Electric", "Normal"],
+		"generation": "VI",
+		"typeMask": 18
+	},
+	{
+		"id": 696,
+		"pokemon": "Tyrunt",
+		"type": ["Rock", "Dragon"],
+		"generation": "VI",
+		"typeMask": 40960
+	},
+	{
+		"id": 697,
+		"pokemon": "Tyrantrum",
+		"type": ["Rock", "Dragon"],
+		"generation": "VI",
+		"typeMask": 40960
+	},
+	{
+		"id": 698,
+		"pokemon": "Amaura",
+		"type": ["Rock", "Ice"],
+		"generation": "VI",
+		"typeMask": 8256
+	},
+	{
+		"id": 699,
+		"pokemon": "Aurorus",
+		"type": ["Rock", "Ice"],
+		"generation": "VI",
+		"typeMask": 8256
+	},
+	{
+		"id": 700,
+		"pokemon": "Sylveon",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 701,
+		"pokemon": "Hawlucha",
+		"type": ["Fighting", "Flying"],
+		"generation": "VI",
+		"typeMask": 1152
+	},
+	{
+		"id": 702,
+		"pokemon": "Dedenne",
+		"type": ["Electric", "Fairy"],
+		"generation": "VI",
+		"typeMask": 262160
+	},
+	{
+		"id": 703,
+		"pokemon": "Carbink",
+		"type": ["Rock", "Fairy"],
+		"generation": "VI",
+		"typeMask": 270336
+	},
+	{
+		"id": 704,
+		"pokemon": "Goomy",
+		"type": ["Dragon"],
+		"generation": "VI",
+		"typeMask": 32768
+	},
+	{
+		"id": 705,
+		"pokemon": "Sliggoo",
+		"type": ["Dragon"],
+		"generation": "VI",
+		"typeMask": 32768
+	},
+	{
+		"id": 706,
+		"pokemon": "Goodra",
+		"type": ["Dragon"],
+		"generation": "VI",
+		"typeMask": 32768
+	},
+	{
+		"id": 707,
+		"pokemon": "Klefki",
+		"type": ["Steel", "Fairy"],
+		"generation": "VI",
+		"typeMask": 393216
+	},
+	{
+		"id": 708,
+		"pokemon": "Phantump",
+		"type": ["Ghost", "Grass"],
+		"generation": "VI",
+		"typeMask": 16416
+	},
+	{
+		"id": 709,
+		"pokemon": "Trevenant",
+		"type": ["Ghost", "Grass"],
+		"generation": "VI",
+		"typeMask": 16416
+	},
+	{
+		"id": 710,
+		"pokemon": "Pumpkaboo",
+		"type": ["Ghost", "Grass"],
+		"generation": "VI",
+		"typeMask": 16416
+	},
+	{
+		"id": 711,
+		"pokemon": "Gourgeist",
+		"type": ["Ghost", "Grass"],
+		"generation": "VI",
+		"typeMask": 16416
+	},
+	{
+		"id": 712,
+		"pokemon": "Bergmite",
+		"type": ["Ice"],
+		"generation": "VI",
+		"typeMask": 64
+	},
+	{
+		"id": 713,
+		"pokemon": "Avalugg",
+		"type": ["Ice"],
+		"generation": "VI",
+		"typeMask": 64
+	},
+	{
+		"id": 714,
+		"pokemon": "Noibat",
+		"type": ["Flying", "Dragon"],
+		"generation": "VI",
+		"typeMask": 33792
+	},
+	{
+		"id": 715,
+		"pokemon": "Noivern",
+		"type": ["Flying", "Dragon"],
+		"generation": "VI",
+		"typeMask": 33792
+	},
+	{
+		"id": 716,
+		"pokemon": "Xerneas",
+		"type": ["Fairy"],
+		"generation": "VI",
+		"typeMask": 262144
+	},
+	{
+		"id": 717,
+		"pokemon": "Yveltal",
+		"type": ["Dark", "Flying"],
+		"generation": "VI",
+		"typeMask": 66560
+	},
+	{
+		"id": 718,
+		"pokemon": "Zygarde",
+		"type": ["Dragon", "Ground"],
+		"generation": "VI",
+		"typeMask": 33280
+	},
+	{
+		"id": 719,
+		"pokemon": "Diancie",
+		"type": ["Rock", "Fairy"],
+		"generation": "VI",
+		"typeMask": 270336
+	},
+	{
+		"id": 720,
+		"pokemon": "Hoopa",
+		"type": ["Psychic", "Ghost"],
+		"generation": "VI",
+		"typeMask": 18432
+	},
+	{
+		"id": 721,
+		"pokemon": "Volcanion",
+		"type": ["Fire", "Water"],
+		"generation": "VI",
+		"typeMask": 12
+	},
+	{
+		"id": 722,
+		"pokemon": "Rowlet",
+		"type": ["Grass", "Flying"],
+		"generation": "VII",
+		"typeMask": 1056
+	},
+	{
+		"id": 723,
+		"pokemon": "Dartrix",
+		"type": ["Grass", "Flying"],
+		"generation": "VII",
+		"typeMask": 1056
+	},
+	{
+		"id": 724,
+		"pokemon": "Decidueye",
+		"type": ["Grass", "Ghost"],
+		"generation": "VII",
+		"typeMask": 16416
+	},
+	{
+		"id": 725,
+		"pokemon": "Litten",
+		"type": ["Fire"],
+		"generation": "VII",
+		"typeMask": 4
+	},
+	{
+		"id": 726,
+		"pokemon": "Torracat",
+		"type": ["Fire"],
+		"generation": "VII",
+		"typeMask": 4
+	},
+	{
+		"id": 727,
+		"pokemon": "Incineroar",
+		"type": ["Fire", "Dark"],
+		"generation": "VII",
+		"typeMask": 65540
+	},
+	{
+		"id": 728,
+		"pokemon": "Popplio",
+		"type": ["Water"],
+		"generation": "VII",
+		"typeMask": 8
+	},
+	{
+		"id": 729,
+		"pokemon": "Brionne",
+		"type": ["Water"],
+		"generation": "VII",
+		"typeMask": 8
+	},
+	{
+		"id": 730,
+		"pokemon": "Primarina",
+		"type": ["Water", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262152
+	},
+	{
+		"id": 731,
+		"pokemon": "Pikipek",
+		"type": ["Normal", "Flying"],
+		"generation": "VII",
+		"typeMask": 1026
+	},
+	{
+		"id": 732,
+		"pokemon": "Trumbeak",
+		"type": ["Normal", "Flying"],
+		"generation": "VII",
+		"typeMask": 1026
+	},
+	{
+		"id": 733,
+		"pokemon": "Toucannon",
+		"type": ["Normal", "Flying"],
+		"generation": "VII",
+		"typeMask": 1026
+	},
+	{
+		"id": 734,
+		"pokemon": "Yungoos",
+		"type": ["Normal"],
+		"generation": "VII",
+		"typeMask": 2
+	},
+	{
+		"id": 735,
+		"pokemon": "Gumshoos",
+		"type": ["Normal"],
+		"generation": "VII",
+		"typeMask": 2
+	},
+	{
+		"id": 736,
+		"pokemon": "Grubbin",
+		"type": ["Bug"],
+		"generation": "VII",
+		"typeMask": 4096
+	},
+	{
+		"id": 737,
+		"pokemon": "Charjabug",
+		"type": ["Bug", "Electric"],
+		"generation": "VII",
+		"typeMask": 4112
+	},
+	{
+		"id": 738,
+		"pokemon": "Vikavolt",
+		"type": ["Bug", "Electric"],
+		"generation": "VII",
+		"typeMask": 4112
+	},
+	{
+		"id": 739,
+		"pokemon": "Crabrawler",
+		"type": ["Fighting"],
+		"generation": "VII",
+		"typeMask": 128
+	},
+	{
+		"id": 740,
+		"pokemon": "Crabominable",
+		"type": ["Fighting", "Ice"],
+		"generation": "VII",
+		"typeMask": 192
+	},
+	{
+		"id": 741,
+		"pokemon": "Oricorio",
+		"type": ["Fire", "Flying"],
+		"generation": "VII",
+		"typeMask": 1028
+	},
+	{
+		"id": 742,
+		"pokemon": "Cutiefly",
+		"type": ["Bug", "Fairy"],
+		"generation": "VII",
+		"typeMask": 266240
+	},
+	{
+		"id": 743,
+		"pokemon": "Ribombee",
+		"type": ["Bug", "Fairy"],
+		"generation": "VII",
+		"typeMask": 266240
+	},
+	{
+		"id": 744,
+		"pokemon": "Rockruff",
+		"type": ["Rock"],
+		"generation": "VII",
+		"typeMask": 8192
+	},
+	{
+		"id": 745,
+		"pokemon": "Lycanroc",
+		"type": ["Rock"],
+		"generation": "VII",
+		"typeMask": 8192
+	},
+	{
+		"id": 746,
+		"pokemon": "Wishiwashi",
+		"type": ["Water"],
+		"generation": "VII",
+		"typeMask": 8
+	},
+	{
+		"id": 747,
+		"pokemon": "Mareanie",
+		"type": ["Poison", "Water"],
+		"generation": "VII",
+		"typeMask": 264
+	},
+	{
+		"id": 748,
+		"pokemon": "Toxapex",
+		"type": ["Poison", "Water"],
+		"generation": "VII",
+		"typeMask": 264
+	},
+	{
+		"id": 749,
+		"pokemon": "Mudbray",
+		"type": ["Ground"],
+		"generation": "VII",
+		"typeMask": 512
+	},
+	{
+		"id": 750,
+		"pokemon": "Mudsdale",
+		"type": ["Ground"],
+		"generation": "VII",
+		"typeMask": 512
+	},
+	{
+		"id": 751,
+		"pokemon": "Dewpider",
+		"type": ["Water", "Bug"],
+		"generation": "VII",
+		"typeMask": 4104
+	},
+	{
+		"id": 752,
+		"pokemon": "Araquanid",
+		"type": ["Water", "Bug"],
+		"generation": "VII",
+		"typeMask": 4104
+	},
+	{
+		"id": 753,
+		"pokemon": "Fomantis",
+		"type": ["Grass"],
+		"generation": "VII",
+		"typeMask": 32
+	},
+	{
+		"id": 754,
+		"pokemon": "Lurantis",
+		"type": ["Grass"],
+		"generation": "VII",
+		"typeMask": 32
+	},
+	{
+		"id": 755,
+		"pokemon": "Morelull",
+		"type": ["Grass", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262176
+	},
+	{
+		"id": 756,
+		"pokemon": "Shiinotic",
+		"type": ["Grass", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262176
+	},
+	{
+		"id": 757,
+		"pokemon": "Salandit",
+		"type": ["Poison", "Fire"],
+		"generation": "VII",
+		"typeMask": 260
+	},
+	{
+		"id": 758,
+		"pokemon": "Salazzle",
+		"type": ["Poison", "Fire"],
+		"generation": "VII",
+		"typeMask": 260
+	},
+	{
+		"id": 759,
+		"pokemon": "Stufful",
+		"type": ["Normal", "Fighting"],
+		"generation": "VII",
+		"typeMask": 130
+	},
+	{
+		"id": 760,
+		"pokemon": "Bewear",
+		"type": ["Normal", "Fighting"],
+		"generation": "VII",
+		"typeMask": 130
+	},
+	{
+		"id": 761,
+		"pokemon": "Bounsweet",
+		"type": ["Grass"],
+		"generation": "VII",
+		"typeMask": 32
+	},
+	{
+		"id": 762,
+		"pokemon": "Steenee",
+		"type": ["Grass"],
+		"generation": "VII",
+		"typeMask": 32
+	},
+	{
+		"id": 763,
+		"pokemon": "Tsareena",
+		"type": ["Grass"],
+		"generation": "VII",
+		"typeMask": 32
+	},
+	{
+		"id": 764,
+		"pokemon": "Comfey",
+		"type": ["Fairy"],
+		"generation": "VII",
+		"typeMask": 262144
+	},
+	{
+		"id": 765,
+		"pokemon": "Oranguru",
+		"type": ["Normal", "Psychic"],
+		"generation": "VII",
+		"typeMask": 2050
+	},
+	{
+		"id": 766,
+		"pokemon": "Passimian",
+		"type": ["Fighting"],
+		"generation": "VII",
+		"typeMask": 128
+	},
+	{
+		"id": 767,
+		"pokemon": "Wimpod",
+		"type": ["Bug", "Water"],
+		"generation": "VII",
+		"typeMask": 4104
+	},
+	{
+		"id": 768,
+		"pokemon": "Golisopod",
+		"type": ["Bug", "Water"],
+		"generation": "VII",
+		"typeMask": 4104
+	},
+	{
+		"id": 769,
+		"pokemon": "Sandygast",
+		"type": ["Ghost", "Ground"],
+		"generation": "VII",
+		"typeMask": 16896
+	},
+	{
+		"id": 770,
+		"pokemon": "Palossand",
+		"type": ["Ghost", "Ground"],
+		"generation": "VII",
+		"typeMask": 16896
+	},
+	{
+		"id": 771,
+		"pokemon": "Pyukumuku",
+		"type": ["Water"],
+		"generation": "VII",
+		"typeMask": 8
+	},
+	{
+		"id": 772,
+		"pokemon": "Type: Null",
+		"type": ["Normal"],
+		"generation": "VII",
+		"typeMask": 2
+	},
+	{
+		"id": 773,
+		"pokemon": "Silvally",
+		"type": ["Normal"],
+		"generation": "VII",
+		"typeMask": 2
+	},
+	{
+		"id": 774,
+		"pokemon": "Minior",
+		"type": ["Rock", "Flying"],
+		"generation": "VII",
+		"typeMask": 9216
+	},
+	{
+		"id": 775,
+		"pokemon": "Komala",
+		"type": ["Normal"],
+		"generation": "VII",
+		"typeMask": 2
+	},
+	{
+		"id": 776,
+		"pokemon": "Turtonator",
+		"type": ["Fire", "Dragon"],
+		"generation": "VII",
+		"typeMask": 32772
+	},
+	{
+		"id": 777,
+		"pokemon": "Togedemaru",
+		"type": ["Electric", "Steel"],
+		"generation": "VII",
+		"typeMask": 131088
+	},
+	{
+		"id": 778,
+		"pokemon": "Mimikyu",
+		"type": ["Ghost", "Fairy"],
+		"generation": "VII",
+		"typeMask": 278528
+	},
+	{
+		"id": 779,
+		"pokemon": "Bruxish",
+		"type": ["Water", "Psychic"],
+		"generation": "VII",
+		"typeMask": 2056
+	},
+	{
+		"id": 780,
+		"pokemon": "Drampa",
+		"type": ["Normal", "Dragon"],
+		"generation": "VII",
+		"typeMask": 32770
+	},
+	{
+		"id": 781,
+		"pokemon": "Dhelmise",
+		"type": ["Ghost", "Grass"],
+		"generation": "VII",
+		"typeMask": 16416
+	},
+	{
+		"id": 782,
+		"pokemon": "Jangmo-o",
+		"type": ["Dragon"],
+		"generation": "VII",
+		"typeMask": 32768
+	},
+	{
+		"id": 783,
+		"pokemon": "Hakamo-o",
+		"type": ["Dragon", "Fighting"],
+		"generation": "VII",
+		"typeMask": 32896
+	},
+	{
+		"id": 784,
+		"pokemon": "Kommo-o",
+		"type": ["Dragon", "Fighting"],
+		"generation": "VII",
+		"typeMask": 32896
+	},
+	{
+		"id": 785,
+		"pokemon": "Tapu Koko",
+		"type": ["Electric", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262160
+	},
+	{
+		"id": 786,
+		"pokemon": "Tapu Lele",
+		"type": ["Psychic", "Fairy"],
+		"generation": "VII",
+		"typeMask": 264192
+	},
+	{
+		"id": 787,
+		"pokemon": "Tapu Bulu",
+		"type": ["Grass", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262176
+	},
+	{
+		"id": 788,
+		"pokemon": "Tapu Fini",
+		"type": ["Water", "Fairy"],
+		"generation": "VII",
+		"typeMask": 262152
+	},
+	{
+		"id": 789,
+		"pokemon": "Cosmog",
+		"type": ["Psychic"],
+		"generation": "VII",
+		"typeMask": 2048
+	},
+	{
+		"id": 790,
+		"pokemon": "Cosmoem",
+		"type": ["Psychic"],
+		"generation": "VII",
+		"typeMask": 2048
+	},
+	{
+		"id": 791,
+		"pokemon": "Solgaleo",
+		"type": ["Psychic", "Steel"],
+		"generation": "VII",
+		"typeMask": 133120
+	},
+	{
+		"id": 792,
+		"pokemon": "Lunala",
+		"type": ["Psychic", "Ghost"],
+		"generation": "VII",
+		"typeMask": 18432
+	},
+	{
+		"id": 793,
+		"pokemon": "Nihilego",
+		"type": ["Rock", "Poison"],
+		"generation": "VII",
+		"typeMask": 8448
+	},
+	{
+		"id": 794,
+		"pokemon": "Buzzwole",
+		"type": ["Bug", "Fighting"],
+		"generation": "VII",
+		"typeMask": 4224
+	},
+	{
+		"id": 795,
+		"pokemon": "Pheromosa",
+		"type": ["Bug", "Fighting"],
+		"generation": "VII",
+		"typeMask": 4224
+	},
+	{
+		"id": 796,
+		"pokemon": "Xurkitree",
+		"type": ["Electric"],
+		"generation": "VII",
+		"typeMask": 16
+	},
+	{
+		"id": 797,
+		"pokemon": "Celesteela",
+		"type": ["Steel", "Flying"],
+		"generation": "VII",
+		"typeMask": 132096
+	},
+	{
+		"id": 798,
+		"pokemon": "Kartana",
+		"type": ["Grass", "Steel"],
+		"generation": "VII",
+		"typeMask": 131104
+	},
+	{
+		"id": 799,
+		"pokemon": "Guzzlord",
+		"type": ["Dark", "Dragon"],
+		"generation": "VII",
+		"typeMask": 98304
+	},
+	{
+		"id": 800,
+		"pokemon": "Necrozma",
+		"type": ["Psychic"],
+		"generation": "VII",
+		"typeMask": 2048
+	},
+	{
+		"id": 801,
+		"pokemon": "Magearna",
+		"type": ["Steel", "Fairy"],
+		"generation": "VII",
+		"typeMask": 393216
+	},
+	{
+		"id": 802,
+		"pokemon": "Marshadow",
+		"type": ["Fighting", "Ghost"],
+		"generation": "VII",
+		"typeMask": 16512
+	},
+	{
+		"id": 803,
+		"pokemon": "Poipole",
+		"type": ["Poison"],
+		"generation": "VII",
+		"typeMask": 256
+	},
+	{
+		"id": 804,
+		"pokemon": "Naganadel",
+		"type": ["Poison", "Dragon"],
+		"generation": "VII",
+		"typeMask": 33024
+	},
+	{
+		"id": 805,
+		"pokemon": "Stakataka",
+		"type": ["Rock", "Steel"],
+		"generation": "VII",
+		"typeMask": 139264
+	},
+	{
+		"id": 806,
+		"pokemon": "Blacephalon",
+		"type": ["Fire", "Ghost"],
+		"generation": "VII",
+		"typeMask": 16388
+	},
+	{
+		"id": 807,
+		"pokemon": "Zeraora",
+		"type": ["Electric"],
+		"generation": "VII",
+		"typeMask": 16
+	},
+	{
+		"id": 808,
+		"pokemon": "Meltan",
+		"type": ["Steel"],
+		"generation": "VII",
+		"typeMask": 131072
+	},
+	{
+		"id": 809,
+		"pokemon": "Melmetal",
+		"type": ["Steel"],
+		"generation": "VII",
+		"typeMask": 131072
+	},
+	{
+		"id": 810,
+		"pokemon": "Grookey",
+		"type": ["Grass"],
+		"generation": "VIII",
+		"typeMask": 32
+	},
+	{
+		"id": 811,
+		"pokemon": "Thwackey",
+		"type": ["Grass"],
+		"generation": "VIII",
+		"typeMask": 32
+	},
+	{
+		"id": 812,
+		"pokemon": "Rillaboom",
+		"type": ["Grass"],
+		"generation": "VIII",
+		"typeMask": 32
+	},
+	{
+		"id": 813,
+		"pokemon": "Scorbunny",
+		"type": ["Fire"],
+		"generation": "VIII",
+		"typeMask": 4
+	},
+	{
+		"id": 814,
+		"pokemon": "Raboot",
+		"type": ["Fire"],
+		"generation": "VIII",
+		"typeMask": 4
+	},
+	{
+		"id": 815,
+		"pokemon": "Cinderace",
+		"type": ["Fire"],
+		"generation": "VIII",
+		"typeMask": 4
+	},
+	{
+		"id": 816,
+		"pokemon": "Sobble",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 817,
+		"pokemon": "Drizzile",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 818,
+		"pokemon": "Inteleon",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 819,
+		"pokemon": "Skwovet",
+		"type": ["Normal"],
+		"generation": "VIII",
+		"typeMask": 2
+	},
+	{
+		"id": 820,
+		"pokemon": "Greedent",
+		"type": ["Normal"],
+		"generation": "VIII",
+		"typeMask": 2
+	},
+	{
+		"id": 821,
+		"pokemon": "Rookidee",
+		"type": ["Flying"],
+		"generation": "VIII",
+		"typeMask": 1024
+	},
+	{
+		"id": 822,
+		"pokemon": "Corvisquire",
+		"type": ["Flying"],
+		"generation": "VIII",
+		"typeMask": 1024
+	},
+	{
+		"id": 823,
+		"pokemon": "Corviknight",
+		"type": ["Flying", "Steel"],
+		"generation": "VIII",
+		"typeMask": 132096
+	},
+	{
+		"id": 824,
+		"pokemon": "Blipbug",
+		"type": ["Bug"],
+		"generation": "VIII",
+		"typeMask": 4096
+	},
+	{
+		"id": 825,
+		"pokemon": "Dottler",
+		"type": ["Bug", "Psychic"],
+		"generation": "VIII",
+		"typeMask": 6144
+	},
+	{
+		"id": 826,
+		"pokemon": "Orbeetle",
+		"type": ["Bug", "Psychic"],
+		"generation": "VIII",
+		"typeMask": 6144
+	},
+	{
+		"id": 827,
+		"pokemon": "Nickit",
+		"type": ["Dark"],
+		"generation": "VIII",
+		"typeMask": 65536
+	},
+	{
+		"id": 828,
+		"pokemon": "Thievul",
+		"type": ["Dark"],
+		"generation": "VIII",
+		"typeMask": 65536
+	},
+	{
+		"id": 829,
+		"pokemon": "Gossifleur",
+		"type": ["Grass"],
+		"generation": "VIII",
+		"typeMask": 32
+	},
+	{
+		"id": 830,
+		"pokemon": "Eldegoss",
+		"type": ["Grass"],
+		"generation": "VIII",
+		"typeMask": 32
+	},
+	{
+		"id": 831,
+		"pokemon": "Wooloo",
+		"type": ["Normal"],
+		"generation": "VIII",
+		"typeMask": 2
+	},
+	{
+		"id": 832,
+		"pokemon": "Dubwool",
+		"type": ["Normal"],
+		"generation": "VIII",
+		"typeMask": 2
+	},
+	{
+		"id": 833,
+		"pokemon": "Chewtle",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 834,
+		"pokemon": "Drednaw",
+		"type": ["Water", "Rock"],
+		"generation": "VIII",
+		"typeMask": 8200
+	},
+	{
+		"id": 835,
+		"pokemon": "Yamper",
+		"type": ["Electric"],
+		"generation": "VIII",
+		"typeMask": 16
+	},
+	{
+		"id": 836,
+		"pokemon": "Boltund",
+		"type": ["Electric"],
+		"generation": "VIII",
+		"typeMask": 16
+	},
+	{
+		"id": 837,
+		"pokemon": "Rolycoly",
+		"type": ["Rock"],
+		"generation": "VIII",
+		"typeMask": 8192
+	},
+	{
+		"id": 838,
+		"pokemon": "Carkol",
+		"type": ["Rock", "Fire"],
+		"generation": "VIII",
+		"typeMask": 8196
+	},
+	{
+		"id": 839,
+		"pokemon": "Coalossal",
+		"type": ["Rock", "Fire"],
+		"generation": "VIII",
+		"typeMask": 8196
+	},
+	{
+		"id": 840,
+		"pokemon": "Applin",
+		"type": ["Grass", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 32800
+	},
+	{
+		"id": 841,
+		"pokemon": "Flapple",
+		"type": ["Grass", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 32800
+	},
+	{
+		"id": 842,
+		"pokemon": "Appletun",
+		"type": ["Grass", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 32800
+	},
+	{
+		"id": 843,
+		"pokemon": "Silicobra",
+		"type": ["Ground"],
+		"generation": "VIII",
+		"typeMask": 512
+	},
+	{
+		"id": 844,
+		"pokemon": "Sandaconda",
+		"type": ["Ground"],
+		"generation": "VIII",
+		"typeMask": 512
+	},
+	{
+		"id": 845,
+		"pokemon": "Cramorant",
+		"type": ["Flying", "Water"],
+		"generation": "VIII",
+		"typeMask": 1032
+	},
+	{
+		"id": 846,
+		"pokemon": "Arrokuda",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 847,
+		"pokemon": "Barraskewda",
+		"type": ["Water"],
+		"generation": "VIII",
+		"typeMask": 8
+	},
+	{
+		"id": 848,
+		"pokemon": "Toxel",
+		"type": ["Electric", "Poison"],
+		"generation": "VIII",
+		"typeMask": 272
+	},
+	{
+		"id": 849,
+		"pokemon": "Toxtricity",
+		"type": ["Electric", "Poison"],
+		"generation": "VIII",
+		"typeMask": 272
+	},
+	{
+		"id": 850,
+		"pokemon": "Sizzlipede",
+		"type": ["Fire", "Bug"],
+		"generation": "VIII",
+		"typeMask": 4100
+	},
+	{
+		"id": 851,
+		"pokemon": "Centiskorch",
+		"type": ["Fire", "Bug"],
+		"generation": "VIII",
+		"typeMask": 4100
+	},
+	{
+		"id": 852,
+		"pokemon": "Clobbopus",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 853,
+		"pokemon": "Grapploct",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 854,
+		"pokemon": "Sinistea",
+		"type": ["Ghost"],
+		"generation": "VIII",
+		"typeMask": 16384
+	},
+	{
+		"id": 855,
+		"pokemon": "Polteageist",
+		"type": ["Ghost"],
+		"generation": "VIII",
+		"typeMask": 16384
+	},
+	{
+		"id": 856,
+		"pokemon": "Hatenna",
+		"type": ["Psychic"],
+		"generation": "VIII",
+		"typeMask": 2048
+	},
+	{
+		"id": 857,
+		"pokemon": "Hattrem",
+		"type": ["Psychic"],
+		"generation": "VIII",
+		"typeMask": 2048
+	},
+	{
+		"id": 858,
+		"pokemon": "Hatterene",
+		"type": ["Psychic", "Fairy"],
+		"generation": "VIII",
+		"typeMask": 264192
+	},
+	{
+		"id": 859,
+		"pokemon": "Impidimp",
+		"type": ["Dark", "Fairy"],
+		"generation": "VIII",
+		"typeMask": 327680
+	},
+	{
+		"id": 860,
+		"pokemon": "Morgrem",
+		"type": ["Dark", "Fairy"],
+		"generation": "VIII",
+		"typeMask": 327680
+	},
+	{
+		"id": 861,
+		"pokemon": "Grimmsnarl",
+		"type": ["Dark", "Fairy"],
+		"generation": "VIII",
+		"typeMask": 327680
+	},
+	{
+		"id": 862,
+		"pokemon": "Obstagoon",
+		"type": ["Dark", "Normal"],
+		"generation": "VIII",
+		"typeMask": 65538
+	},
+	{
+		"id": 863,
+		"pokemon": "Perrserker",
+		"type": ["Steel"],
+		"generation": "VIII",
+		"typeMask": 131072
+	},
+	{
+		"id": 864,
+		"pokemon": "Cursola",
+		"type": ["Ghost"],
+		"generation": "VIII",
+		"typeMask": 16384
+	},
+	{
+		"id": 865,
+		"pokemon": "Sirfetch'd",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 866,
+		"pokemon": "Mr. Rime",
+		"type": ["Ice", "Psychic"],
+		"generation": "VIII",
+		"typeMask": 2112
+	},
+	{
+		"id": 867,
+		"pokemon": "Runerigus",
+		"type": ["Ground", "Ghost"],
+		"generation": "VIII",
+		"typeMask": 16896
+	},
+	{
+		"id": 868,
+		"pokemon": "Milcery",
+		"type": ["Fairy"],
+		"generation": "VIII",
+		"typeMask": 262144
+	},
+	{
+		"id": 869,
+		"pokemon": "Alcremie",
+		"type": ["Fairy"],
+		"generation": "VIII",
+		"typeMask": 262144
+	},
+	{
+		"id": 870,
+		"pokemon": "Falinks",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 871,
+		"pokemon": "Pincurchin",
+		"type": ["Electric"],
+		"generation": "VIII",
+		"typeMask": 16
+	},
+	{
+		"id": 872,
+		"pokemon": "Snom",
+		"type": ["Ice", "Bug"],
+		"generation": "VIII",
+		"typeMask": 4160
+	},
+	{
+		"id": 873,
+		"pokemon": "Frosmoth",
+		"type": ["Ice", "Bug"],
+		"generation": "VIII",
+		"typeMask": 4160
+	},
+	{
+		"id": 874,
+		"pokemon": "Stonjourner",
+		"type": ["Rock"],
+		"generation": "VIII",
+		"typeMask": 8192
+	},
+	{
+		"id": 875,
+		"pokemon": "Eiscue",
+		"type": ["Ice"],
+		"generation": "VIII",
+		"typeMask": 64
+	},
+	{
+		"id": 876,
+		"pokemon": "Indeedee",
+		"type": ["Psychic", "Normal"],
+		"generation": "VIII",
+		"typeMask": 2050
+	},
+	{
+		"id": 877,
+		"pokemon": "Morpeko",
+		"type": ["Electric", "Dark"],
+		"generation": "VIII",
+		"typeMask": 65552
+	},
+	{
+		"id": 878,
+		"pokemon": "Cufant",
+		"type": ["Steel"],
+		"generation": "VIII",
+		"typeMask": 131072
+	},
+	{
+		"id": 879,
+		"pokemon": "Copperajah",
+		"type": ["Steel"],
+		"generation": "VIII",
+		"typeMask": 131072
+	},
+	{
+		"id": 880,
+		"pokemon": "Dracozolt",
+		"type": ["Electric", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 32784
+	},
+	{
+		"id": 881,
+		"pokemon": "Arctozolt",
+		"type": ["Electric", "Ice"],
+		"generation": "VIII",
+		"typeMask": 80
+	},
+	{
+		"id": 882,
+		"pokemon": "Dracovish",
+		"type": ["Water", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 32776
+	},
+	{
+		"id": 883,
+		"pokemon": "Arctovish",
+		"type": ["Water", "Ice"],
+		"generation": "VIII",
+		"typeMask": 72
+	},
+	{
+		"id": 884,
+		"pokemon": "Duraludon",
+		"type": ["Steel", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 163840
+	},
+	{
+		"id": 885,
+		"pokemon": "Dreepy",
+		"type": ["Dragon", "Ghost"],
+		"generation": "VIII",
+		"typeMask": 49152
+	},
+	{
+		"id": 886,
+		"pokemon": "Drakloak",
+		"type": ["Dragon", "Ghost"],
+		"generation": "VIII",
+		"typeMask": 49152
+	},
+	{
+		"id": 887,
+		"pokemon": "Dragapult",
+		"type": ["Dragon", "Ghost"],
+		"generation": "VIII",
+		"typeMask": 49152
+	},
+	{
+		"id": 888,
+		"pokemon": "Zacian",
+		"type": ["Fairy"],
+		"generation": "VIII",
+		"typeMask": 262144
+	},
+	{
+		"id": 889,
+		"pokemon": "Zamazenta",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 890,
+		"pokemon": "Eternatus",
+		"type": ["Poison", "Dragon"],
+		"generation": "VIII",
+		"typeMask": 33024
+	},
+	{
+		"id": 891,
+		"pokemon": "Kubfu",
+		"type": ["Fighting"],
+		"generation": "VIII",
+		"typeMask": 128
+	},
+	{
+		"id": 892,
+		"pokemon": "Urshifu",
+		"type": ["Fighting", "Dark"],
+		"generation": "VIII",
+		"typeMask": 65664
+	},
+	{
+		"id": 893,
+		"pokemon": "Zarude",
+		"type": ["Dark", "Grass"],
+		"generation": "VIII",
+		"typeMask": 65568
+	},
+	{
+		"id": 894,
+		"pokemon": "Regieleki",
+		"type": ["Electric"],
+		"generation": "VIII",
+		"typeMask": 16
+	},
+	{
+		"id": 895,
+		"pokemon": "Regidrago",
+		"type": ["Dragon"],
+		"generation": "VIII",
+		"typeMask": 32768
+	},
+	{
+		"id": 896,
+		"pokemon": "Glastrier",
+		"type": ["Ice"],
+		"generation": "VIII",
+		"typeMask": 64
+	},
+	{
+		"id": 897,
+		"pokemon": "Spectrier",
+		"type": ["Ghost"],
+		"generation": "VIII",
+		"typeMask": 16384
+	},
+	{
+		"id": 898,
+		"pokemon": "Calyrex",
+		"type": ["Psychic", "Grass"],
+		"generation": "VIII",
+		"typeMask": 2080
+	},
+	{
+		"id": 899,
+		"pokemon": "Wyrdeer",
+		"type": ["Normal", "Psychic"],
+		"generation": "VIII",
+		"typeMask": 2050
+	},
+	{
+		"id": 900,
+		"pokemon": "Kleavor",
+		"type": ["Bug", "Rock"],
+		"generation": "VIII",
+		"typeMask": 12288
+	},
+	{
+		"id": 901,
+		"pokemon": "Ursaluna",
+		"type": ["Ground", "Normal"],
+		"generation": "VIII",
+		"typeMask": 514
+	},
+	{
+		"id": 902,
+		"pokemon": "Basculegion",
+		"type": ["Water", "Ghost"],
+		"generation": "VIII",
+		"typeMask": 16392
+	},
+	{
+		"id": 903,
+		"pokemon": "Sneasler",
+		"type": ["Fighting", "Poison"],
+		"generation": "VIII",
+		"typeMask": 384
+	},
+	{
+		"id": 904,
+		"pokemon": "Overqwil",
+		"type": ["Dark", "Poison"],
+		"generation": "VIII",
+		"typeMask": 65792
+	},
+	{
+		"id": 905,
+		"pokemon": "Enamorus",
+		"type": ["Fairy", "Flying"],
+		"generation": "VIII",
+		"typeMask": 263168
+	},
+	{
+		"id": 906,
+		"pokemon": "Sprigatito",
+		"type": ["Grass"],
+		"generation": "IX",
+		"typeMask": 32
+	},
+	{
+		"id": 907,
+		"pokemon": "Floragato",
+		"type": ["Grass"],
+		"generation": "IX",
+		"typeMask": 32
+	},
+	{
+		"id": 908,
+		"pokemon": "Meowscarada",
+		"type": ["Grass", "Dark"],
+		"generation": "IX",
+		"typeMask": 65568
+	},
+	{
+		"id": 909,
+		"pokemon": "Fuecoco",
+		"type": ["Fire"],
+		"generation": "IX",
+		"typeMask": 4
+	},
+	{
+		"id": 910,
+		"pokemon": "Crocalor",
+		"type": ["Fire"],
+		"generation": "IX",
+		"typeMask": 4
+	},
+	{
+		"id": 911,
+		"pokemon": "Skeledirge",
+		"type": ["Fire", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16388
+	},
+	{
+		"id": 912,
+		"pokemon": "Quaxly",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 913,
+		"pokemon": "Quaxwell",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 914,
+		"pokemon": "Quaquaval",
+		"type": ["Water", "Fighting"],
+		"generation": "IX",
+		"typeMask": 136
+	},
+	{
+		"id": 915,
+		"pokemon": "Lechonk",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 916,
+		"pokemon": "Oinkologne",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 917,
+		"pokemon": "Tarountula",
+		"type": ["Bug"],
+		"generation": "IX",
+		"typeMask": 4096
+	},
+	{
+		"id": 918,
+		"pokemon": "Spidops",
+		"type": ["Bug"],
+		"generation": "IX",
+		"typeMask": 4096
+	},
+	{
+		"id": 919,
+		"pokemon": "Nymble",
+		"type": ["Bug"],
+		"generation": "IX",
+		"typeMask": 4096
+	},
+	{
+		"id": 920,
+		"pokemon": "Lokix",
+		"type": ["Bug", "Dark"],
+		"generation": "IX",
+		"typeMask": 69632
+	},
+	{
+		"id": 921,
+		"pokemon": "Pawmi",
+		"type": ["Electric"],
+		"generation": "IX",
+		"typeMask": 16
+	},
+	{
+		"id": 922,
+		"pokemon": "Pawmo",
+		"type": ["Electric", "Fighting"],
+		"generation": "IX",
+		"typeMask": 144
+	},
+	{
+		"id": 923,
+		"pokemon": "Pawmot",
+		"type": ["Electric", "Fighting"],
+		"generation": "IX",
+		"typeMask": 144
+	},
+	{
+		"id": 924,
+		"pokemon": "Tandemaus",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 925,
+		"pokemon": "Maushold",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 926,
+		"pokemon": "Fidough",
+		"type": ["Fairy"],
+		"generation": "IX",
+		"typeMask": 262144
+	},
+	{
+		"id": 927,
+		"pokemon": "Dachsbun",
+		"type": ["Fairy"],
+		"generation": "IX",
+		"typeMask": 262144
+	},
+	{
+		"id": 928,
+		"pokemon": "Smoliv",
+		"type": ["Grass", "Normal"],
+		"generation": "IX",
+		"typeMask": 34
+	},
+	{
+		"id": 929,
+		"pokemon": "Dolliv",
+		"type": ["Grass", "Normal"],
+		"generation": "IX",
+		"typeMask": 34
+	},
+	{
+		"id": 930,
+		"pokemon": "Arboliva",
+		"type": ["Grass", "Normal"],
+		"generation": "IX",
+		"typeMask": 34
+	},
+	{
+		"id": 931,
+		"pokemon": "Squawkabilly",
+		"type": ["Normal", "Flying"],
+		"generation": "IX",
+		"typeMask": 1026
+	},
+	{
+		"id": 932,
+		"pokemon": "Nacli",
+		"type": ["Rock"],
+		"generation": "IX",
+		"typeMask": 8192
+	},
+	{
+		"id": 933,
+		"pokemon": "Naclstack",
+		"type": ["Rock"],
+		"generation": "IX",
+		"typeMask": 8192
+	},
+	{
+		"id": 934,
+		"pokemon": "Garganacl",
+		"type": ["Rock"],
+		"generation": "IX",
+		"typeMask": 8192
+	},
+	{
+		"id": 935,
+		"pokemon": "Charcadet",
+		"type": ["Fire"],
+		"generation": "IX",
+		"typeMask": 4
+	},
+	{
+		"id": 936,
+		"pokemon": "Armarouge",
+		"type": ["Fire", "Psychic"],
+		"generation": "IX",
+		"typeMask": 2052
+	},
+	{
+		"id": 937,
+		"pokemon": "Ceruledge",
+		"type": ["Fire", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16388
+	},
+	{
+		"id": 938,
+		"pokemon": "Tadbulb",
+		"type": ["Electric"],
+		"generation": "IX",
+		"typeMask": 16
+	},
+	{
+		"id": 939,
+		"pokemon": "Bellibolt",
+		"type": ["Electric"],
+		"generation": "IX",
+		"typeMask": 16
+	},
+	{
+		"id": 940,
+		"pokemon": "Wattrel",
+		"type": ["Electric", "Flying"],
+		"generation": "IX",
+		"typeMask": 1040
+	},
+	{
+		"id": 941,
+		"pokemon": "Kilowattrel",
+		"type": ["Electric", "Flying"],
+		"generation": "IX",
+		"typeMask": 1040
+	},
+	{
+		"id": 942,
+		"pokemon": "Maschiff",
+		"type": ["Dark"],
+		"generation": "IX",
+		"typeMask": 65536
+	},
+	{
+		"id": 943,
+		"pokemon": "Mabosstiff",
+		"type": ["Dark"],
+		"generation": "IX",
+		"typeMask": 65536
+	},
+	{
+		"id": 944,
+		"pokemon": "Shroodle",
+		"type": ["Poison", "Normal"],
+		"generation": "IX",
+		"typeMask": 258
+	},
+	{
+		"id": 945,
+		"pokemon": "Grafaiai",
+		"type": ["Poison", "Normal"],
+		"generation": "IX",
+		"typeMask": 258
+	},
+	{
+		"id": 946,
+		"pokemon": "Bramblin",
+		"type": ["Grass", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16416
+	},
+	{
+		"id": 947,
+		"pokemon": "Brambleghast",
+		"type": ["Grass", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16416
+	},
+	{
+		"id": 948,
+		"pokemon": "Toedscool",
+		"type": ["Ground", "Grass"],
+		"generation": "IX",
+		"typeMask": 544
+	},
+	{
+		"id": 949,
+		"pokemon": "Toedscruel",
+		"type": ["Ground", "Grass"],
+		"generation": "IX",
+		"typeMask": 544
+	},
+	{
+		"id": 950,
+		"pokemon": "Klawf",
+		"type": ["Rock"],
+		"generation": "IX",
+		"typeMask": 8192
+	},
+	{
+		"id": 951,
+		"pokemon": "Capsakid",
+		"type": ["Grass"],
+		"generation": "IX",
+		"typeMask": 32
+	},
+	{
+		"id": 952,
+		"pokemon": "Scovillain",
+		"type": ["Grass", "Fire"],
+		"generation": "IX",
+		"typeMask": 36
+	},
+	{
+		"id": 953,
+		"pokemon": "Rellor",
+		"type": ["Bug"],
+		"generation": "IX",
+		"typeMask": 4096
+	},
+	{
+		"id": 954,
+		"pokemon": "Rabsca",
+		"type": ["Bug", "Psychic"],
+		"generation": "IX",
+		"typeMask": 6144
+	},
+	{
+		"id": 955,
+		"pokemon": "Flittle",
+		"type": ["Psychic"],
+		"generation": "IX",
+		"typeMask": 2048
+	},
+	{
+		"id": 956,
+		"pokemon": "Espathra",
+		"type": ["Psychic"],
+		"generation": "IX",
+		"typeMask": 2048
+	},
+	{
+		"id": 957,
+		"pokemon": "Tinkatink",
+		"type": ["Fairy", "Steel"],
+		"generation": "IX",
+		"typeMask": 393216
+	},
+	{
+		"id": 958,
+		"pokemon": "Tinkatuff",
+		"type": ["Fairy", "Steel"],
+		"generation": "IX",
+		"typeMask": 393216
+	},
+	{
+		"id": 959,
+		"pokemon": "Tinkaton",
+		"type": ["Fairy", "Steel"],
+		"generation": "IX",
+		"typeMask": 393216
+	},
+	{
+		"id": 960,
+		"pokemon": "Wiglett",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 961,
+		"pokemon": "Wugtrio",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 962,
+		"pokemon": "Bombirdier",
+		"type": ["Flying", "Dark"],
+		"generation": "IX",
+		"typeMask": 66560
+	},
+	{
+		"id": 963,
+		"pokemon": "Finizen",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 964,
+		"pokemon": "Palafin",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 965,
+		"pokemon": "Varoom",
+		"type": ["Steel", "Poison"],
+		"generation": "IX",
+		"typeMask": 131328
+	},
+	{
+		"id": 966,
+		"pokemon": "Revavroom",
+		"type": ["Steel", "Poison"],
+		"generation": "IX",
+		"typeMask": 131328
+	},
+	{
+		"id": 967,
+		"pokemon": "Cyclizar",
+		"type": ["Dragon", "Normal"],
+		"generation": "IX",
+		"typeMask": 32770
+	},
+	{
+		"id": 968,
+		"pokemon": "Orthworm",
+		"type": ["Steel"],
+		"generation": "IX",
+		"typeMask": 131072
+	},
+	{
+		"id": 969,
+		"pokemon": "Glimmet",
+		"type": ["Rock", "Poison"],
+		"generation": "IX",
+		"typeMask": 8448
+	},
+	{
+		"id": 970,
+		"pokemon": "Glimmora",
+		"type": ["Rock", "Poison"],
+		"generation": "IX",
+		"typeMask": 8448
+	},
+	{
+		"id": 971,
+		"pokemon": "Greavard",
+		"type": ["Ghost"],
+		"generation": "IX",
+		"typeMask": 16384
+	},
+	{
+		"id": 972,
+		"pokemon": "Houndstone",
+		"type": ["Ghost"],
+		"generation": "IX",
+		"typeMask": 16384
+	},
+	{
+		"id": 973,
+		"pokemon": "Flamigo",
+		"type": ["Flying", "Fighting"],
+		"generation": "IX",
+		"typeMask": 1152
+	},
+	{
+		"id": 974,
+		"pokemon": "Cetoddle",
+		"type": ["Ice"],
+		"generation": "IX",
+		"typeMask": 64
+	},
+	{
+		"id": 975,
+		"pokemon": "Cetitan",
+		"type": ["Ice"],
+		"generation": "IX",
+		"typeMask": 64
+	},
+	{
+		"id": 976,
+		"pokemon": "Veluza",
+		"type": ["Water", "Psychic"],
+		"generation": "IX",
+		"typeMask": 2056
+	},
+	{
+		"id": 977,
+		"pokemon": "Dondozo",
+		"type": ["Water"],
+		"generation": "IX",
+		"typeMask": 8
+	},
+	{
+		"id": 978,
+		"pokemon": "Tatsugiri",
+		"type": ["Dragon", "Water"],
+		"generation": "IX",
+		"typeMask": 32776
+	},
+	{
+		"id": 979,
+		"pokemon": "Annihilape",
+		"type": ["Fighting", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16512
+	},
+	{
+		"id": 980,
+		"pokemon": "Clodsire",
+		"type": ["Poison", "Ground"],
+		"generation": "IX",
+		"typeMask": 768
+	},
+	{
+		"id": 981,
+		"pokemon": "Farigiraf",
+		"type": ["Normal", "Psychic"],
+		"generation": "IX",
+		"typeMask": 2050
+	},
+	{
+		"id": 982,
+		"pokemon": "Dudunsparce",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 983,
+		"pokemon": "Kingambit",
+		"type": ["Dark", "Steel"],
+		"generation": "IX",
+		"typeMask": 196608
+	},
+	{
+		"id": 984,
+		"pokemon": "Great Tusk",
+		"type": ["Ground", "Fighting"],
+		"generation": "IX",
+		"typeMask": 640
+	},
+	{
+		"id": 985,
+		"pokemon": "Scream Tail",
+		"type": ["Fairy", "Psychic"],
+		"generation": "IX",
+		"typeMask": 264192
+	},
+	{
+		"id": 986,
+		"pokemon": "Brute Bonnet",
+		"type": ["Grass", "Dark"],
+		"generation": "IX",
+		"typeMask": 65568
+	},
+	{
+		"id": 987,
+		"pokemon": "Flutter Mane",
+		"type": ["Ghost", "Fairy"],
+		"generation": "IX",
+		"typeMask": 278528
+	},
+	{
+		"id": 988,
+		"pokemon": "Slither Wing",
+		"type": ["Bug", "Fighting"],
+		"generation": "IX",
+		"typeMask": 4224
+	},
+	{
+		"id": 989,
+		"pokemon": "Sandy Shocks",
+		"type": ["Electric", "Ground"],
+		"generation": "IX",
+		"typeMask": 528
+	},
+	{
+		"id": 990,
+		"pokemon": "Iron Treads",
+		"type": ["Ground", "Steel"],
+		"generation": "IX",
+		"typeMask": 131584
+	},
+	{
+		"id": 991,
+		"pokemon": "Iron Bundle",
+		"type": ["Ice", "Water"],
+		"generation": "IX",
+		"typeMask": 72
+	},
+	{
+		"id": 992,
+		"pokemon": "Iron Hands",
+		"type": ["Fighting", "Electric"],
+		"generation": "IX",
+		"typeMask": 144
+	},
+	{
+		"id": 993,
+		"pokemon": "Iron Jugulis",
+		"type": ["Dark", "Flying"],
+		"generation": "IX",
+		"typeMask": 66560
+	},
+	{
+		"id": 994,
+		"pokemon": "Iron Moth",
+		"type": ["Fire", "Poison"],
+		"generation": "IX",
+		"typeMask": 260
+	},
+	{
+		"id": 995,
+		"pokemon": "Iron Thorns",
+		"type": ["Rock", "Electric"],
+		"generation": "IX",
+		"typeMask": 8208
+	},
+	{
+		"id": 996,
+		"pokemon": "Frigibax",
+		"type": ["Dragon", "Ice"],
+		"generation": "IX",
+		"typeMask": 32832
+	},
+	{
+		"id": 997,
+		"pokemon": "Arctibax",
+		"type": ["Dragon", "Ice"],
+		"generation": "IX",
+		"typeMask": 32832
+	},
+	{
+		"id": 998,
+		"pokemon": "Baxcalibur",
+		"type": ["Dragon", "Ice"],
+		"generation": "IX",
+		"typeMask": 32832
+	},
+	{
+		"id": 999,
+		"pokemon": "Gimmighoul",
+		"type": ["Ghost"],
+		"generation": "IX",
+		"typeMask": 16384
+	},
+	{
+		"id": 1000,
+		"pokemon": "Gholdengo",
+		"type": ["Steel", "Ghost"],
+		"generation": "IX",
+		"typeMask": 147456
+	},
+	{
+		"id": 1001,
+		"pokemon": "Wo-Chien",
+		"type": ["Dark", "Grass"],
+		"generation": "IX",
+		"typeMask": 65568
+	},
+	{
+		"id": 1002,
+		"pokemon": "Chien-Pao",
+		"type": ["Dark", "Ice"],
+		"generation": "IX",
+		"typeMask": 65600
+	},
+	{
+		"id": 1003,
+		"pokemon": "Ting-Lu",
+		"type": ["Dark", "Ground"],
+		"generation": "IX",
+		"typeMask": 66048
+	},
+	{
+		"id": 1004,
+		"pokemon": "Chi-Yu",
+		"type": ["Dark", "Fire"],
+		"generation": "IX",
+		"typeMask": 65540
+	},
+	{
+		"id": 1005,
+		"pokemon": "Roaring Moon",
+		"type": ["Dragon", "Dark"],
+		"generation": "IX",
+		"typeMask": 98304
+	},
+	{
+		"id": 1006,
+		"pokemon": "Iron Valiant",
+		"type": ["Fairy", "Fighting"],
+		"generation": "IX",
+		"typeMask": 262272
+	},
+	{
+		"id": 1007,
+		"pokemon": "Koraidon",
+		"type": ["Fighting", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32896
+	},
+	{
+		"id": 1008,
+		"pokemon": "Miraidon",
+		"type": ["Electric", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32784
+	},
+	{
+		"id": 1009,
+		"pokemon": "Walking Wake",
+		"type": ["Water", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32776
+	},
+	{
+		"id": 1010,
+		"pokemon": "Iron Leaves",
+		"type": ["Grass", "Psychic"],
+		"generation": "IX",
+		"typeMask": 2080
+	},
+	{
+		"id": 1011,
+		"pokemon": "Dipplin",
+		"type": ["Grass", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32800
+	},
+	{
+		"id": 1012,
+		"pokemon": "Poltchageist",
+		"type": ["Grass", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16416
+	},
+	{
+		"id": 1013,
+		"pokemon": "Sinistcha",
+		"type": ["Grass", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16416
+	},
+	{
+		"id": 1014,
+		"pokemon": "Okidogi",
+		"type": ["Poison", "Fighting"],
+		"generation": "IX",
+		"typeMask": 384
+	},
+	{
+		"id": 1015,
+		"pokemon": "Munkidori",
+		"type": ["Poison", "Psychic"],
+		"generation": "IX",
+		"typeMask": 2304
+	},
+	{
+		"id": 1016,
+		"pokemon": "Fezandipiti",
+		"type": ["Poison", "Fairy"],
+		"generation": "IX",
+		"typeMask": 262400
+	},
+	{
+		"id": 1017,
+		"pokemon": "Ogerpon",
+		"type": ["Grass"],
+		"generation": "IX",
+		"typeMask": 32
+	},
+	{
+		"id": 1018,
+		"pokemon": "Archaludon",
+		"type": ["Steel", "Dragon"],
+		"generation": "IX",
+		"typeMask": 163840
+	},
+	{
+		"id": 1019,
+		"pokemon": "Hydrapple",
+		"type": ["Grass", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32800
+	},
+	{
+		"id": 1020,
+		"pokemon": "Gouging Fire",
+		"type": ["Fire", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32772
+	},
+	{
+		"id": 1021,
+		"pokemon": "Raging Bolt",
+		"type": ["Electric", "Dragon"],
+		"generation": "IX",
+		"typeMask": 32784
+	},
+	{
+		"id": 1022,
+		"pokemon": "Iron Boulder",
+		"type": ["Rock", "Psychic"],
+		"generation": "IX",
+		"typeMask": 10240
+	},
+	{
+		"id": 1023,
+		"pokemon": "Iron Crown",
+		"type": ["Steel", "Psychic"],
+		"generation": "IX",
+		"typeMask": 133120
+	},
+	{
+		"id": 1024,
+		"pokemon": "Terapagos",
+		"type": ["Normal"],
+		"generation": "IX",
+		"typeMask": 2
+	},
+	{
+		"id": 1025,
+		"pokemon": "Pecharunt",
+		"type": ["Poison", "Ghost"],
+		"generation": "IX",
+		"typeMask": 16640
+	}
+]

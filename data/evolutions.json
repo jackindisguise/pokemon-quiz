@@ -1,0 +1,2134 @@
+[
+  {
+    "from": 1,
+    "to": 2,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 2,
+    "to": 3,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 4,
+    "to": 5,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 5,
+    "to": 6,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 7,
+    "to": 8,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 8,
+    "to": 9,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 10,
+    "to": 11,
+    "method": "level-up",
+    "requirements": {
+      "level": 7
+    }
+  },
+  {
+    "from": 11,
+    "to": 12,
+    "method": "level-up",
+    "requirements": {
+      "level": 10
+    }
+  },
+  {
+    "from": 13,
+    "to": 14,
+    "method": "level-up",
+    "requirements": {
+      "level": 7
+    }
+  },
+  {
+    "from": 14,
+    "to": 15,
+    "method": "level-up",
+    "requirements": {
+      "level": 10
+    }
+  },
+  {
+    "from": 16,
+    "to": 17,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 17,
+    "to": 18,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 19,
+    "to": 20,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 19,
+    "to": 20,
+    "method": "level-up",
+    "requirements": {
+      "level": 20,
+      "time_of_day": "night"
+    }
+  },
+  {
+    "from": 21,
+    "to": 22,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 23,
+    "to": 24,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 172,
+    "to": 25,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 220
+    }
+  },
+  {
+    "from": 25,
+    "to": 26,
+    "method": "use-item",
+    "requirements": {
+      "item": "Thunder Stone"
+    }
+  },
+  {
+    "from": 27,
+    "to": 28,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 27,
+    "to": 28,
+    "method": "use-item",
+    "requirements": {
+      "item": "Ice Stone"
+    }
+  },
+  {
+    "from": 29,
+    "to": 30,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 30,
+    "to": 31,
+    "method": "use-item",
+    "requirements": {
+      "item": "Moon Stone"
+    }
+  },
+  {
+    "from": 32,
+    "to": 33,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 33,
+    "to": 34,
+    "method": "use-item",
+    "requirements": {
+      "item": "Moon Stone"
+    }
+  },
+  {
+    "from": 173,
+    "to": 35,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 35,
+    "to": 36,
+    "method": "use-item",
+    "requirements": {
+      "item": "Moon Stone"
+    }
+  },
+  {
+    "from": 37,
+    "to": 38,
+    "method": "use-item",
+    "requirements": {
+      "item": "Fire Stone"
+    }
+  },
+  {
+    "from": 37,
+    "to": 38,
+    "method": "use-item",
+    "requirements": {
+      "item": "Ice Stone"
+    }
+  },
+  {
+    "from": 174,
+    "to": 39,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 39,
+    "to": 40,
+    "method": "use-item",
+    "requirements": {
+      "item": "Moon Stone"
+    }
+  },
+  {
+    "from": 41,
+    "to": 42,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 42,
+    "to": 169,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 43,
+    "to": 44,
+    "method": "level-up",
+    "requirements": {
+      "level": 21
+    }
+  },
+  {
+    "from": 44,
+    "to": 45,
+    "method": "use-item",
+    "requirements": {
+      "item": "Leaf Stone"
+    }
+  },
+  {
+    "from": 44,
+    "to": 182,
+    "method": "use-item",
+    "requirements": {
+      "item": "Sun Stone"
+    }
+  },
+  {
+    "from": 46,
+    "to": 47,
+    "method": "level-up",
+    "requirements": {
+      "level": 24
+    }
+  },
+  {
+    "from": 48,
+    "to": 49,
+    "method": "level-up",
+    "requirements": {
+      "level": 31
+    }
+  },
+  {
+    "from": 50,
+    "to": 51,
+    "method": "level-up",
+    "requirements": {
+      "level": 26
+    }
+  },
+  {
+    "from": 52,
+    "to": 53,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 52,
+    "to": 53,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 52,
+    "to": 863,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 54,
+    "to": 55,
+    "method": "level-up",
+    "requirements": {
+      "level": 33
+    }
+  },
+  {
+    "from": 56,
+    "to": 57,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 57,
+    "to": 979,
+    "method": "use-move",
+    "requirements": {
+      "move_count": 20
+    }
+  },
+  {
+    "from": 58,
+    "to": 59,
+    "method": "use-item",
+    "requirements": {
+      "item": "Fire Stone"
+    }
+  },
+  {
+    "from": 60,
+    "to": 61,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 61,
+    "to": 62,
+    "method": "use-item",
+    "requirements": {
+      "item": "Water Stone"
+    }
+  },
+  {
+    "from": 61,
+    "to": 186,
+    "method": "trade",
+    "requirements": {
+      "held_item": "King's Rock"
+    }
+  },
+  {
+    "from": 63,
+    "to": 64,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 64,
+    "to": 65,
+    "method": "trade"
+  },
+  {
+    "from": 66,
+    "to": 67,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 67,
+    "to": 68,
+    "method": "trade"
+  },
+  {
+    "from": 69,
+    "to": 70,
+    "method": "level-up",
+    "requirements": {
+      "level": 21
+    }
+  },
+  {
+    "from": 70,
+    "to": 71,
+    "method": "use-item",
+    "requirements": {
+      "item": "Leaf Stone"
+    }
+  },
+  {
+    "from": 72,
+    "to": 73,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 74,
+    "to": 75,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 75,
+    "to": 76,
+    "method": "trade"
+  },
+  {
+    "from": 77,
+    "to": 78,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 79,
+    "to": 80,
+    "method": "level-up",
+    "requirements": {
+      "level": 37
+    }
+  },
+  {
+    "from": 79,
+    "to": 80,
+    "method": "use-item",
+    "requirements": {
+      "item": "Galarica Cuff"
+    }
+  },
+  {
+    "from": 79,
+    "to": 199,
+    "method": "trade",
+    "requirements": {
+      "held_item": "King's Rock"
+    }
+  },
+  {
+    "from": 79,
+    "to": 199,
+    "method": "use-item",
+    "requirements": {
+      "item": "Galarica Wreath"
+    }
+  },
+  {
+    "from": 81,
+    "to": 82,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "level-up",
+    "requirements": {
+      "location": "Mt Coronet"
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "level-up",
+    "requirements": {
+      "location": "Chargestone Cave"
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "level-up",
+    "requirements": {
+      "location": "Kalos Route 13"
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "level-up",
+    "requirements": {
+      "location": "Blush Mountain"
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "level-up",
+    "requirements": {
+      "location": "Vast Poni Canyon"
+    }
+  },
+  {
+    "from": 82,
+    "to": 462,
+    "method": "use-item",
+    "requirements": {
+      "item": "Thunder Stone"
+    }
+  },
+  {
+    "from": 83,
+    "to": 865,
+    "method": "three-critical-hits"
+  },
+  {
+    "from": 84,
+    "to": 85,
+    "method": "level-up",
+    "requirements": {
+      "level": 31
+    }
+  },
+  {
+    "from": 86,
+    "to": 87,
+    "method": "level-up",
+    "requirements": {
+      "level": 34
+    }
+  },
+  {
+    "from": 88,
+    "to": 89,
+    "method": "level-up",
+    "requirements": {
+      "level": 38
+    }
+  },
+  {
+    "from": 90,
+    "to": 91,
+    "method": "use-item",
+    "requirements": {
+      "item": "Water Stone"
+    }
+  },
+  {
+    "from": 92,
+    "to": 93,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 93,
+    "to": 94,
+    "method": "trade"
+  },
+  {
+    "from": 95,
+    "to": 208,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Metal Coat"
+    }
+  },
+  {
+    "from": 96,
+    "to": 97,
+    "method": "level-up",
+    "requirements": {
+      "level": 26
+    }
+  },
+  {
+    "from": 98,
+    "to": 99,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 100,
+    "to": 101,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 102,
+    "to": 103,
+    "method": "use-item",
+    "requirements": {
+      "item": "Leaf Stone"
+    }
+  },
+  {
+    "from": 104,
+    "to": 105,
+    "method": "level-up",
+    "requirements": {
+      "level": 28
+    }
+  },
+  {
+    "from": 104,
+    "to": 105,
+    "method": "level-up",
+    "requirements": {
+      "level": 28,
+      "time_of_day": "night"
+    }
+  },
+  {
+    "from": 236,
+    "to": 106,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 236,
+    "to": 107,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 236,
+    "to": 237,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 108,
+    "to": 463,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 676
+    }
+  },
+  {
+    "from": 109,
+    "to": 110,
+    "method": "level-up",
+    "requirements": {
+      "level": 35
+    }
+  },
+  {
+    "from": 111,
+    "to": 112,
+    "method": "level-up",
+    "requirements": {
+      "level": 42
+    }
+  },
+  {
+    "from": 112,
+    "to": 464,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Protector"
+    }
+  },
+  {
+    "from": 440,
+    "to": 113,
+    "method": "level-up",
+    "requirements": {
+      "time_of_day": "day",
+      "held_item": "Oval Stone"
+    }
+  },
+  {
+    "from": 113,
+    "to": 242,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 114,
+    "to": 465,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 21
+    }
+  },
+  {
+    "from": 116,
+    "to": 117,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 117,
+    "to": 230,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Dragon Scale"
+    }
+  },
+  {
+    "from": 118,
+    "to": 119,
+    "method": "level-up",
+    "requirements": {
+      "level": 33
+    }
+  },
+  {
+    "from": 120,
+    "to": 121,
+    "method": "use-item",
+    "requirements": {
+      "item": "Water Stone"
+    }
+  },
+  {
+    "from": 439,
+    "to": 122,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 523
+    }
+  },
+  {
+    "from": 122,
+    "to": 866,
+    "method": "level-up",
+    "requirements": {
+      "level": 42
+    }
+  },
+  {
+    "from": 123,
+    "to": 212,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Metal Coat"
+    }
+  },
+  {
+    "from": 123,
+    "to": 900,
+    "method": "use-item",
+    "requirements": {
+      "item": "Black Augurite"
+    }
+  },
+  {
+    "from": 238,
+    "to": 124,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 239,
+    "to": 125,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 125,
+    "to": 466,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Electirizer"
+    }
+  },
+  {
+    "from": 240,
+    "to": 126,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 126,
+    "to": 467,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Magmarizer"
+    }
+  },
+  {
+    "from": 129,
+    "to": 130,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 133,
+    "to": 134,
+    "method": "use-item",
+    "requirements": {
+      "item": "Water Stone"
+    }
+  },
+  {
+    "from": 133,
+    "to": 135,
+    "method": "use-item",
+    "requirements": {
+      "item": "Thunder Stone"
+    }
+  },
+  {
+    "from": 133,
+    "to": 136,
+    "method": "use-item",
+    "requirements": {
+      "item": "Fire Stone"
+    }
+  },
+  {
+    "from": 133,
+    "to": 196,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160,
+      "time_of_day": "day"
+    }
+  },
+  {
+    "from": 133,
+    "to": 197,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160,
+      "time_of_day": "night"
+    }
+  },
+  {
+    "from": 133,
+    "to": 470,
+    "method": "level-up",
+    "requirements": {
+      "location": "Eterna Forest"
+    }
+  },
+  {
+    "from": 133,
+    "to": 470,
+    "method": "level-up",
+    "requirements": {
+      "location": "Pinwheel Forest"
+    }
+  },
+  {
+    "from": 133,
+    "to": 470,
+    "method": "level-up",
+    "requirements": {
+      "location": "Kalos Route 20"
+    }
+  },
+  {
+    "from": 133,
+    "to": 470,
+    "method": "use-item",
+    "requirements": {
+      "item": "Leaf Stone"
+    }
+  },
+  {
+    "from": 133,
+    "to": 471,
+    "method": "level-up",
+    "requirements": {
+      "location": "Sinnoh Route 217"
+    }
+  },
+  {
+    "from": 133,
+    "to": 471,
+    "method": "level-up",
+    "requirements": {
+      "location": "Twist Mountain"
+    }
+  },
+  {
+    "from": 133,
+    "to": 471,
+    "method": "level-up",
+    "requirements": {
+      "location": "Frost Cavern"
+    }
+  },
+  {
+    "from": 133,
+    "to": 471,
+    "method": "use-item",
+    "requirements": {
+      "item": "Ice Stone"
+    }
+  },
+  {
+    "from": 133,
+    "to": 700,
+    "method": "level-up",
+    "requirements": {
+      "affection": 2,
+      "known_move_type": "fairy"
+    }
+  },
+  {
+    "from": 133,
+    "to": 700,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160,
+      "known_move_type": "fairy"
+    }
+  },
+  {
+    "from": 137,
+    "to": 233,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Up Grade"
+    }
+  },
+  {
+    "from": 233,
+    "to": 474,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Dubious Disc"
+    }
+  },
+  {
+    "from": 138,
+    "to": 139,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 140,
+    "to": 141,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 446,
+    "to": 143,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 147,
+    "to": 148,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 148,
+    "to": 149,
+    "method": "level-up",
+    "requirements": {
+      "level": 55
+    }
+  },
+  {
+    "from": 152,
+    "to": 153,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 153,
+    "to": 154,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 155,
+    "to": 156,
+    "method": "level-up",
+    "requirements": {
+      "level": 14
+    }
+  },
+  {
+    "from": 156,
+    "to": 157,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 158,
+    "to": 159,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 159,
+    "to": 160,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 161,
+    "to": 162,
+    "method": "level-up",
+    "requirements": {
+      "level": 15
+    }
+  },
+  {
+    "from": 163,
+    "to": 164,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 165,
+    "to": 166,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 167,
+    "to": 168,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 170,
+    "to": 171,
+    "method": "level-up",
+    "requirements": {
+      "level": 27
+    }
+  },
+  {
+    "from": 175,
+    "to": 176,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 176,
+    "to": 468,
+    "method": "use-item",
+    "requirements": {
+      "item": "Shiny Stone"
+    }
+  },
+  {
+    "from": 177,
+    "to": 178,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 179,
+    "to": 180,
+    "method": "level-up",
+    "requirements": {
+      "level": 15
+    }
+  },
+  {
+    "from": 180,
+    "to": 181,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 298,
+    "to": 183,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160
+    }
+  },
+  {
+    "from": 183,
+    "to": 184,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 438,
+    "to": 185,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 523
+    }
+  },
+  {
+    "from": 187,
+    "to": 188,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 188,
+    "to": 189,
+    "method": "level-up",
+    "requirements": {
+      "level": 27
+    }
+  },
+  {
+    "from": 190,
+    "to": 424,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 177
+    }
+  },
+  {
+    "from": 191,
+    "to": 192,
+    "method": "use-item",
+    "requirements": {
+      "item": "Sun Stone"
+    }
+  },
+  {
+    "from": 193,
+    "to": 469,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 21
+    }
+  },
+  {
+    "from": 194,
+    "to": 195,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 194,
+    "to": 980,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 198,
+    "to": 430,
+    "method": "use-item",
+    "requirements": {
+      "item": "Dusk Stone"
+    }
+  },
+  {
+    "from": 200,
+    "to": 429,
+    "method": "use-item",
+    "requirements": {
+      "item": "Dusk Stone"
+    }
+  },
+  {
+    "from": 360,
+    "to": 202,
+    "method": "level-up",
+    "requirements": {
+      "level": 15
+    }
+  },
+  {
+    "from": 203,
+    "to": 981,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 884
+    }
+  },
+  {
+    "from": 204,
+    "to": 205,
+    "method": "level-up",
+    "requirements": {
+      "level": 31
+    }
+  },
+  {
+    "from": 206,
+    "to": 982,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 400
+    }
+  },
+  {
+    "from": 207,
+    "to": 472,
+    "method": "level-up",
+    "requirements": {
+      "time_of_day": "night",
+      "held_item": "Razor Fang"
+    }
+  },
+  {
+    "from": 209,
+    "to": 210,
+    "method": "level-up",
+    "requirements": {
+      "level": 23
+    }
+  },
+  {
+    "from": 211,
+    "to": 904,
+    "method": "strong-style-move",
+    "requirements": {
+      "move_count": 20
+    }
+  },
+  {
+    "from": 211,
+    "to": 904,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 48
+    }
+  },
+  {
+    "from": 211,
+    "to": 904,
+    "method": "use-move",
+    "requirements": {
+      "move_count": 20
+    }
+  },
+  {
+    "from": 215,
+    "to": 461,
+    "method": "level-up",
+    "requirements": {
+      "time_of_day": "night",
+      "held_item": "Razor Claw"
+    }
+  },
+  {
+    "from": 215,
+    "to": 903,
+    "method": "level-up",
+    "requirements": {
+      "time_of_day": "day",
+      "held_item": "Razor Claw"
+    }
+  },
+  {
+    "from": 216,
+    "to": 217,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 217,
+    "to": 901,
+    "method": "use-item",
+    "requirements": {
+      "item": "Peat Block",
+      "time_of_day": "full-moon"
+    }
+  },
+  {
+    "from": 218,
+    "to": 219,
+    "method": "level-up",
+    "requirements": {
+      "level": 38
+    }
+  },
+  {
+    "from": 220,
+    "to": 221,
+    "method": "level-up",
+    "requirements": {
+      "level": 33
+    }
+  },
+  {
+    "from": 221,
+    "to": 473,
+    "method": "level-up",
+    "requirements": {
+      "known_move": 21
+    }
+  },
+  {
+    "from": 222,
+    "to": 864,
+    "method": "level-up",
+    "requirements": {
+      "level": 38
+    }
+  },
+  {
+    "from": 223,
+    "to": 224,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 458,
+    "to": 226,
+    "method": "level-up",
+    "requirements": {
+      "party_species": "remoraid"
+    }
+  },
+  {
+    "from": 228,
+    "to": 229,
+    "method": "level-up",
+    "requirements": {
+      "level": 24
+    }
+  },
+  {
+    "from": 231,
+    "to": 232,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 234,
+    "to": 899,
+    "method": "agile-style-move",
+    "requirements": {
+      "move_count": 20
+    }
+  },
+  {
+    "from": 246,
+    "to": 247,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 247,
+    "to": 248,
+    "method": "level-up",
+    "requirements": {
+      "level": 55
+    }
+  },
+  {
+    "from": 252,
+    "to": 253,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 253,
+    "to": 254,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 255,
+    "to": 256,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 256,
+    "to": 257,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 258,
+    "to": 259,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 259,
+    "to": 260,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 261,
+    "to": 262,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 263,
+    "to": 264,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 264,
+    "to": 862,
+    "method": "level-up",
+    "requirements": {
+      "level": 35,
+      "time_of_day": "night"
+    }
+  },
+  {
+    "from": 265,
+    "to": 266,
+    "method": "level-up",
+    "requirements": {
+      "level": 7
+    }
+  },
+  {
+    "from": 266,
+    "to": 267,
+    "method": "level-up",
+    "requirements": {
+      "level": 10
+    }
+  },
+  {
+    "from": 265,
+    "to": 268,
+    "method": "level-up",
+    "requirements": {
+      "level": 7
+    }
+  },
+  {
+    "from": 268,
+    "to": 269,
+    "method": "level-up",
+    "requirements": {
+      "level": 10
+    }
+  },
+  {
+    "from": 270,
+    "to": 271,
+    "method": "level-up",
+    "requirements": {
+      "level": 14
+    }
+  },
+  {
+    "from": 271,
+    "to": 272,
+    "method": "use-item",
+    "requirements": {
+      "item": "Water Stone"
+    }
+  },
+  {
+    "from": 273,
+    "to": 274,
+    "method": "level-up",
+    "requirements": {
+      "level": 14
+    }
+  },
+  {
+    "from": 274,
+    "to": 275,
+    "method": "use-item",
+    "requirements": {
+      "item": "Leaf Stone"
+    }
+  },
+  {
+    "from": 276,
+    "to": 277,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 278,
+    "to": 279,
+    "method": "level-up",
+    "requirements": {
+      "level": 25
+    }
+  },
+  {
+    "from": 280,
+    "to": 281,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 281,
+    "to": 282,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 281,
+    "to": 475,
+    "method": "use-item",
+    "requirements": {
+      "item": "Dawn Stone"
+    }
+  },
+  {
+    "from": 283,
+    "to": 284,
+    "method": "level-up",
+    "requirements": {
+      "level": 22
+    }
+  },
+  {
+    "from": 285,
+    "to": 286,
+    "method": "level-up",
+    "requirements": {
+      "level": 23
+    }
+  },
+  {
+    "from": 287,
+    "to": 288,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 288,
+    "to": 289,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 290,
+    "to": 291,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 290,
+    "to": 292,
+    "method": "shed"
+  },
+  {
+    "from": 293,
+    "to": 294,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 294,
+    "to": 295,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 296,
+    "to": 297,
+    "method": "level-up",
+    "requirements": {
+      "level": 24
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "level-up",
+    "requirements": {
+      "location": "Mt Coronet"
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "level-up",
+    "requirements": {
+      "location": "Chargestone Cave"
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "level-up",
+    "requirements": {
+      "location": "Kalos Route 13"
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "level-up",
+    "requirements": {
+      "location": "Blush Mountain"
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "level-up",
+    "requirements": {
+      "location": "Vast Poni Canyon"
+    }
+  },
+  {
+    "from": 299,
+    "to": 476,
+    "method": "use-item",
+    "requirements": {
+      "item": "Thunder Stone"
+    }
+  },
+  {
+    "from": 300,
+    "to": 301,
+    "method": "use-item",
+    "requirements": {
+      "item": "Moon Stone"
+    }
+  },
+  {
+    "from": 304,
+    "to": 305,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 305,
+    "to": 306,
+    "method": "level-up",
+    "requirements": {
+      "level": 42
+    }
+  },
+  {
+    "from": 307,
+    "to": 308,
+    "method": "level-up",
+    "requirements": {
+      "level": 37
+    }
+  },
+  {
+    "from": 309,
+    "to": 310,
+    "method": "level-up",
+    "requirements": {
+      "level": 26
+    }
+  },
+  {
+    "from": 406,
+    "to": 315,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 160,
+      "time_of_day": "day"
+    }
+  },
+  {
+    "from": 315,
+    "to": 407,
+    "method": "use-item",
+    "requirements": {
+      "item": "Shiny Stone"
+    }
+  },
+  {
+    "from": 316,
+    "to": 317,
+    "method": "level-up",
+    "requirements": {
+      "level": 26
+    }
+  },
+  {
+    "from": 318,
+    "to": 319,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 320,
+    "to": 321,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 322,
+    "to": 323,
+    "method": "level-up",
+    "requirements": {
+      "level": 33
+    }
+  },
+  {
+    "from": 325,
+    "to": 326,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 328,
+    "to": 329,
+    "method": "level-up",
+    "requirements": {
+      "level": 35
+    }
+  },
+  {
+    "from": 329,
+    "to": 330,
+    "method": "level-up",
+    "requirements": {
+      "level": 45
+    }
+  },
+  {
+    "from": 331,
+    "to": 332,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 333,
+    "to": 334,
+    "method": "level-up",
+    "requirements": {
+      "level": 35
+    }
+  },
+  {
+    "from": 339,
+    "to": 340,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 341,
+    "to": 342,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 343,
+    "to": 344,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 345,
+    "to": 346,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 347,
+    "to": 348,
+    "method": "level-up",
+    "requirements": {
+      "level": 40
+    }
+  },
+  {
+    "from": 349,
+    "to": 350,
+    "method": "level-up",
+    "requirements": {
+      "beauty": 170
+    }
+  },
+  {
+    "from": 349,
+    "to": 350,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Prism Scale"
+    }
+  },
+  {
+    "from": 353,
+    "to": 354,
+    "method": "level-up",
+    "requirements": {
+      "level": 37
+    }
+  },
+  {
+    "from": 355,
+    "to": 356,
+    "method": "level-up",
+    "requirements": {
+      "level": 37
+    }
+  },
+  {
+    "from": 356,
+    "to": 477,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Reaper Cloth"
+    }
+  },
+  {
+    "from": 433,
+    "to": 358,
+    "method": "level-up",
+    "requirements": {
+      "happiness": 220,
+      "time_of_day": "night"
+    }
+  },
+  {
+    "from": 361,
+    "to": 362,
+    "method": "level-up",
+    "requirements": {
+      "level": 42
+    }
+  },
+  {
+    "from": 361,
+    "to": 478,
+    "method": "use-item",
+    "requirements": {
+      "item": "Dawn Stone"
+    }
+  },
+  {
+    "from": 363,
+    "to": 364,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 364,
+    "to": 365,
+    "method": "level-up",
+    "requirements": {
+      "level": 44
+    }
+  },
+  {
+    "from": 366,
+    "to": 367,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Deep Sea Tooth"
+    }
+  },
+  {
+    "from": 366,
+    "to": 368,
+    "method": "trade",
+    "requirements": {
+      "held_item": "Deep Sea Scale"
+    }
+  },
+  {
+    "from": 371,
+    "to": 372,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  },
+  {
+    "from": 372,
+    "to": 373,
+    "method": "level-up",
+    "requirements": {
+      "level": 50
+    }
+  },
+  {
+    "from": 374,
+    "to": 375,
+    "method": "level-up",
+    "requirements": {
+      "level": 20
+    }
+  },
+  {
+    "from": 375,
+    "to": 376,
+    "method": "level-up",
+    "requirements": {
+      "level": 45
+    }
+  },
+  {
+    "from": 387,
+    "to": 388,
+    "method": "level-up",
+    "requirements": {
+      "level": 18
+    }
+  },
+  {
+    "from": 388,
+    "to": 389,
+    "method": "level-up",
+    "requirements": {
+      "level": 32
+    }
+  },
+  {
+    "from": 390,
+    "to": 391,
+    "method": "level-up",
+    "requirements": {
+      "level": 14
+    }
+  },
+  {
+    "from": 391,
+    "to": 392,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 393,
+    "to": 394,
+    "method": "level-up",
+    "requirements": {
+      "level": 16
+    }
+  },
+  {
+    "from": 394,
+    "to": 395,
+    "method": "level-up",
+    "requirements": {
+      "level": 36
+    }
+  },
+  {
+    "from": 396,
+    "to": 397,
+    "method": "level-up",
+    "requirements": {
+      "level": 14
+    }
+  },
+  {
+    "from": 397,
+    "to": 398,
+    "method": "level-up",
+    "requirements": {
+      "level": 34
+    }
+  },
+  {
+    "from": 399,
+    "to": 400,
+    "method": "level-up",
+    "requirements": {
+      "level": 15
+    }
+  },
+  {
+    "from": 401,
+    "to": 402,
+    "method": "level-up",
+    "requirements": {
+      "level": 10
+    }
+  },
+  {
+    "from": 403,
+    "to": 404,
+    "method": "level-up",
+    "requirements": {
+      "level": 15
+    }
+  },
+  {
+    "from": 404,
+    "to": 405,
+    "method": "level-up",
+    "requirements": {
+      "level": 30
+    }
+  }
+]
