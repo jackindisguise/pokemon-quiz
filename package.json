@@ -1,0 +1,30 @@
+{
+	"dependencies": {
+		"@prisma/adapter-better-sqlite3": "^7.6.0",
+		"@prisma/client": "^7.6.0",
+		"@types/node": "^25.5.0",
+		"better-sqlite3": "^12.8.0",
+		"csv-parse": "^6.2.1",
+		"dotenv": "^17.3.1",
+		"prisma": "^7.6.0",
+		"puppeteer": "^24.8.1",
+		"tsx": "^4.21.0",
+		"typescript": "^6.0.2"
+	},
+	"name": "pokemon",
+	"version": "1.0.0",
+	"description": "",
+	"main": "anki-image-generator.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prisma:generate": "prisma generate",
+		"prisma:migrate": "prisma migrate dev --name init_pokemon",
+		"prisma:seed": "prisma db seed",
+		"db:setup": "npm run prisma:migrate && npm run prisma:seed",
+		"quiz:data": "node scripts/build-quiz-data.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module"
+}

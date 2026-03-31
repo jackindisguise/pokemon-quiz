@@ -1,0 +1,910 @@
+/* Shared quiz styles — effectiveness, pokemon-type, moveset */
+
+:root {
+	color-scheme: dark;
+	font-family:
+		Inter,
+		system-ui,
+		-apple-system,
+		Segoe UI,
+		Roboto,
+		sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 24px;
+	background: #121521;
+	color: #eef2ff;
+}
+
+.theme-toggle {
+	position: fixed;
+	top: 12px;
+	right: 12px;
+	z-index: 10;
+	border: 1px solid #3c4a6d;
+	background: #1a243b;
+	color: #eaf0ff;
+	padding: 6px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 0.9rem;
+}
+
+.theme-toggle:hover {
+	background: #243250;
+}
+
+.container {
+	max-width: 920px;
+	margin: 0 auto;
+	background: #1b2131;
+	border: 1px solid #2d3752;
+	border-radius: 14px;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0 0 12px;
+	font-size: 1.4rem;
+}
+
+.quiz-nav {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin: 0 0 12px;
+}
+
+.quiz-nav a {
+	color: #9ec5ff;
+	text-decoration: none;
+	font-size: 0.95rem;
+	border: 1px solid #3c4a6d;
+	padding: 6px 10px;
+	border-radius: 8px;
+	background: #1a243b;
+}
+
+.quiz-nav a:hover {
+	background: #243250;
+	border-color: #5470a8;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin: 0 0 12px;
+}
+
+.toggle-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.95rem;
+	color: #aeb8d8;
+	user-select: none;
+	border: 1px solid #3c4a6d;
+	background: #252d3f;
+	padding: 6px 10px;
+	border-radius: 8px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.toggle-btn.active {
+	background: #3357a5;
+	border-color: #6f91da;
+	color: #f2f7ff;
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: center;
+}
+
+/* --- Effectiveness quiz --- */
+
+.quiz-page--effectiveness .ruby-stack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	margin-top: 8px;
+	width: 100%;
+}
+
+.quiz-page--effectiveness .ruby-rt {
+	font-size: 0.82rem;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #9fb0de;
+	line-height: 1.1;
+}
+
+.quiz-page--effectiveness .ruby-rb {
+	font-size: 1rem;
+	color: #dce5ff;
+	line-height: 1.25;
+	text-align: center;
+}
+
+.quiz-page--effectiveness .ruby-rt.hidden {
+	display: none;
+}
+
+.quiz-page--effectiveness #moveType.hidden {
+	display: none;
+}
+
+.quiz-page--effectiveness .question {
+	margin: 0;
+	font-size: 1.05rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 4px;
+}
+
+.quiz-page--effectiveness .move-inline-ruby {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	margin-right: 4px;
+	border: 1px solid #3c4a6d;
+	border-radius: 8px;
+	padding: 2px 8px 4px;
+	background: #1a243b;
+}
+
+.quiz-page--effectiveness #moveName {
+	display: inline-flex;
+	align-items: center;
+}
+
+.quiz-page--effectiveness .quiz-config-modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(8, 12, 20, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	z-index: 40;
+}
+
+.quiz-page--effectiveness .quiz-config-modal.hidden {
+	display: none;
+}
+
+.quiz-page--effectiveness .quiz-config-card {
+	width: min(560px, 100%);
+	background: #1b2131;
+	border: 1px solid #3c4a6d;
+	border-radius: 12px;
+	padding: 14px;
+	display: grid;
+	gap: 10px;
+}
+
+.quiz-page--effectiveness .quiz-config-card h2 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.quiz-page--effectiveness .config-label {
+	display: grid;
+	gap: 6px;
+	font-size: 0.92rem;
+	color: #c7d3f3;
+}
+
+.quiz-page--effectiveness .config-label select {
+	background: #10182c;
+	color: #eaf0ff;
+	border: 1px solid #3c4a6d;
+	border-radius: 8px;
+	padding: 7px 8px;
+}
+
+.quiz-page--effectiveness .config-mode-wrap {
+	display: grid;
+	gap: 8px;
+}
+
+.quiz-page--effectiveness .config-mode-wrap.hidden {
+	display: none;
+}
+
+.quiz-page--effectiveness .config-mode-title {
+	color: #c7d3f3;
+	font-size: 0.9rem;
+}
+
+.quiz-page--effectiveness .config-mode-buttons {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.quiz-page--effectiveness .config-actions {
+	display: flex;
+	gap: 8px;
+	justify-content: flex-end;
+}
+
+.quiz-page--effectiveness .image-wrap {
+	background: #111726;
+	border: 1px solid #2d3752;
+	border-radius: 12px;
+	padding: 12px;
+	text-align: center;
+	width: 100%;
+	max-width: 340px;
+}
+
+.quiz-page--effectiveness #pokemonImage {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+	image-rendering: auto;
+}
+
+.quiz-page--effectiveness #explanation {
+	display: grid;
+	gap: 6px;
+	justify-content: center;
+}
+
+.quiz-page--effectiveness .explanation-row {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.quiz-page--effectiveness .type-pill,
+.quiz-page--effectiveness .modifier-pill,
+.quiz-page--type #result .type-pill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 8px;
+	border-radius: 999px;
+	border: 1px solid transparent;
+	font-size: 0.86rem;
+	line-height: 1.1;
+}
+
+.quiz-page--effectiveness .type-pill,
+.quiz-page--type #result .type-pill {
+	color: #f4f7ff;
+}
+
+.quiz-page--effectiveness .type-normal,
+.quiz-page--type #result .type-normal { background: #8c8c5f; border-color: #a8a878; }
+.quiz-page--effectiveness .type-fire,
+.quiz-page--type #result .type-fire { background: #b35f2a; border-color: #f08030; }
+.quiz-page--effectiveness .type-water,
+.quiz-page--type #result .type-water { background: #3f63b6; border-color: #6890f0; }
+.quiz-page--effectiveness .type-electric,
+.quiz-page--type #result .type-electric { background: #9a861f; border-color: #f8d030; color: #1e1e0f; }
+.quiz-page--effectiveness .type-grass,
+.quiz-page--type #result .type-grass { background: #4f8b2f; border-color: #78c850; }
+.quiz-page--effectiveness .type-ice,
+.quiz-page--type #result .type-ice { background: #4e98a3; border-color: #98d8d8; color: #0e1b1d; }
+.quiz-page--effectiveness .type-fighting,
+.quiz-page--type #result .type-fighting { background: #8e2f2b; border-color: #c03028; }
+.quiz-page--effectiveness .type-poison,
+.quiz-page--type #result .type-poison { background: #7b3b87; border-color: #a040a0; }
+.quiz-page--effectiveness .type-ground,
+.quiz-page--type #result .type-ground { background: #9b7a33; border-color: #e0c068; color: #19160c; }
+.quiz-page--effectiveness .type-flying,
+.quiz-page--type #result .type-flying { background: #6f63a8; border-color: #a890f0; }
+.quiz-page--effectiveness .type-psychic,
+.quiz-page--type #result .type-psychic { background: #b2326f; border-color: #f85888; }
+.quiz-page--effectiveness .type-bug,
+.quiz-page--type #result .type-bug { background: #708826; border-color: #a8b820; }
+.quiz-page--effectiveness .type-rock,
+.quiz-page--type #result .type-rock { background: #88743a; border-color: #b8a038; }
+.quiz-page--effectiveness .type-ghost,
+.quiz-page--type #result .type-ghost { background: #4f457c; border-color: #705898; }
+.quiz-page--effectiveness .type-dragon,
+.quiz-page--type #result .type-dragon { background: #4a3da8; border-color: #7038f8; }
+.quiz-page--effectiveness .type-dark,
+.quiz-page--type #result .type-dark { background: #4a3f37; border-color: #705848; }
+.quiz-page--effectiveness .type-steel,
+.quiz-page--type #result .type-steel { background: #637b86; border-color: #b8b8d0; color: #10181b; }
+.quiz-page--effectiveness .type-fairy,
+.quiz-page--type #result .type-fairy { background: #b05f86; border-color: #ee99ac; }
+
+.quiz-page--effectiveness .modifier-pill {
+	font-weight: 700;
+}
+
+.quiz-page--effectiveness .mod-4 { background: #1f8a4d; border-color: #2fbf6c; color: #eafff2; }
+.quiz-page--effectiveness .mod-2 { background: #2f9e5f; border-color: #49c97d; color: #eafff2; }
+.quiz-page--effectiveness .mod-1 { background: #475067; border-color: #67708a; color: #e8ecff; }
+.quiz-page--effectiveness .mod-half { background: #a8742f; border-color: #d39a4e; color: #fff6ea; }
+.quiz-page--effectiveness .mod-quarter { background: #b0542b; border-color: #df7547; color: #fff1ea; }
+.quiz-page--effectiveness .mod-0 { background: #8f2b2b; border-color: #cc4b4b; color: #ffecec; }
+
+.quiz-page--effectiveness .explanation-sep {
+	color: #9eb0db;
+	font-weight: 600;
+}
+
+.quiz-page--effectiveness .total-row {
+	margin-top: 2px;
+}
+
+.quiz-page #result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.45rem;
+}
+
+.quiz-page .result-status {
+	font-size: 1.75rem;
+	font-weight: 800;
+	line-height: 1.15;
+	letter-spacing: 0.02em;
+}
+
+.quiz-page .result-status--correct {
+	color: #34d399;
+}
+
+.quiz-page .result-status--incorrect {
+	color: #f87171;
+}
+
+.quiz-page .result-answer-line {
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: #b9c6ea;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.quiz-page .result-answer-pill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 10px;
+	border-radius: 999px;
+	border: 1px solid #67708a;
+	background: #475067;
+	color: #e8ecff;
+	font-size: 0.86rem;
+	font-weight: 700;
+	line-height: 1.15;
+	max-width: 100%;
+	text-align: center;
+}
+
+.quiz-page--moveset .result-answer-pill--pokemon {
+	gap: 8px;
+	padding: 4px 12px 4px 5px;
+}
+
+.quiz-page--moveset .result-answer-pill-image {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	flex-shrink: 0;
+	border-radius: 8px;
+}
+
+/* --- Pokemon type quiz --- */
+
+.quiz-page--type .image-wrap,
+.quiz-page--learn-move .image-wrap,
+.quiz-page--evolution .image-wrap {
+	background: #111726;
+	border: 1px solid #2d3752;
+	border-radius: 12px;
+	padding: 12px;
+	text-align: center;
+	width: 100%;
+	max-width: 340px;
+}
+
+.quiz-page--type #pokemonImage,
+.quiz-page--learn-move #pokemonImage,
+.quiz-page--evolution #pokemonImage {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+}
+
+.quiz-page--type #pokemonName,
+.quiz-page--learn-move #pokemonName,
+.quiz-page--evolution #pokemonName {
+	margin-top: 8px;
+	font-size: 1.05rem;
+	color: #dce5ff;
+}
+
+.quiz-page--type #question,
+.quiz-page--learn-move #question,
+.quiz-page--evolution #question {
+	margin-top: 6px;
+	color: #b9c6ea;
+}
+
+.quiz-page--type #explanation,
+.quiz-page--learn-move #explanation,
+.quiz-page--evolution #explanation {
+	white-space: pre-line;
+}
+
+.quiz-page--evolution .image-wrap {
+	max-width: 620px;
+}
+
+.quiz-page--evolution .evolution-visual {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.quiz-page--evolution .evolution-stage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	min-width: 0;
+}
+
+.quiz-page--evolution #pokemonImageFrom,
+.quiz-page--evolution #pokemonImageTo {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+
+.quiz-page--evolution #pokemonNameFrom,
+.quiz-page--evolution #pokemonNameTo {
+	margin-top: 0;
+	font-size: 1rem;
+	color: #dce5ff;
+	text-align: center;
+}
+
+.quiz-page--evolution .evolution-arrow {
+	font-size: 2rem;
+	line-height: 1;
+	color: #9fb0de;
+	font-weight: 800;
+	user-select: none;
+}
+
+/* --- Moveset quiz --- */
+
+.quiz-page--moveset .moveset-card {
+	background: #111726;
+	border: 1px solid #2d3752;
+	border-radius: 12px;
+	padding: 14px;
+	width: 100%;
+	max-width: 520px;
+}
+
+.quiz-page--moveset #question {
+	margin: 0 0 8px;
+	text-align: center;
+	color: #b9c6ea;
+}
+
+.quiz-page--moveset .moveset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+}
+
+.quiz-page--moveset .moveset-list li {
+	color: #e3eaff;
+	font-size: 1rem;
+	line-height: 1.2;
+	background: #1a243b;
+	border: 2px solid #3c4a6d;
+	padding: 8px 10px;
+	min-height: 2.6em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	box-shadow:
+		2px 0 0 #0f1422,
+		0 2px 0 #0f1422,
+		2px 2px 0 #0f1422;
+	border-radius:10px;
+	font-weight:bold;
+}
+
+.quiz-page--moveset button.option {
+	display: flex;
+	align-items: center;
+}
+
+.quiz-page--moveset .option-content {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	flex: 1;
+}
+
+.quiz-page--moveset .option-image {
+	width: 44px;
+	height: 44px;
+	object-fit: contain;
+}
+
+/* --- Options & shared UI --- */
+
+.options {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(220px, 1fr));
+	gap: 10px;
+	width: 100%;
+	max-width: 620px;
+}
+
+button.option {
+	border: 1px solid #3c4a6d;
+	background: #202942;
+	color: #eaf0ff;
+	padding: 10px 12px;
+	border-radius: 10px;
+	text-align: left;
+	cursor: pointer;
+	font-size: 0.95rem;
+}
+
+.option-key {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.45em;
+	margin-right: 6px;
+	padding: 1px 5px;
+	border-radius: 6px;
+	background: #314064;
+	color: #d9e4ff;
+	font-size: 0.8rem;
+	text-align: center;
+	font-weight: 700;
+}
+
+button.option:hover:enabled {
+	background: #2a3554;
+}
+
+button.option:disabled {
+	opacity: 0.75;
+	cursor: default;
+}
+
+.option.correct {
+	border-color: #25b864;
+	background: #163728;
+}
+
+.option.wrong {
+	border-color: #d45454;
+	background: #412121;
+}
+
+.actions {
+	margin-top: 14px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.quiz-next-row {
+	display: flex;
+	justify-content: center;
+	margin-top: 14px;
+	width: 100%;
+}
+
+#nextQuestion {
+	opacity: 0;
+	transform: translateY(6px) scale(0.98);
+	pointer-events: none;
+}
+
+#nextQuestion.is-visible {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+	pointer-events: auto;
+	animation: nextButtonAppear 140ms ease;
+}
+
+@keyframes nextButtonAppear {
+	0% {
+		opacity: 0;
+		transform: translateY(6px) scale(0.98);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.fade-swap {
+	animation: fadeSwap 320ms ease;
+}
+
+@keyframes fadeSwap {
+	0% {
+		opacity: 0.2;
+		transform: translateY(4px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#result {
+	min-height: 1.6em;
+	font-weight: 600;
+	text-align: center;
+}
+
+#transitionBar {
+	width: 100%;
+	max-width: 620px;
+	height: 10px;
+	margin: 10px auto 0;
+	border: 1px solid #3c4a6d;
+	border-radius: 999px;
+	background: #151d30;
+	overflow: hidden;
+}
+
+#transitionBar.hidden {
+	display:none;
+}
+
+#transitionFill {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, #60a5fa, #34d399);
+	transition: width 80ms linear;
+}
+
+#explanation {
+	min-height: 2.2em;
+	max-width: 760px;
+	margin: 8px auto 0;
+	text-align: center;
+	color: #b9c6ea;
+	font-size: 0.95rem;
+	line-height: 1.35;
+}
+
+.footer-status {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#streakInfo {
+	color: #c7d3f3;
+	font-size: 0.92rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+#streakInfo .label {
+	display: inline-block;
+	min-width: 54px;
+}
+
+#streakInfo .value {
+	display: inline-block;
+	min-width: 2ch;
+}
+
+.quiz-help-box {
+	margin-top: 14px;
+	padding: 12px 14px;
+	border: 1px solid #33405f;
+	border-radius: 10px;
+	background: #141c2e;
+	color: #c7d3f3;
+}
+
+.quiz-help-box h2 {
+	margin: 0 0 8px;
+	font-size: 1rem;
+	color: #e6edff;
+}
+
+.quiz-help-box p {
+	margin: 6px 0;
+	font-size: 0.92rem;
+	line-height: 1.35;
+}
+
+/* Light theme (all quizzes) */
+
+body.light-theme {
+	color-scheme: light;
+	background: #eef2fa;
+	color: #1a2233;
+}
+
+body.light-theme .container {
+	background: #ffffff;
+	border-color: #c9d4ea;
+}
+
+body.light-theme .theme-toggle,
+body.light-theme .quiz-nav a,
+body.light-theme button.option {
+	background: #f4f7ff;
+	color: #1a2233;
+	border-color: #b7c4de;
+}
+
+body.light-theme.quiz-page--effectiveness .move-inline-ruby {
+	background: #f4f7ff;
+	color: #1a2233;
+	border-color: #b7c4de;
+}
+
+body.light-theme .quiz-nav a:hover,
+body.light-theme .theme-toggle:hover,
+body.light-theme button.option:hover:enabled {
+	background: #e8eefb;
+}
+
+body.light-theme .toggle-btn,
+body.light-theme #result,
+body.light-theme #streakInfo,
+body.light-theme #explanation,
+body.light-theme .quiz-help-box h2,
+body.light-theme .quiz-help-box p {
+	color: #2b3750;
+}
+
+body.light-theme.quiz-page--moveset #question,
+body.light-theme.quiz-page--evolution #question {
+	color: #2b3750;
+}
+
+body.light-theme.quiz-page--evolution #pokemonNameFrom,
+body.light-theme.quiz-page--evolution #pokemonNameTo {
+	color: #1a2233;
+}
+
+body.light-theme.quiz-page--evolution .evolution-arrow {
+	color: #3d4d66;
+}
+
+body.light-theme.quiz-page--moveset .moveset-list li {
+	color: #2b3750;
+	background: #eef3ff;
+	border-color: #b7c4de;
+	box-shadow:
+		2px 0 0 #c9d4ea,
+		0 2px 0 #c9d4ea,
+		2px 2px 0 #c9d4ea;
+}
+
+body.light-theme .image-wrap,
+body.light-theme .quiz-help-box {
+	background: #f8faff;
+	border-color: #c9d4ea;
+	color: #2b3750;
+}
+
+body.light-theme.quiz-page--moveset .moveset-card {
+	background: #f8faff;
+	border: 1px solid #c9d4ea;
+	color: #2b3750;
+	box-shadow: 0 1px 3px rgba(43, 55, 80, 0.06);
+}
+
+body.light-theme.quiz-page--effectiveness .move-inline-ruby,
+body.light-theme.quiz-page .ruby-rb,
+body.light-theme.quiz-page--effectiveness #question,
+body.light-theme.quiz-page--type #question,
+body.light-theme.quiz-page--type #pokemonName,
+body.light-theme.quiz-page--learn-move #question,
+body.light-theme.quiz-page--learn-move #pokemonName,
+body.light-theme.quiz-page--evolution #question,
+body.light-theme.quiz-page--evolution #pokemonName {
+	color: #1a2233;
+}
+
+body.light-theme.quiz-page .ruby-rt,
+body.light-theme.quiz-page .explanation-sep {
+	color: #3d4d66;
+}
+
+body.light-theme.quiz-page .result-answer-line {
+	color: #2b3750;
+}
+
+body.light-theme.quiz-page .result-status--correct {
+	color: #059669;
+}
+
+body.light-theme.quiz-page .result-status--incorrect {
+	color: #dc2626;
+}
+
+body.light-theme.quiz-page .result-answer-pill {
+	background: #e2e8f7;
+	border-color: #b7c4de;
+	color: #1a2233;
+}
+
+body.light-theme.quiz-page--effectiveness .quiz-config-card {
+	background: #ffffff;
+	border-color: #c9d4ea;
+}
+
+body.light-theme.quiz-page--effectiveness .config-label,
+body.light-theme.quiz-page--effectiveness .config-mode-title {
+	color: #2b3750;
+}
+
+body.light-theme.quiz-page--effectiveness .config-label select {
+	background: #f4f7ff;
+	color: #1a2233;
+	border-color: #b7c4de;
+}
+
+body.light-theme.quiz-page--moveset .result-answer-pill-image {
+}
+
+body.light-theme #transitionBar {
+	background: #e4ebfb;
+	border-color: #b7c4de;
+}
+
+body.light-theme .toggle-btn {
+	background: #e2e8f7;
+	border-color: #b7c4de;
+	color: #2b3750;
+}
+
+body.light-theme .toggle-btn.active {
+	background: #5e7ec5;
+	border-color: #4f6fb3;
+	color: #f7faff;
+}
+
+body.light-theme .option-key {
+	background: #dfe8fb;
+	color: #243250;
+	border: 1px solid #b7c4de;
+}

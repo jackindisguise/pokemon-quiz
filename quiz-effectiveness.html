@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Effectiveness Quiz</title>
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+  <body class="quiz-page quiz-page--effectiveness">
+    <button id="themeToggle" class="theme-toggle" type="button">
+      Light mode
+    </button>
+    <nav class="quiz-nav">
+      <a href="./quiz-effectiveness.html">Effectiveness Quiz</a>
+      <a href="./quiz-pokemon-type.html">Pokemon Type Quiz</a>
+      <a href="./quiz-moveset.html">Moveset Quiz</a>
+      <a href="./quiz-learn-move.html">Learn a Move Quiz</a>
+      <a href="./quiz-evolution.html">Evolution Quiz</a>
+    </nav>
+    <div class="container">
+      <h1>Type Effectiveness Quiz</h1>
+      <div class="controls">
+        <button
+          id="showTypeInfo"
+          class="toggle-btn"
+          type="button"
+          aria-pressed="false"
+        >
+          show type info
+        </button>
+        <button
+          id="autoNextMode"
+          class="toggle-btn active"
+          type="button"
+          aria-pressed="true"
+        >
+          auto-next
+        </button>
+        <button
+          id="fasterMode"
+          class="toggle-btn"
+          type="button"
+          aria-pressed="false"
+        >
+          fast mode
+        </button>
+        <button id="openConfig" class="toggle-btn" type="button">config</button>
+      </div>
+      <div id="configModal" class="quiz-config-modal hidden" aria-hidden="true">
+        <div class="quiz-config-card" role="dialog" aria-modal="true">
+          <h2>Effectiveness Config</h2>
+          <label class="config-label" for="configMoveType">
+            Force move type
+            <select id="configMoveType"></select>
+          </label>
+          <label class="config-label" for="configPokemonType">
+            Force pokemon type
+            <select id="configPokemonType"></select>
+          </label>
+          <div id="pokemonTypeModeWrap" class="config-mode-wrap hidden">
+            <span class="config-mode-title">Pokemon type mode</span>
+            <div class="config-mode-buttons">
+              <button
+                type="button"
+                class="toggle-btn config-mode-btn active"
+                data-mode="optional"
+                aria-pressed="true"
+              >
+                multi-type optional
+              </button>
+              <button
+                type="button"
+                class="toggle-btn config-mode-btn"
+                data-mode="forced"
+                aria-pressed="false"
+              >
+                multi-type forced
+              </button>
+              <button
+                type="button"
+                class="toggle-btn config-mode-btn"
+                data-mode="mono"
+                aria-pressed="false"
+              >
+                mono-type only
+              </button>
+            </div>
+          </div>
+          <div class="config-actions">
+            <button id="applyConfig" class="toggle-btn" type="button">
+              apply
+            </button>
+            <button id="closeConfig" class="toggle-btn" type="button">
+              close
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="image-wrap">
+          <img id="pokemonImage" alt="Pokemon" />
+          <div class="ruby-stack">
+            <div id="pokemonTypes" class="ruby-rt hidden"></div>
+            <div id="pokemonMeta" class="ruby-rb"></div>
+          </div>
+          <div class="ruby-stack">
+            <p class="question ruby-rb" id="question">
+              <span class="move-inline-ruby">
+                <span id="moveType" class="ruby-rt hidden"></span>
+                <span id="moveName">Loading...</span>
+              </span>
+              <span id="questionSuffix"></span>
+            </p>
+          </div>
+        </div>
+        <div id="options" class="options"></div>
+      </div>
+      <div class="actions">
+        <span id="result"></span>
+      </div>
+      <div id="transitionBar" class="hidden">
+        <div id="transitionFill"></div>
+      </div>
+      <div id="explanation"></div>
+      <div class="quiz-next-row">
+        <button id="nextQuestion" class="toggle-btn" type="button" disabled>
+          next
+        </button>
+      </div>
+      <div class="footer-status">
+        <div id="streakInfo">
+          <div id="streak">
+            <span class="label">Streak:</span>
+            <span id="streakValue" class="value">0</span>
+          </div>
+          <div id="best">
+            <span class="label">Best:</span>
+            <span id="bestValue" class="value">0</span>
+          </div>
+        </div>
+      </div>
+      <section class="quiz-help-box" aria-label="Quiz rules">
+        <h2>How This Quiz Works</h2>
+        <p>
+          Choose the effectiveness multiplier for the shown move against the
+          shown Pokemon.
+        </p>
+        <h2>Hotkeys</h2>
+        <p>You can use number keys (1-6) to pick answers.</p>
+        <p>Press Space after answering to go next.</p>
+        <p>
+          Turn off auto-next if you want to advance manually with Space or the
+          Next button.
+        </p>
+      </section>
+    </div>
+
+    <script src="./quiz-data.js"></script>
+    <script src="./quiz-persist.js"></script>
+    <script>
+      const THEME_STORAGE_KEY = "quizTheme";
+      const QUIZ_ID = "effectiveness";
+      const TYPE_CHART = {
+        Normal: { RESIST: ["Rock", "Steel"], IMMUNE: ["Ghost"] },
+        Fire: {
+          VULNERABLE: ["Grass", "Ice", "Bug", "Steel"],
+          RESIST: ["Fire", "Water", "Rock", "Dragon"],
+        },
+        Water: {
+          VULNERABLE: ["Fire", "Ground", "Rock"],
+          RESIST: ["Water", "Grass", "Dragon"],
+        },
+        Electric: {
+          VULNERABLE: ["Water", "Flying"],
+          RESIST: ["Electric", "Grass", "Dragon"],
+          IMMUNE: ["Ground"],
+        },
+        Grass: {
+          VULNERABLE: ["Water", "Ground", "Rock"],
+          RESIST: [
+            "Fire",
+            "Grass",
+            "Poison",
+            "Flying",
+            "Bug",
+            "Dragon",
+            "Steel",
+          ],
+        },
+        Ice: {
+          VULNERABLE: ["Grass", "Ground", "Flying", "Dragon"],
+          RESIST: ["Fire", "Water", "Ice", "Steel"],
+        },
+        Fighting: {
+          VULNERABLE: ["Normal", "Ice", "Rock", "Dark", "Steel"],
+          RESIST: ["Poison", "Flying", "Psychic", "Bug", "Fairy"],
+          IMMUNE: ["Ghost"],
+        },
+        Poison: {
+          VULNERABLE: ["Grass", "Fairy"],
+          RESIST: ["Poison", "Ground", "Rock", "Ghost"],
+          IMMUNE: ["Steel"],
+        },
+        Ground: {
+          VULNERABLE: ["Fire", "Electric", "Poison", "Rock", "Steel"],
+          RESIST: ["Grass", "Bug"],
+          IMMUNE: ["Flying"],
+        },
+        Flying: {
+          VULNERABLE: ["Grass", "Fighting", "Bug"],
+          RESIST: ["Electric", "Rock", "Steel"],
+        },
+        Psychic: {
+          VULNERABLE: ["Fighting", "Poison"],
+          RESIST: ["Psychic", "Steel"],
+          IMMUNE: ["Dark"],
+        },
+        Bug: {
+          VULNERABLE: ["Grass", "Psychic", "Dark"],
+          RESIST: ["Fire", "Fighting", "Poison", "Flying", "Steel", "Fairy"],
+        },
+        Rock: {
+          VULNERABLE: ["Fire", "Ice", "Flying", "Bug"],
+          RESIST: ["Fighting", "Ground", "Steel"],
+        },
+        Ghost: {
+          VULNERABLE: ["Ghost", "Psychic"],
+          RESIST: ["Dark"],
+          IMMUNE: ["Normal"],
+        },
+        Dragon: {
+          VULNERABLE: ["Dragon"],
+          RESIST: ["Steel"],
+          IMMUNE: ["Fairy"],
+        },
+        Dark: {
+          VULNERABLE: ["Psychic", "Ghost"],
+          RESIST: ["Fighting", "Dark", "Fairy"],
+        },
+        Steel: {
+          VULNERABLE: ["Ice", "Rock", "Fairy"],
+          RESIST: ["Fire", "Water", "Electric", "Steel"],
+        },
+        Fairy: {
+          VULNERABLE: ["Fighting", "Dragon", "Dark"],
+          RESIST: ["Fire", "Poison", "Steel"],
+        },
+      };
+
+      const OPTIONS = [
+        { value: 1, label: "Normal" },
+        { value: 2, label: "It\u2019s super effective!" },
+        { value: 0.5, label: "It's not very effective..." },
+        { value: 0, label: "It doesn't affect them..." },
+        { value: 4, label: "<b><i>It\u2019s super effective!</i></b>" },
+        { value: 0.25, label: "<b><i>It's not very effective...</i></b>" },
+      ];
+
+      let moves = [];
+      let pokemon = [];
+      let currentAnswer = null;
+      let isAnswered = false;
+      let currentMatchupExplanation = "";
+      let activeOptionButtons = [];
+      let statsSnapshot = QuizPersist.loadStats(QUIZ_ID);
+      let currentStreak = statsSnapshot.currentStreak;
+      let bestStreak = statsSnapshot.bestStreak;
+      const TRANSITION_MS = 5000;
+      let currentTransitionDurationMs = TRANSITION_MS;
+      let transitionRafId = null;
+      let transitionStartTime = 0;
+      const TYPE_OPTIONS = Object.keys(TYPE_CHART);
+
+      function randomFrom(items) {
+        return items[Math.floor(Math.random() * items.length)];
+      }
+
+      function isToggleOn(buttonEl) {
+        return buttonEl.classList.contains("active");
+      }
+
+      function setToggle(buttonEl, on) {
+        buttonEl.classList.toggle("active", on);
+        buttonEl.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+
+      function populateTypeSelect(selectEl) {
+        selectEl.innerHTML = "";
+        const any = document.createElement("option");
+        any.value = "any";
+        any.textContent = "Any";
+        selectEl.appendChild(any);
+        TYPE_OPTIONS.forEach((type) => {
+          const opt = document.createElement("option");
+          opt.value = type;
+          opt.textContent = type;
+          selectEl.appendChild(opt);
+        });
+      }
+
+      function setTypeMode(mode) {
+        const modeButtons = document.querySelectorAll(".config-mode-btn");
+        modeButtons.forEach((btn) => {
+          const on = btn.dataset.mode === mode;
+          setToggle(btn, on);
+        });
+      }
+
+      function getTypeMode() {
+        const active = document.querySelector(".config-mode-btn.active");
+        return active?.dataset.mode || "optional";
+      }
+
+      function syncPokemonTypeModeVisibility() {
+        const pokemonType = document.getElementById("configPokemonType").value;
+        const show = pokemonType !== "any";
+        document
+          .getElementById("pokemonTypeModeWrap")
+          .classList.toggle("hidden", !show);
+      }
+
+      function getConfigFilters() {
+        return {
+          moveType: document.getElementById("configMoveType").value || "any",
+          pokemonType:
+            document.getElementById("configPokemonType").value || "any",
+          pokemonTypeMode: getTypeMode(),
+        };
+      }
+
+      function applyFiltersToUi(filters) {
+        document.getElementById("configMoveType").value = filters.moveType;
+        document.getElementById("configPokemonType").value = filters.pokemonType;
+        setTypeMode(filters.pokemonTypeMode);
+        syncPokemonTypeModeVisibility();
+      }
+
+      function openConfigModal() {
+        const modal = document.getElementById("configModal");
+        modal.classList.remove("hidden");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeConfigModal() {
+        const modal = document.getElementById("configModal");
+        modal.classList.add("hidden");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+      function persistEffectivenessSettings() {
+        const filters = getConfigFilters();
+        QuizPersist.saveSettings(QUIZ_ID, {
+          autoNext: isToggleOn(document.getElementById("autoNextMode")),
+          fastMode: isToggleOn(document.getElementById("fasterMode")),
+          showTypeInfo: isToggleOn(document.getElementById("showTypeInfo")),
+          moveType: filters.moveType,
+          pokemonType: filters.pokemonType,
+          pokemonTypeMode: filters.pokemonTypeMode,
+        });
+      }
+
+      function applyEffectivenessSettings() {
+        const s = QuizPersist.loadSettings(QUIZ_ID, {
+          autoNext: true,
+          fastMode: false,
+          showTypeInfo: false,
+          moveType: "any",
+          pokemonType: "any",
+          pokemonTypeMode: "optional",
+        });
+        setToggle(
+          document.getElementById("autoNextMode"),
+          s.autoNext !== false,
+        );
+        setToggle(document.getElementById("fasterMode"), s.fastMode === true);
+        setToggle(
+          document.getElementById("showTypeInfo"),
+          s.showTypeInfo === true,
+        );
+        const show = s.showTypeInfo === true;
+        document
+          .getElementById("pokemonTypes")
+          .classList.toggle("hidden", !show);
+        document.getElementById("moveType").classList.toggle("hidden", !show);
+        applyFiltersToUi({
+          moveType: s.moveType || "any",
+          pokemonType: s.pokemonType || "any",
+          pokemonTypeMode: s.pokemonTypeMode || "optional",
+        });
+      }
+
+      function recordStatsAfterAnswer(correct) {
+        statsSnapshot.totalAnswered += 1;
+        if (correct) statsSnapshot.totalCorrect += 1;
+        statsSnapshot.currentStreak = currentStreak;
+        statsSnapshot.bestStreak = bestStreak;
+        statsSnapshot.history.push({ t: Date.now(), correct });
+        if (statsSnapshot.history.length > QuizPersist.MAX_HISTORY) {
+          statsSnapshot.history = statsSnapshot.history.slice(
+            -QuizPersist.MAX_HISTORY,
+          );
+        }
+        QuizPersist.saveStats(QUIZ_ID, statsSnapshot);
+      }
+
+      function syncAutoNextUi() {
+        const autoNextOn = isToggleOn(document.getElementById("autoNextMode"));
+        const fasterModeEl = document.getElementById("fasterMode");
+        fasterModeEl.style.opacity = autoNextOn ? "1" : "0.25";
+      }
+
+      function imagePathFromPokemonId(id) {
+        return `images/${String(id).padStart(4, "0")}.png`;
+      }
+
+      function getModifier(attackingType, defendingTypes) {
+        const chart = TYPE_CHART[attackingType] || {};
+        let modifier = 1;
+        for (const defType of defendingTypes) {
+          if ((chart.IMMUNE || []).includes(defType)) {
+            modifier = 0;
+            break;
+          }
+          if ((chart.RESIST || []).includes(defType)) modifier *= 0.5;
+          else if ((chart.VULNERABLE || []).includes(defType)) modifier *= 2;
+        }
+        return modifier;
+      }
+
+      function getPerTypeMultiplier(attackingType, defendingType) {
+        const chart = TYPE_CHART[attackingType] || {};
+        if ((chart.IMMUNE || []).includes(defendingType)) return 0;
+        if ((chart.RESIST || []).includes(defendingType)) return 0.5;
+        if ((chart.VULNERABLE || []).includes(defendingType)) return 2;
+        return 1;
+      }
+
+      function formatMultiplier(value) {
+        if (value === 0.25) return "x¼";
+        if (value === 0.5) return "x½";
+        return `x${value}`;
+      }
+
+      function getTypeClass(typeName) {
+        return `type-${typeName.toLowerCase()}`;
+      }
+
+      function getModifierClass(multiplier) {
+        if (multiplier === 4) return "mod-4";
+        if (multiplier === 2) return "mod-2";
+        if (multiplier === 1) return "mod-1";
+        if (multiplier === 0.5) return "mod-half";
+        if (multiplier === 0.25) return "mod-quarter";
+        return "mod-0";
+      }
+
+      function modifierPillHtml(multiplier) {
+        const cls = getModifierClass(multiplier);
+        const label = formatMultiplier(multiplier);
+        return `<span class="modifier-pill ${cls}">${label}</span>`;
+      }
+
+      function describePerType(attackingType, defendingType) {
+        const mult = getPerTypeMultiplier(attackingType, defendingType);
+        return { defendingType, mult };
+      }
+
+      function buildMatchupExplanation(
+        attackingType,
+        defendingTypes,
+        totalModifier,
+      ) {
+        const parts = defendingTypes.map((type) =>
+          describePerType(attackingType, type),
+        );
+        const rows = parts
+          .map(({ defendingType, mult }) => {
+            return `<div class="explanation-row">
+							<span class="type-pill ${getTypeClass(attackingType)}">${attackingType}</span>
+							<span class="explanation-sep">vs</span>
+							<span class="type-pill ${getTypeClass(defendingType)}">${defendingType}</span>
+							<span class="explanation-sep">=</span>
+							<span class="modifier-pill ${getModifierClass(mult)}">${formatMultiplier(mult)}</span>
+						</div>`;
+          })
+          .join("");
+
+        if (defendingTypes.length < 2) {
+          return rows;
+        }
+
+        const defendingTypePills = defendingTypes
+          .map(
+            (type) =>
+              `<span class="type-pill ${getTypeClass(type)}">${type}</span>`,
+          )
+          .join("");
+        const totalRow = `<div class="explanation-row total-row">
+					<span class="type-pill ${getTypeClass(attackingType)}">${attackingType}</span>
+					<span class="explanation-sep">vs</span>
+					${defendingTypePills}
+					<span class="explanation-sep">=</span>
+					<span class="modifier-pill ${getModifierClass(totalModifier)}">${formatMultiplier(totalModifier)}</span>
+				</div>`;
+
+        return `${rows}${totalRow}`;
+      }
+
+      function renderOptions() {
+        const optionsEl = document.getElementById("options");
+        optionsEl.innerHTML = "";
+        activeOptionButtons = [];
+        OPTIONS.forEach((option, idx) => {
+          const btn = document.createElement("button");
+          btn.className = "option";
+          btn.innerHTML = `<span class="option-key">${idx + 1}</span>${option.label} (${formatMultiplier(option.value)})`;
+          btn.disabled = isAnswered;
+          btn.dataset.value = String(option.value);
+          btn.dataset.optionIndex = String(idx);
+          btn.addEventListener("click", () => onChoose(option.value, btn));
+          optionsEl.appendChild(btn);
+          activeOptionButtons.push(btn);
+        });
+      }
+
+      function onOptionHotkey(index) {
+        if (isAnswered) return;
+        const button = activeOptionButtons[index];
+        if (!button || button.disabled) return;
+        button.click();
+      }
+
+      function updateStreakInfo() {
+        document.getElementById("streakValue").textContent =
+          String(currentStreak);
+        document.getElementById("bestValue").textContent = String(bestStreak);
+      }
+
+      function setTransitionProgress(progress) {
+        const clamped = Math.max(0, Math.min(1, progress));
+        document.getElementById("transitionFill").style.width =
+          `${(1 - clamped) * 100}%`;
+      }
+
+      function stopTransitionCountdown() {
+        if (transitionRafId !== null) {
+          cancelAnimationFrame(transitionRafId);
+          transitionRafId = null;
+        }
+        transitionStartTime = 0;
+        document.getElementById("transitionBar").classList.add("hidden");
+        setTransitionProgress(0);
+      }
+
+      function tickTransition(now) {
+        const elapsed = now - transitionStartTime;
+        const progress = elapsed / currentTransitionDurationMs;
+        setTransitionProgress(progress);
+
+        if (elapsed >= currentTransitionDurationMs) {
+          stopTransitionCountdown();
+          nextRound();
+          return;
+        }
+
+        transitionRafId = requestAnimationFrame(tickTransition);
+      }
+
+      function startTransitionCountdown() {
+        const autoNextModeEl = document.getElementById("autoNextMode");
+        if (!isToggleOn(autoNextModeEl)) {
+          stopTransitionCountdown();
+          return;
+        }
+        stopTransitionCountdown();
+        const transitionBarEl = document.getElementById("transitionBar");
+        const fasterModeEl = document.getElementById("fasterMode");
+        currentTransitionDurationMs = isToggleOn(fasterModeEl)
+          ? TRANSITION_MS / 2
+          : TRANSITION_MS;
+        transitionBarEl.classList.remove("hidden");
+        setTransitionProgress(0);
+        transitionStartTime = performance.now();
+        transitionRafId = requestAnimationFrame(tickTransition);
+      }
+
+      function onChoose(value, selectedBtn) {
+        if (isAnswered) return;
+        isAnswered = true;
+        const resultEl = document.getElementById("result");
+        const explanationEl = document.getElementById("explanation");
+
+        const buttons = [...document.querySelectorAll(".option")];
+        for (const btn of buttons) btn.disabled = true;
+
+        for (const btn of buttons) {
+          const optionValue = Number(btn.dataset.value);
+          if (optionValue === currentAnswer) btn.classList.add("correct");
+        }
+
+        const pill = modifierPillHtml(currentAnswer);
+        if (value !== currentAnswer) {
+          selectedBtn.classList.add("wrong");
+          resultEl.innerHTML = `<div class="result-status result-status--incorrect">Incorrect!</div><div class="result-answer-line">The correct answer: ${pill}</div>`;
+          currentStreak = 0;
+        } else {
+          resultEl.innerHTML = `<div class="result-status result-status--correct">Correct!</div><div class="result-answer-line">The correct answer: ${pill}</div>`;
+          currentStreak += 1;
+          bestStreak = Math.max(bestStreak, currentStreak);
+        }
+        updateStreakInfo();
+        recordStatsAfterAnswer(value === currentAnswer);
+        explanationEl.innerHTML = currentMatchupExplanation;
+        document.getElementById("nextQuestion").disabled = false;
+        document.getElementById("nextQuestion").classList.add("is-visible");
+
+        startTransitionCountdown();
+      }
+
+      function nextRound() {
+        const filters = getConfigFilters();
+        const filteredMoves =
+          filters.moveType === "any"
+            ? moves
+            : moves.filter((m) => m.type === filters.moveType);
+        const filteredPokemon =
+          filters.pokemonType === "any"
+            ? pokemon
+            : pokemon.filter((p) => {
+                const hasType = p.type.includes(filters.pokemonType);
+                if (!hasType) return false;
+                if (filters.pokemonTypeMode === "forced") return p.type.length > 1;
+                if (filters.pokemonTypeMode === "mono") return p.type.length === 1;
+                return true;
+              });
+        const movePool = filteredMoves.length > 0 ? filteredMoves : moves;
+        const pokemonPool = filteredPokemon.length > 0 ? filteredPokemon : pokemon;
+        const move = randomFrom(movePool);
+        const mon = randomFrom(pokemonPool);
+        const modifier = getModifier(move.type, mon.type);
+        currentAnswer = modifier;
+        isAnswered = false;
+
+        const moveNameEl = document.getElementById("moveName");
+        const questionSuffixEl = document.getElementById("questionSuffix");
+        const imageEl = document.getElementById("pokemonImage");
+        const metaEl = document.getElementById("pokemonMeta");
+        const typesEl = document.getElementById("pokemonTypes");
+        const moveTypeEl = document.getElementById("moveType");
+        const showTypeInfoEl = document.getElementById("showTypeInfo");
+        const resultEl = document.getElementById("result");
+        const explanationEl = document.getElementById("explanation");
+        const imageWrapEl = document.querySelector(".image-wrap");
+        const optionsEl = document.getElementById("options");
+
+        imageWrapEl.classList.remove("fade-swap");
+        optionsEl.classList.remove("fade-swap");
+        void imageWrapEl.offsetWidth;
+        moveNameEl.textContent = move.name;
+        questionSuffixEl.textContent = `vs. ${mon.pokemon} is...`;
+        imageEl.src = imagePathFromPokemonId(mon.id);
+        imageEl.onerror = () => {
+          imageEl.alt = `Missing image for ${mon.pokemon}`;
+        };
+        metaEl.textContent = mon.pokemon;
+        typesEl.textContent = mon.type.join("/");
+        moveTypeEl.textContent = move.type;
+        const showTypeInfo = isToggleOn(showTypeInfoEl);
+        typesEl.classList.toggle("hidden", !showTypeInfo);
+        moveTypeEl.classList.toggle("hidden", !showTypeInfo);
+        resultEl.innerHTML = "";
+        currentMatchupExplanation = buildMatchupExplanation(
+          move.type,
+          mon.type,
+          modifier,
+        );
+        explanationEl.innerHTML = "";
+        document.getElementById("nextQuestion").disabled = true;
+        document.getElementById("nextQuestion").classList.remove("is-visible");
+        stopTransitionCountdown();
+        renderOptions();
+        imageWrapEl.classList.add("fade-swap");
+        optionsEl.classList.add("fade-swap");
+      }
+
+      function init() {
+        if (
+          !QUIZ_DATA ||
+          !Array.isArray(QUIZ_DATA.moves) ||
+          !Array.isArray(QUIZ_DATA.pokemon)
+        ) {
+          throw new Error(
+            "Missing quiz data. Run: node scripts/build-quiz-data.js",
+          );
+        }
+        moves = QUIZ_DATA.moves;
+        pokemon = QUIZ_DATA.pokemon;
+        populateTypeSelect(document.getElementById("configMoveType"));
+        populateTypeSelect(document.getElementById("configPokemonType"));
+        applyEffectivenessSettings();
+        document
+          .getElementById("showTypeInfo")
+          .addEventListener("click", (event) => {
+            const button = event.currentTarget;
+            const next = !isToggleOn(button);
+            setToggle(button, next);
+            document
+              .getElementById("pokemonTypes")
+              .classList.toggle("hidden", !next);
+            document
+              .getElementById("moveType")
+              .classList.toggle("hidden", !next);
+            persistEffectivenessSettings();
+          });
+        document
+          .getElementById("fasterMode")
+          .addEventListener("click", (event) => {
+            const button = event.currentTarget;
+            setToggle(button, !isToggleOn(button));
+            persistEffectivenessSettings();
+          });
+        document
+          .querySelectorAll(".config-mode-btn")
+          .forEach((button) =>
+            button.addEventListener("click", (event) => {
+              const target = event.currentTarget;
+              setTypeMode(target.dataset.mode);
+            }),
+          );
+        document
+          .getElementById("configPokemonType")
+          .addEventListener("change", syncPokemonTypeModeVisibility);
+        document
+          .getElementById("openConfig")
+          .addEventListener("click", openConfigModal);
+        document
+          .getElementById("closeConfig")
+          .addEventListener("click", closeConfigModal);
+        document
+          .getElementById("applyConfig")
+          .addEventListener("click", () => {
+            persistEffectivenessSettings();
+            closeConfigModal();
+            if (!isAnswered) {
+              nextRound();
+            }
+          });
+        document
+          .getElementById("configModal")
+          .addEventListener("click", (event) => {
+            if (event.target.id === "configModal") closeConfigModal();
+          });
+        document
+          .getElementById("autoNextMode")
+          .addEventListener("click", (event) => {
+            const button = event.currentTarget;
+            const next = !isToggleOn(button);
+            setToggle(button, next);
+            persistEffectivenessSettings();
+            syncAutoNextUi();
+            if (!next) {
+              stopTransitionCountdown();
+            } else if (isAnswered) {
+              startTransitionCountdown();
+            }
+          });
+        document
+          .getElementById("nextQuestion")
+          .addEventListener("click", () => {
+            if (!isAnswered) return;
+            stopTransitionCountdown();
+            nextRound();
+          });
+        syncAutoNextUi();
+        document.addEventListener("keydown", (event) => {
+          if (event.code === "Space") {
+            if (isAnswered) {
+              event.preventDefault();
+              stopTransitionCountdown();
+              nextRound();
+            }
+            return;
+          }
+          const keyIndex = Number(event.key) - 1;
+          if (!Number.isInteger(keyIndex) || keyIndex < 0 || keyIndex > 5)
+            return;
+          onOptionHotkey(keyIndex);
+        });
+        document.getElementById("themeToggle").addEventListener("click", () => {
+          const nextTheme = document.body.classList.contains("light-theme")
+            ? "dark"
+            : "light";
+          localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+          applyTheme(nextTheme);
+        });
+        updateStreakInfo();
+        nextRound();
+      }
+
+      function applyTheme(theme) {
+        const light = theme === "light";
+        document.body.classList.toggle("light-theme", light);
+        document.getElementById("themeToggle").textContent = light
+          ? "Dark mode"
+          : "Light mode";
+      }
+
+      try {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || "dark";
+        applyTheme(savedTheme);
+        init();
+      } catch (error) {
+        document.getElementById("moveName").textContent =
+          "Failed to load quiz data.";
+        document.getElementById("questionSuffix").textContent = "";
+        document.getElementById("result").textContent = String(error);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Quiz Hub</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 24px;
+        background: #121521;
+        color: #eef2ff;
+      }
+
+      .container {
+        max-width: 860px;
+        margin: 0 auto;
+        background: #1b2131;
+        border: 1px solid #2d3752;
+        border-radius: 14px;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin: 8px 0;
+        line-height: 1.4;
+        color: #c7d3f3;
+      }
+
+      .quiz-list {
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .quiz-link {
+        display: block;
+        text-decoration: none;
+        color: #eaf0ff;
+        background: #202942;
+        border: 1px solid #3c4a6d;
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+
+      .quiz-link:hover {
+        background: #2a3554;
+      }
+
+      .quiz-title {
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+
+      .quiz-desc {
+        font-size: 0.92rem;
+        color: #b9c6ea;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <ul class="quiz-list">
+        <li>
+          <a class="quiz-link" href="./quiz-effectiveness.html">
+            <div class="quiz-title">Type Effectiveness Quiz</div>
+            <div class="quiz-desc">
+              Given a move and target Pokemon, choose the effectiveness
+              multiplier.
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="quiz-link" href="./quiz-pokemon-type.html">
+            <div class="quiz-title">Pokemon Type Quiz</div>
+            <div class="quiz-desc">
+              Identify one of the correct types for the shown Pokemon.
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="quiz-link" href="./quiz-moveset.html">
+            <div class="quiz-title">Moveset Quiz</div>
+            <div class="quiz-desc">
+              Match a 4-move set to the Pokemon it belongs to.
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="quiz-link" href="./quiz-learn-move.html">
+            <div class="quiz-title">Learn a Move Quiz</div>
+            <div class="quiz-desc">
+              Pick a move that the displayed Pokemon can learn.
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="quiz-link" href="./quiz-evolution.html">
+            <div class="quiz-title">Evolution Quiz</div>
+            <div class="quiz-desc">
+              Answer evolution requirement questions for specific Pokemon
+              evolution pairs.
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

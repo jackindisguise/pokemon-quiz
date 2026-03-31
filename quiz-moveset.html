@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Moveset Quiz</title>
+    <link rel="stylesheet" href="./quiz.css" />
+  </head>
+  <body class="quiz-page quiz-page--moveset">
+    <button id="themeToggle" class="theme-toggle" type="button">
+      Light mode
+    </button>
+    <nav class="quiz-nav">
+      <a href="./quiz-effectiveness.html">Effectiveness Quiz</a>
+      <a href="./quiz-pokemon-type.html">Pokemon Type Quiz</a>
+      <a href="./quiz-moveset.html">Moveset Quiz</a>
+      <a href="./quiz-learn-move.html">Learn a Move Quiz</a>
+      <a href="./quiz-evolution.html">Evolution Quiz</a>
+    </nav>
+    <div class="container">
+      <h1>Pokemon Moveset Quiz</h1>
+      <div class="controls">
+        <button
+          id="autoNextMode"
+          class="toggle-btn active"
+          type="button"
+          aria-pressed="true"
+        >
+          auto-next
+        </button>
+        <button
+          id="fasterMode"
+          class="toggle-btn"
+          type="button"
+          aria-pressed="false"
+        >
+          fast mode
+        </button>
+      </div>
+
+      <div class="panel">
+        <div class="moveset-card">
+          <p id="question">Which Pokemon matches this moveset?</p>
+          <ol id="movesetList" class="moveset-list"></ol>
+        </div>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div class="actions">
+        <span id="result"></span>
+      </div>
+      <div id="transitionBar" class="hidden">
+        <div id="transitionFill"></div>
+      </div>
+      <div id="explanation"></div>
+      <div class="quiz-next-row">
+        <button id="nextQuestion" class="toggle-btn" type="button" disabled>
+          next
+        </button>
+      </div>
+      <div class="footer-status">
+        <div id="streakInfo">
+          <div id="streak">
+            <span class="label">Streak:</span>
+            <span id="streakValue" class="value">0</span>
+          </div>
+          <div id="best">
+            <span class="label">Best:</span>
+            <span id="bestValue" class="value">0</span>
+          </div>
+        </div>
+      </div>
+      <section class="quiz-help-box" aria-label="Quiz rules">
+        <h2>How This Quiz Works</h2>
+        <p>Read the moveset and choose which Pokemon it belongs to.</p>
+        <p>
+          The card lists four random moves from that Pokemon's full learnset in
+          the dataset.
+        </p>
+        <h2>Hotkeys</h2>
+        <p>You can use number keys (1-4) to pick answers.</p>
+        <p>Press Space after answering to go next.</p>
+        <p>
+          Turn off auto-next if you want to advance manually with Space or the
+          Next button.
+        </p>
+      </section>
+    </div>
+
+    <script src="./quiz-moveset-data.js"></script>
+    <script src="./quiz-persist.js"></script>
+    <script>
+      const THEME_STORAGE_KEY = "quizTheme";
+      const QUIZ_ID = "moveset";
+      const OPTION_COUNT = 4;
+      const TRANSITION_MS = 5000;
+
+      let pokemonMovesets = [];
+      let currentEntry = null;
+      let isAnswered = false;
+      let activeOptionButtons = [];
+      let statsSnapshot = QuizPersist.loadStats(QUIZ_ID);
+      let currentStreak = statsSnapshot.currentStreak;
+      let bestStreak = statsSnapshot.bestStreak;
+
+      let currentTransitionDurationMs = TRANSITION_MS;
+      let transitionRafId = null;
+      let transitionStartTime = 0;
+
+      function randomFrom(items) {
+        return items[Math.floor(Math.random() * items.length)];
+      }
+
+      function isToggleOn(buttonEl) {
+        return buttonEl.classList.contains("active");
+      }
+
+      function setToggle(buttonEl, on) {
+        buttonEl.classList.toggle("active", on);
+        buttonEl.setAttribute("aria-pressed", on ? "true" : "false");
+      }
+
+      function persistQuizSettings() {
+        QuizPersist.saveSettings(QUIZ_ID, {
+          autoNext: isToggleOn(document.getElementById("autoNextMode")),
+          fastMode: isToggleOn(document.getElementById("fasterMode")),
+        });
+      }
+
+      function applyQuizSettings() {
+        const s = QuizPersist.loadSettings(QUIZ_ID, {
+          autoNext: true,
+          fastMode: false,
+        });
+        setToggle(
+          document.getElementById("autoNextMode"),
+          s.autoNext !== false,
+        );
+        setToggle(document.getElementById("fasterMode"), s.fastMode === true);
+      }
+
+      function recordStatsAfterAnswer(correct) {
+        statsSnapshot.totalAnswered += 1;
+        if (correct) statsSnapshot.totalCorrect += 1;
+        statsSnapshot.currentStreak = currentStreak;
+        statsSnapshot.bestStreak = bestStreak;
+        statsSnapshot.history.push({ t: Date.now(), correct });
+        if (statsSnapshot.history.length > QuizPersist.MAX_HISTORY) {
+          statsSnapshot.history = statsSnapshot.history.slice(
+            -QuizPersist.MAX_HISTORY,
+          );
+        }
+        QuizPersist.saveStats(QUIZ_ID, statsSnapshot);
+      }
+
+      function syncAutoNextUi() {
+        const autoNextOn = isToggleOn(document.getElementById("autoNextMode"));
+        const fasterModeEl = document.getElementById("fasterMode");
+        fasterModeEl.style.opacity = autoNextOn ? "1" : "0.25";
+      }
+
+      function shuffle(items) {
+        const copy = [...items];
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+      }
+
+      function imagePathFromPokemonId(id) {
+        return `images/${String(id).padStart(4, "0")}.png`;
+      }
+
+      function escapeHtml(text) {
+        return String(text)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function quizResultHtml(isCorrect, answerInnerHtml) {
+        const status = isCorrect ? "correct" : "incorrect";
+        const label = isCorrect ? "Correct!" : "Incorrect!";
+        return `<div class="result-status result-status--${status}">${label}</div><div class="result-answer-line">The correct answer: ${answerInnerHtml}</div>`;
+      }
+
+      function updateStreakInfo() {
+        document.getElementById("streakValue").textContent =
+          String(currentStreak);
+        document.getElementById("bestValue").textContent = String(bestStreak);
+      }
+
+      function setTransitionProgress(progress) {
+        const clamped = Math.max(0, Math.min(1, progress));
+        document.getElementById("transitionFill").style.width =
+          `${(1 - clamped) * 100}%`;
+      }
+
+      function stopTransitionCountdown() {
+        if (transitionRafId !== null) {
+          cancelAnimationFrame(transitionRafId);
+          transitionRafId = null;
+        }
+        transitionStartTime = 0;
+        document.getElementById("transitionBar").classList.add("hidden");
+        setTransitionProgress(0);
+      }
+
+      function tickTransition(now) {
+        const elapsed = now - transitionStartTime;
+        const progress = elapsed / currentTransitionDurationMs;
+        setTransitionProgress(progress);
+
+        if (elapsed >= currentTransitionDurationMs) {
+          stopTransitionCountdown();
+          nextRound();
+          return;
+        }
+        transitionRafId = requestAnimationFrame(tickTransition);
+      }
+
+      function startTransitionCountdown() {
+        const autoNextModeEl = document.getElementById("autoNextMode");
+        if (!isToggleOn(autoNextModeEl)) {
+          stopTransitionCountdown();
+          return;
+        }
+        stopTransitionCountdown();
+        const transitionBarEl = document.getElementById("transitionBar");
+        const fasterModeEl = document.getElementById("fasterMode");
+        currentTransitionDurationMs = isToggleOn(fasterModeEl)
+          ? TRANSITION_MS / 2
+          : TRANSITION_MS;
+        transitionBarEl.classList.remove("hidden");
+        setTransitionProgress(0);
+        transitionStartTime = performance.now();
+        transitionRafId = requestAnimationFrame(tickTransition);
+      }
+
+      function renderOptions(optionPokemon) {
+        const optionsEl = document.getElementById("options");
+        optionsEl.innerHTML = "";
+        activeOptionButtons = [];
+        optionPokemon.forEach((entry, idx) => {
+          const btn = document.createElement("button");
+          btn.className = "option";
+          btn.dataset.pokemon = entry.pokemon;
+          btn.disabled = isAnswered;
+          btn.innerHTML = `
+						<span class="option-key">${idx + 1}</span>
+						<span class="option-content">
+							<img class="option-image" src="${imagePathFromPokemonId(entry.id)}" alt="${entry.pokemon}" />
+							<span>${entry.pokemon}</span>
+						</span>
+					`;
+          btn.addEventListener("click", () => onChoose(entry.pokemon, btn));
+          optionsEl.appendChild(btn);
+          activeOptionButtons.push(btn);
+        });
+      }
+
+      function onOptionHotkey(index) {
+        if (isAnswered) return;
+        const button = activeOptionButtons[index];
+        if (!button || button.disabled) return;
+        button.click();
+      }
+
+      function onChoose(selectedPokemon, selectedBtn) {
+        if (isAnswered) return;
+        isAnswered = true;
+        const resultEl = document.getElementById("result");
+        const explanationEl = document.getElementById("explanation");
+
+        const buttons = [...document.querySelectorAll(".option")];
+        for (const btn of buttons) btn.disabled = true;
+        for (const btn of buttons) {
+          if (btn.dataset.pokemon === currentEntry.pokemon)
+            btn.classList.add("correct");
+        }
+
+        const imgSrc = imagePathFromPokemonId(currentEntry.id);
+        const nameSafe = escapeHtml(currentEntry.pokemon);
+        const answerPill = `<span class="result-answer-pill result-answer-pill--pokemon"><img class="result-answer-pill-image" src="${imgSrc}" alt="${nameSafe}" width="40" height="40" />${nameSafe}</span>`;
+        if (selectedPokemon !== currentEntry.pokemon) {
+          selectedBtn.classList.add("wrong");
+          resultEl.innerHTML = quizResultHtml(false, answerPill);
+          currentStreak = 0;
+        } else {
+          resultEl.innerHTML = quizResultHtml(true, answerPill);
+          currentStreak += 1;
+          bestStreak = Math.max(bestStreak, currentStreak);
+        }
+        updateStreakInfo();
+        recordStatsAfterAnswer(selectedPokemon === currentEntry.pokemon);
+        explanationEl.textContent = `Pokemon #${currentEntry.id}: ${currentEntry.pokemon}`;
+        document.getElementById("nextQuestion").disabled = false;
+        document.getElementById("nextQuestion").classList.add("is-visible");
+        startTransitionCountdown();
+      }
+
+      function nextRound() {
+        stopTransitionCountdown();
+        isAnswered = false;
+        currentEntry = randomFrom(pokemonMovesets);
+        const shownMoves = shuffle(currentEntry.moves).slice(0, 4);
+        const decoys = shuffle(
+          pokemonMovesets.filter(
+            (entry) => entry.pokemon !== currentEntry.pokemon,
+          ),
+        ).slice(0, OPTION_COUNT - 1);
+        const optionPokemon = shuffle([currentEntry, ...decoys]);
+
+        const movesetListEl = document.getElementById("movesetList");
+        const resultEl = document.getElementById("result");
+        const explanationEl = document.getElementById("explanation");
+        const cardEl = document.querySelector(".moveset-card");
+        const optionsEl = document.getElementById("options");
+
+        cardEl.classList.remove("fade-swap");
+        optionsEl.classList.remove("fade-swap");
+        void cardEl.offsetWidth;
+
+        movesetListEl.innerHTML = shownMoves
+          .map((move) => `<li>${move}</li>`)
+          .join("");
+        resultEl.innerHTML = "";
+        explanationEl.textContent = "";
+        document.getElementById("nextQuestion").disabled = true;
+        document.getElementById("nextQuestion").classList.remove("is-visible");
+        renderOptions(optionPokemon);
+        cardEl.classList.add("fade-swap");
+        optionsEl.classList.add("fade-swap");
+      }
+
+      function applyTheme(theme) {
+        const light = theme === "light";
+        document.body.classList.toggle("light-theme", light);
+        document.getElementById("themeToggle").textContent = light
+          ? "Dark mode"
+          : "Light mode";
+      }
+
+      function init() {
+        if (
+          !QUIZ_MOVESET_DATA ||
+          !Array.isArray(QUIZ_MOVESET_DATA.pokemonMovesets)
+        ) {
+          throw new Error("Missing moveset quiz data. Run: npm run quiz:data");
+        }
+        pokemonMovesets = QUIZ_MOVESET_DATA.pokemonMovesets;
+
+        applyQuizSettings();
+
+        document.getElementById("themeToggle").addEventListener("click", () => {
+          const nextTheme = document.body.classList.contains("light-theme")
+            ? "dark"
+            : "light";
+          localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+          applyTheme(nextTheme);
+        });
+        document
+          .getElementById("fasterMode")
+          .addEventListener("click", (event) => {
+            const button = event.currentTarget;
+            setToggle(button, !isToggleOn(button));
+            persistQuizSettings();
+          });
+        document
+          .getElementById("autoNextMode")
+          .addEventListener("click", (event) => {
+            const button = event.currentTarget;
+            const next = !isToggleOn(button);
+            setToggle(button, next);
+            persistQuizSettings();
+            syncAutoNextUi();
+            if (!next) {
+              stopTransitionCountdown();
+            } else if (isAnswered) {
+              startTransitionCountdown();
+            }
+          });
+        document
+          .getElementById("nextQuestion")
+          .addEventListener("click", () => {
+            if (!isAnswered) return;
+            stopTransitionCountdown();
+            nextRound();
+          });
+        syncAutoNextUi();
+
+        document.addEventListener("keydown", (event) => {
+          if (event.code === "Space") {
+            if (isAnswered) {
+              event.preventDefault();
+              stopTransitionCountdown();
+              nextRound();
+            }
+            return;
+          }
+          const keyIndex = Number(event.key) - 1;
+          if (
+            !Number.isInteger(keyIndex) ||
+            keyIndex < 0 ||
+            keyIndex > OPTION_COUNT - 1
+          )
+            return;
+          onOptionHotkey(keyIndex);
+        });
+
+        updateStreakInfo();
+        nextRound();
+      }
+
+      try {
+        const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) || "dark";
+        applyTheme(savedTheme);
+        init();
+      } catch (error) {
+        document.getElementById("question").textContent =
+          "Failed to load quiz data.";
+        document.getElementById("result").textContent = String(error);
+      }
+    </script>
+  </body>
+</html>

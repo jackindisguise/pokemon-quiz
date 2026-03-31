@@ -1,0 +1,8 @@
+node_modules
+data
+dist
+generated
+prisma
+scripts
+src
+.env
