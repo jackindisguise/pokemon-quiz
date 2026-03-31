@@ -59,16 +59,22 @@ h1 {
 	justify-content: space-between;
 	gap: 10px;
 	margin: 0 0 12px;
+	flex-wrap: nowrap;
 }
 
 .quiz-title-row h1 {
 	margin: 0;
+	flex: 1;
+	min-width: 0;
+	text-align: left;
 }
 
 .title-actions {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
+	flex-shrink: 0;
+	white-space: nowrap;
 }
 
 .title-actions .toggle-btn,
@@ -1043,7 +1049,10 @@ body.light-theme .option-key {
 
 	h1 {
 		font-size: 1.15rem;
-		text-align: center;
+	}
+
+	.quiz-title-row h1 {
+		text-align: left;
 	}
 
 	.quiz-nav {
