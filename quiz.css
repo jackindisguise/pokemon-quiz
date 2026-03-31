@@ -908,3 +908,142 @@ body.light-theme .option-key {
 	color: #243250;
 	border: 1px solid #b7c4de;
 }
+
+/* Mobile + small screens */
+
+@media (max-width: 900px) {
+	body {
+		padding: 16px;
+	}
+
+	.container {
+		padding: 16px;
+	}
+
+	.quiz-nav {
+		flex-wrap: wrap;
+		gap: 8px;
+	}
+
+	.controls {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.options {
+		grid-template-columns: 1fr;
+		max-width: 520px;
+	}
+
+	.quiz-page--evolution .evolution-visual {
+		gap: 8px;
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		padding: 10px;
+	}
+
+	.theme-toggle {
+		position: static;
+		display: block;
+		margin: 0 0 10px auto;
+	}
+
+	.container {
+		padding: 12px;
+		border-radius: 10px;
+	}
+
+	h1 {
+		font-size: 1.15rem;
+		text-align: center;
+	}
+
+	.quiz-nav {
+		justify-content: flex-start;
+	}
+
+	.quiz-nav a,
+	.toggle-btn,
+	button.option {
+		font-size: 0.9rem;
+	}
+
+	.quiz-page--effectiveness .image-wrap,
+	.quiz-page--type .image-wrap,
+	.quiz-page--learn-move .image-wrap {
+		max-width: 100%;
+	}
+
+	.quiz-page--effectiveness #pokemonImage,
+	.quiz-page--type #pokemonImage,
+	.quiz-page--learn-move #pokemonImage {
+		max-width: 220px;
+	}
+
+	.quiz-page--evolution .image-wrap {
+		max-width: 100%;
+	}
+
+	.quiz-page--evolution .evolution-visual {
+		flex-direction: column;
+	}
+
+	.quiz-page--evolution .evolution-arrow {
+		transform: rotate(90deg);
+		font-size: 1.5rem;
+	}
+
+	.quiz-page--evolution #pokemonImageFrom,
+	.quiz-page--evolution #pokemonImageTo {
+		max-width: 150px;
+	}
+
+	.quiz-page--moveset .moveset-card {
+		padding: 10px;
+	}
+
+	.quiz-page--moveset .moveset-list {
+		grid-template-columns: 1fr;
+	}
+
+	.quiz-page--moveset .option-image {
+		width: 36px;
+		height: 36px;
+	}
+
+	.quiz-page .result-status {
+		font-size: 1.35rem;
+	}
+
+	#explanation {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 420px) {
+	.quiz-nav a,
+	.toggle-btn {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.quiz-page--effectiveness .config-actions {
+		flex-wrap: wrap;
+		justify-content: stretch;
+	}
+
+	.quiz-page--effectiveness .config-actions .toggle-btn {
+		flex: 1 1 100%;
+	}
+
+	button.option {
+		padding: 9px 10px;
+	}
+
+	.option-key {
+		margin-right: 4px;
+	}
+}
