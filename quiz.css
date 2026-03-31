@@ -11,6 +11,12 @@
 		sans-serif;
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 24px;
@@ -1028,7 +1034,7 @@ body.light-theme .option-key {
 	}
 
 	.options {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		max-width: 520px;
 	}
 
@@ -1039,12 +1045,17 @@ body.light-theme .option-key {
 
 @media (max-width: 640px) {
 	body {
-		padding: 10px;
+		padding: 0;
 	}
 
 	.container {
 		padding: 12px;
-		border-radius: 10px;
+		margin: 0;
+		max-width: none;
+		width: 100%;
+		min-height: 100vh;
+		border: none;
+		border-radius: 0;
 	}
 
 	h1 {
