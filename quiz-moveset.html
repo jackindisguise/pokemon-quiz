@@ -12,7 +12,14 @@
     </button>
     <div class="container">
       <h1>Pokemon Moveset Quiz</h1>
-      <div class="controls">
+      <script>
+        if (window.matchMedia("(max-width: 640px)").matches) {
+          document.querySelector(".quiz-settings")?.removeAttribute("open");
+        }
+      </script>
+      <details class="quiz-settings" open>
+        <summary>Quiz settings</summary>
+        <div class="controls">
         <button
           id="autoNextMode"
           class="toggle-btn active"
@@ -29,7 +36,8 @@
         >
           fast mode
         </button>
-      </div>
+        </div>
+      </details>
 
       <div class="panel">
         <div class="moveset-card">

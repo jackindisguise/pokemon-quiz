@@ -12,7 +12,14 @@
     </button>
     <div class="container">
       <h1>Type Effectiveness Quiz</h1>
-      <div class="controls">
+      <script>
+        if (window.matchMedia("(max-width: 640px)").matches) {
+          document.querySelector(".quiz-settings")?.removeAttribute("open");
+        }
+      </script>
+      <details class="quiz-settings" open>
+        <summary>Quiz settings</summary>
+        <div class="controls">
         <button
           id="showTypeInfo"
           class="toggle-btn"
@@ -38,7 +45,8 @@
           fast mode
         </button>
         <button id="openConfig" class="toggle-btn" type="button">config</button>
-      </div>
+        </div>
+      </details>
       <div id="configModal" class="quiz-config-modal hidden" aria-hidden="true">
         <div class="quiz-config-card" role="dialog" aria-modal="true">
           <h2>Effectiveness Config</h2>
