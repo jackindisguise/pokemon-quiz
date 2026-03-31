@@ -3,44 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="0; url=./quiz-effectiveness.html" />
     <title>Pokemon Quiz Hub</title>
+    <link rel="stylesheet" href="./quiz.css" />
     <style>
-      :root {
-        color-scheme: dark;
-        font-family:
-          Inter,
-          system-ui,
-          -apple-system,
-          Segoe UI,
-          Roboto,
-          sans-serif;
-      }
-
-      body {
-        margin: 0;
-        padding: 24px;
-        background: #121521;
-        color: #eef2ff;
-      }
-
-      .container {
+      .quiz-page--index .container {
         max-width: 860px;
-        margin: 0 auto;
-        background: #1b2131;
-        border: 1px solid #2d3752;
-        border-radius: 14px;
-        padding: 20px;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: 1.5rem;
-      }
-
-      p {
-        margin: 8px 0;
-        line-height: 1.4;
-        color: #c7d3f3;
       }
 
       .quiz-list {
@@ -75,7 +43,26 @@
       }
     </style>
   </head>
-  <body>
+  <body class="quiz-page quiz-page--index">
+    <script>
+      window.location.replace("./quiz-effectiveness.html");
+    </script>
+    <noscript>
+      <main class="container">
+        <p>
+          Redirecting to the Effectiveness Quiz...
+          <a class="quiz-link" href="./quiz-effectiveness.html">Continue</a>
+        </p>
+      </main>
+    </noscript>
+    <nav class="quiz-nav">
+      <a href="./index.html">Home</a>
+      <a href="./quiz-effectiveness.html">Effectiveness Quiz</a>
+      <a href="./quiz-pokemon-type.html">Pokemon Type Quiz</a>
+      <a href="./quiz-moveset.html">Moveset Quiz</a>
+      <a href="./quiz-learn-move.html">Learn a Move Quiz</a>
+      <a href="./quiz-evolution.html">Evolution Quiz</a>
+    </nav>
     <main class="container">
       <ul class="quiz-list">
         <li>
