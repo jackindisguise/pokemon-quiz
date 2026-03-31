@@ -7,37 +7,49 @@
     <link rel="stylesheet" href="./quiz.css" />
   </head>
   <body class="quiz-page quiz-page--type">
-    <button id="themeToggle" class="theme-toggle" type="button">
-      Light mode
-    </button>
     <div class="container">
-      <h1>Pokemon Type Quiz</h1>
-      <script>
-        if (window.matchMedia("(max-width: 640px)").matches) {
-          document.querySelector(".quiz-settings")?.removeAttribute("open");
-        }
-      </script>
-      <details class="quiz-settings" open>
-        <summary>Quiz settings</summary>
-        <div class="controls">
-        <button
-          id="autoNextMode"
-          class="toggle-btn active"
-          type="button"
-          aria-pressed="true"
-        >
-          auto-next
-        </button>
-        <button
-          id="fasterMode"
-          class="toggle-btn"
-          type="button"
-          aria-pressed="false"
-        >
-          fast mode
-        </button>
+      <div class="quiz-title-row">
+        <h1>Pokemon Type Quiz</h1>
+        <div class="title-actions">
+          <button id="themeToggle" class="theme-toggle" type="button">🌞</button>
+          <button
+            id="openSettings"
+            class="toggle-btn settings-gear-btn"
+            type="button"
+            aria-label="Open quiz settings"
+          >
+            ⚙
+          </button>
         </div>
-      </details>
+      </div>
+      <div id="settingsModal" class="quiz-settings-modal hidden" aria-hidden="true">
+        <div class="quiz-settings-card" role="dialog" aria-modal="true">
+          <h2>Quiz Settings</h2>
+          <div class="controls">
+          <button
+            id="autoNextMode"
+            class="toggle-btn active"
+            type="button"
+            aria-pressed="true"
+          >
+            auto-next
+          </button>
+          <button
+            id="fasterMode"
+            class="toggle-btn"
+            type="button"
+            aria-pressed="false"
+          >
+            fast mode
+          </button>
+          </div>
+          <div class="config-actions">
+            <button id="closeSettings" class="toggle-btn" type="button">
+              close
+            </button>
+          </div>
+        </div>
+      </div>
 
       <div class="panel">
         <div class="image-wrap">
@@ -171,6 +183,18 @@
         const autoNextOn = isToggleOn(document.getElementById("autoNextMode"));
         const fasterModeEl = document.getElementById("fasterMode");
         fasterModeEl.style.opacity = autoNextOn ? "1" : "0.25";
+      }
+
+      function openSettingsModal() {
+        const modal = document.getElementById("settingsModal");
+        modal.classList.remove("hidden");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeSettingsModal() {
+        const modal = document.getElementById("settingsModal");
+        modal.classList.add("hidden");
+        modal.setAttribute("aria-hidden", "true");
       }
 
       function shuffle(items) {
@@ -373,6 +397,7 @@
         allTypes = [...new Set(pokemon.flatMap((entry) => entry.type))];
 
         applyQuizSettings();
+        closeSettingsModal();
 
         document.addEventListener("keydown", (event) => {
           if (event.code === "Space") {
@@ -421,6 +446,17 @@
             }
           });
         document
+          .getElementById("openSettings")
+          .addEventListener("click", openSettingsModal);
+        document
+          .getElementById("closeSettings")
+          .addEventListener("click", closeSettingsModal);
+        document
+          .getElementById("settingsModal")
+          .addEventListener("click", (event) => {
+            if (event.target.id === "settingsModal") closeSettingsModal();
+          });
+        document
           .getElementById("nextQuestion")
           .addEventListener("click", () => {
             if (!isAnswered) return;
@@ -436,9 +472,7 @@
       function applyTheme(theme) {
         const light = theme === "light";
         document.body.classList.toggle("light-theme", light);
-        document.getElementById("themeToggle").textContent = light
-          ? "Dark mode"
-          : "Light mode";
+        document.getElementById("themeToggle").textContent = light ? "🌙" : "🌞";
       }
 
       try {

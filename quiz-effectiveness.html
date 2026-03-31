@@ -7,49 +7,50 @@
     <link rel="stylesheet" href="./quiz.css" />
   </head>
   <body class="quiz-page quiz-page--effectiveness">
-    <button id="themeToggle" class="theme-toggle" type="button">
-      Light mode
-    </button>
     <div class="container">
-      <h1>Type Effectiveness Quiz</h1>
-      <script>
-        if (window.matchMedia("(max-width: 640px)").matches) {
-          document.querySelector(".quiz-settings")?.removeAttribute("open");
-        }
-      </script>
-      <details class="quiz-settings" open>
-        <summary>Quiz settings</summary>
-        <div class="controls">
-        <button
-          id="showTypeInfo"
-          class="toggle-btn"
-          type="button"
-          aria-pressed="false"
-        >
-          show type info
-        </button>
-        <button
-          id="autoNextMode"
-          class="toggle-btn active"
-          type="button"
-          aria-pressed="true"
-        >
-          auto-next
-        </button>
-        <button
-          id="fasterMode"
-          class="toggle-btn"
-          type="button"
-          aria-pressed="false"
-        >
-          fast mode
-        </button>
-        <button id="openConfig" class="toggle-btn" type="button">config</button>
+      <div class="quiz-title-row">
+        <h1>Type Effectiveness Quiz</h1>
+        <div class="title-actions">
+          <button id="themeToggle" class="theme-toggle" type="button">🌞</button>
+          <button
+            id="openConfig"
+            class="toggle-btn settings-gear-btn"
+            type="button"
+            aria-label="Open quiz settings"
+          >
+            ⚙
+          </button>
         </div>
-      </details>
+      </div>
       <div id="configModal" class="quiz-config-modal hidden" aria-hidden="true">
         <div class="quiz-config-card" role="dialog" aria-modal="true">
           <h2>Effectiveness Config</h2>
+          <div class="config-inline-toggle">
+            <button
+              id="showTypeInfo"
+              class="toggle-btn"
+              type="button"
+              aria-pressed="false"
+            >
+              show type info
+            </button>
+            <button
+              id="autoNextMode"
+              class="toggle-btn active"
+              type="button"
+              aria-pressed="true"
+            >
+              auto-next
+            </button>
+            <button
+              id="fasterMode"
+              class="toggle-btn"
+              type="button"
+              aria-pressed="false"
+            >
+              fast mode
+            </button>
+          </div>
           <label class="config-label" for="configMoveType">
             Force move type
             <select id="configMoveType"></select>
@@ -340,7 +341,8 @@
 
       function applyFiltersToUi(filters) {
         document.getElementById("configMoveType").value = filters.moveType;
-        document.getElementById("configPokemonType").value = filters.pokemonType;
+        document.getElementById("configPokemonType").value =
+          filters.pokemonType;
         setTypeMode(filters.pokemonTypeMode);
         syncPokemonTypeModeVisibility();
       }
@@ -639,12 +641,15 @@
             : pokemon.filter((p) => {
                 const hasType = p.type.includes(filters.pokemonType);
                 if (!hasType) return false;
-                if (filters.pokemonTypeMode === "forced") return p.type.length > 1;
-                if (filters.pokemonTypeMode === "mono") return p.type.length === 1;
+                if (filters.pokemonTypeMode === "forced")
+                  return p.type.length > 1;
+                if (filters.pokemonTypeMode === "mono")
+                  return p.type.length === 1;
                 return true;
               });
         const movePool = filteredMoves.length > 0 ? filteredMoves : moves;
-        const pokemonPool = filteredPokemon.length > 0 ? filteredPokemon : pokemon;
+        const pokemonPool =
+          filteredPokemon.length > 0 ? filteredPokemon : pokemon;
         const move = randomFrom(movePool);
         const mon = randomFrom(pokemonPool);
         const modifier = getModifier(move.type, mon.type);
@@ -729,14 +734,12 @@
             setToggle(button, !isToggleOn(button));
             persistEffectivenessSettings();
           });
-        document
-          .querySelectorAll(".config-mode-btn")
-          .forEach((button) =>
-            button.addEventListener("click", (event) => {
-              const target = event.currentTarget;
-              setTypeMode(target.dataset.mode);
-            }),
-          );
+        document.querySelectorAll(".config-mode-btn").forEach((button) =>
+          button.addEventListener("click", (event) => {
+            const target = event.currentTarget;
+            setTypeMode(target.dataset.mode);
+          }),
+        );
         document
           .getElementById("configPokemonType")
           .addEventListener("change", syncPokemonTypeModeVisibility);
@@ -746,15 +749,13 @@
         document
           .getElementById("closeConfig")
           .addEventListener("click", closeConfigModal);
-        document
-          .getElementById("applyConfig")
-          .addEventListener("click", () => {
-            persistEffectivenessSettings();
-            closeConfigModal();
-            if (!isAnswered) {
-              nextRound();
-            }
-          });
+        document.getElementById("applyConfig").addEventListener("click", () => {
+          persistEffectivenessSettings();
+          closeConfigModal();
+          if (!isAnswered) {
+            nextRound();
+          }
+        });
         document
           .getElementById("configModal")
           .addEventListener("click", (event) => {
@@ -810,9 +811,7 @@
       function applyTheme(theme) {
         const light = theme === "light";
         document.body.classList.toggle("light-theme", light);
-        document.getElementById("themeToggle").textContent = light
-          ? "Dark mode"
-          : "Light mode";
+        document.getElementById("themeToggle").textContent = light ? "🌙" : "🌞";
       }
 
       try {
