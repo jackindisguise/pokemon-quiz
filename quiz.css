@@ -752,6 +752,16 @@ button.option:disabled {
 	line-height: 1.35;
 }
 
+.quiz-links-box {
+	margin-top: 10px;
+}
+
+.quiz-links-box .quiz-nav {
+	margin: 0;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
 /* Light theme (all quizzes) */
 
 body.light-theme {
@@ -881,9 +891,6 @@ body.light-theme.quiz-page--effectiveness .config-label select {
 	background: #f4f7ff;
 	color: #1a2233;
 	border-color: #b7c4de;
-}
-
-body.light-theme.quiz-page--moveset .result-answer-pill-image {
 }
 
 body.light-theme #transitionBar {
