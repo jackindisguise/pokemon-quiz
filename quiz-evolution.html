@@ -390,10 +390,20 @@
         }
         if (key === "move_count") {
           const usedMove = req.used_move;
-          const prompt =
-            usedMove != null && usedMove !== ""
-              ? `How many times must ${fromName} use ${usedMove} to evolve into ${toName}?`
-              : `How many moves must ${fromName} know to evolve into ${toName}?`;
+          let prompt;
+          if (usedMove != null && usedMove !== "") {
+            if (entry.method === "strong-style-move") {
+              prompt = `How many times must ${fromName} use ${usedMove} in Strong Style to evolve into ${toName}?`;
+            } else if (entry.method === "agile-style-move") {
+              prompt = `How many times must ${fromName} use ${usedMove} in Agile Style to evolve into ${toName}?`;
+            } else if (entry.method === "use-move") {
+              prompt = `How many times must ${fromName} use ${usedMove} to evolve into ${toName}?`;
+            } else {
+              prompt = `How many times must ${fromName} use ${usedMove} to evolve into ${toName}?`;
+            }
+          } else {
+            prompt = `How many moves must ${fromName} know to evolve into ${toName}?`;
+          }
           return {
             key,
             answer: req.move_count,
