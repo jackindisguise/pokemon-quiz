@@ -11,7 +11,9 @@
       <div class="quiz-title-row">
         <h1>Evolution Quiz</h1>
         <div class="title-actions">
-          <button id="themeToggle" class="theme-toggle" type="button">🌞</button>
+          <button id="themeToggle" class="theme-toggle" type="button">
+            🌞
+          </button>
           <button
             id="openSettings"
             class="toggle-btn settings-gear-btn"
@@ -22,26 +24,30 @@
           </button>
         </div>
       </div>
-      <div id="settingsModal" class="quiz-settings-modal hidden" aria-hidden="true">
+      <div
+        id="settingsModal"
+        class="quiz-settings-modal hidden"
+        aria-hidden="true"
+      >
         <div class="quiz-settings-card" role="dialog" aria-modal="true">
           <h2>Quiz Settings</h2>
           <div class="controls">
-        <button
-          id="autoNextMode"
-          class="toggle-btn active"
-          type="button"
-          aria-pressed="true"
-        >
-          auto-next
-        </button>
-        <button
-          id="fasterMode"
-          class="toggle-btn"
-          type="button"
-          aria-pressed="false"
-        >
-          fast mode
-        </button>
+            <button
+              id="autoNextMode"
+              class="toggle-btn active"
+              type="button"
+              aria-pressed="true"
+            >
+              auto-next
+            </button>
+            <button
+              id="fasterMode"
+              class="toggle-btn"
+              type="button"
+              aria-pressed="false"
+            >
+              fast mode
+            </button>
           </div>
           <div class="config-actions">
             <button id="closeSettings" class="toggle-btn" type="button">
@@ -309,7 +315,12 @@
           return moveNamesById[String(value)] || `Move #${value}`;
         if (key === "known_move_type") return titleCase(value);
         if (key === "method") return titleCase(value);
-        if (key === "move_count") return `${value} moves`;
+        if (key === "move_count") {
+          const hasUsedMove =
+            currentRound?.entry?.requirements?.used_move != null &&
+            currentRound.entry.requirements.used_move !== "";
+          return hasUsedMove ? `${value} times` : `${value} moves`;
+        }
         return String(value);
       }
 
@@ -378,10 +389,15 @@
           };
         }
         if (key === "move_count") {
+          const usedMove = req.used_move;
+          const prompt =
+            usedMove != null && usedMove !== ""
+              ? `How many times must ${fromName} use ${usedMove} to evolve into ${toName}?`
+              : `How many moves must ${fromName} know to evolve into ${toName}?`;
           return {
             key,
             answer: req.move_count,
-            prompt: `How many moves must ${fromName} know to evolve into ${toName}?`,
+            prompt,
           };
         }
         if (key === "party_species") {
@@ -426,10 +442,31 @@
 
       function fallbackPoolForKey(key) {
         if (key === "time_of_day") return ["day", "night", "full-moon"];
+        if (key === "known_move_type")
+          return [
+            "normal",
+            "fire",
+            "water",
+            "electric",
+            "grass",
+            "ice",
+            "fighting",
+            "poison",
+            "ground",
+            "flying",
+            "psychic",
+            "bug",
+            "rock",
+            "ghost",
+            "dragon",
+            "dark",
+            "steel",
+            "fairy",
+          ];
         if (key === "level") return [16, 20, 30, 36, 42];
+        if (key === "move_count") return [10, 15, 20, 25, 30, 35, 40];
         if (key === "affection") return [1, 2, 3, 4];
-        if (key === "happiness")
-          return [120, 140, 160, 180, 200, 220, 240];
+        if (key === "happiness") return [120, 140, 160, 180, 200, 220, 240];
         if (key === "method")
           return [
             "level-up",
@@ -651,7 +688,9 @@
       function applyTheme(theme) {
         const light = theme === "light";
         document.body.classList.toggle("light-theme", light);
-        document.getElementById("themeToggle").textContent = light ? "🌙" : "🌞";
+        document.getElementById("themeToggle").textContent = light
+          ? "🌙"
+          : "🌞";
       }
 
       try {

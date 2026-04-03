@@ -130,6 +130,10 @@ function parseEvolution(chain, species) {
           evolution.requirements.party_species = details.party_species.name;
         if (details.party_type)
           evolution.requirements.party_type = details.party_type.name;
+        if (details.used_move)
+          evolution.requirements.used_move = normalizeItemName(
+            details.used_move.name,
+          );
         if (Object.keys(evolution.requirements).length == 0) {
           console.log(
             `${species.name} -> ${targetSpecies.name} has no requirements`,

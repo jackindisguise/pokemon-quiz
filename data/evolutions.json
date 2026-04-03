@@ -349,7 +349,8 @@
     "to": 979,
     "method": "use-move",
     "requirements": {
-      "move_count": 20
+      "move_count": 20,
+      "used_move": "Rage Fist"
     }
   },
   {
@@ -1301,7 +1302,8 @@
     "to": 904,
     "method": "strong-style-move",
     "requirements": {
-      "move_count": 20
+      "move_count": 20,
+      "used_move": "Barb Barrage"
     }
   },
   {
@@ -1317,7 +1319,8 @@
     "to": 904,
     "method": "use-move",
     "requirements": {
-      "move_count": 20
+      "move_count": 20,
+      "used_move": "Barb Barrage"
     }
   },
   {
@@ -1424,7 +1427,8 @@
     "to": 899,
     "method": "agile-style-move",
     "requirements": {
-      "move_count": 20
+      "move_count": 20,
+      "used_move": "Psyshield Bash"
     }
   },
   {
